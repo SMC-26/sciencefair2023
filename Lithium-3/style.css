@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Krona+One&display=swap');
+
+:root {
+    --primary-color: #0b4135;
+    --secondary-color: #fdffd0;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.title {
+    font-family: 'Krona One', sans-serif;
+    color: var(--primary-color);
+}
+
+#main {
+    --bs-border-color: var(--primary-color);
+    width: 90%;
+}
+
+#btn-container {
+    background-color: var(--primary-color);
+}
+
+.topic-btn {
+    --bs-btn-color: var(--secondary-color);
+    --bs-btn-hover-color: var(--primary-color);
+    --bs-btn-hover-bg: var(--secondary-color);
+    --bs-btn-hover-border-color: var(--secondary-color);
+    --bs-btn-active-color: var(--primary-color);
+    --bs-btn-active-bg: var(--secondary-color);
+    --bs-btn-active-border-color: var(--secondary-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    border-width: 0.1px;
+    margin: 0 0.25rem;
+}
+
+#main-part {color: var(--primary-color);}
+
+#main-desc {
+    color: var(--primary-color);
+    font-family: 'Krona One', sans-serif;
+}
+
+#main-text {
+    text-align: justify;
+    color: var(--primary-color);
+}
