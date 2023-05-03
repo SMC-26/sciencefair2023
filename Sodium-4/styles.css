@@ -55,14 +55,19 @@ main{
 	margin: 50px auto;
 }
 section{
-	margin: 50px 0;
+	margin: 20px 0;
 }
 .local{
 	background-color: #73a4c7;
 	position: sticky;
-	top: 0;
+	top: 50px;
 	z-index: 1;
 	display: flex;
+	height: 43px;
+	opacity: 0.5;
+}
+.local:hover{
+	opacity: 1;
 }
 .local ul{
 	margin: 0 auto;
@@ -77,8 +82,26 @@ section{
 	text-decoration: none;
 	color: white;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 }
 .local a:hover{
 	color: lightgray;
+}
+#bio_link{
+	color: #befaac;
+}
+#bio_link:hover{
+	color: #aac7a1;
+}
+#chem_link{
+	color: #ffb8e6;
+}
+#chem_link:hover{
+	color: #cca9c0;
+}
+#phys_link{
+	color: #fbfcb6;
+}
+#phys_link:hover{
+	color: #d0d1ae;
 }

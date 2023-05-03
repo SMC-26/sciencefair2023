@@ -19,7 +19,7 @@ body {
 #main {
     --bs-border-color: var(--primary-color);
     width: 90%;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
     background-color: rgba(0,0,0,0.25);
 }
 
@@ -27,7 +27,10 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 2.5rem;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
 }
 
 #btn-container {
@@ -69,9 +72,10 @@ body {
     width: 50%;
 }
 
-@media only screen and (max-width: 576px) {
-    #liquid3-pics {width: 100%;}
+#aerium-pics {
+    width: 40%;
 }
+
 .dummy{
     height: 200px;
     width: 200px;
@@ -81,4 +85,9 @@ body {
 .researchers-img{
     width: 300px;
     display: block;
+}
+
+@media only screen and (max-width: 576px) {
+    #liquid3-pics {width: 100%;}
+    #aerium-pics {width: 100%;}
 }

@@ -51,7 +51,7 @@
         <br>
         <h1 class="BigText MargTop"><b>Photosynthesis</b></h1>
         <div class="VPH MargTop">Video Placeholder</div>
-        <div class="PPH MargTop">Placeholder Placeholder</div>
+        <video autoplay muted loop src="SynthAnim.mp4" class="SynthAnim MargTop"></video>
     </div>
     <div class="Leaf">
     </div>
@@ -68,10 +68,19 @@
         <div class="VVVPH MargTop">Video Placeholder cubed</div>
         <div class="AAPH MargTop">Animation Placeholder squared</div>
     </div>
-    <div class="GamePH" id="GPH">
-        <button class="Button" onclick="gamestart()">Click Me!</button>
+    <div class="GamePH" id="GameHolder">
+        <h1 class="TextPH" id="InsHead">Instructions:</h1>
+        <p class="TextPH" id="InsText">
+            A background will be shown, along with a timer, score, and lives. <br>
+            Plants will appear and fall downwards, you must click the plants that are not suited to the environment in the background. <br>
+            Clicking the plants that are not suited to the environment will give you points, while clicking plants that are suited to the environment will make you lose a life. <br>
+            If a plant that isn't suited to the environment reaches the bottom, you will also lose a life. <br>
+            When the timer ends, the environment randomly changes, and the game becomes harder. <br><br>
+            <b>Use what you have learned, and survive as long as you can!</b>
+        </p>
+        <button class="Button"  id="GPH" onclick="gamestart()">Click to Start!</button>
+        <canvas class="Game" id="Game"></canvas>
     </div>
-    <canvas class="Game" id="Game"></canvas>
     <div class="Doxx">
         <h1 class="DoxxHeader MargTop"><b>Meet the <br>creators</b></h1> <br>
             <p class="DoxxText">Let's introduce you to the people who did the research, encoded the website, and amongst other things. Let's meet the people from Group 2 from section Sodium.</p>

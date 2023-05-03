@@ -37,7 +37,7 @@ h3{
 }
 
 p{
-  color: #33125a;
+  color: #5a5a5a;
   font-size: 18px;
   line-height: 22px;
   padding: 10px;
@@ -303,6 +303,15 @@ p{
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.sci-intro{
+  position: relative;
+  background-color: white;
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 50px;
+  z-index: 2;
 }
 .container {
   max-width: var(--container);
