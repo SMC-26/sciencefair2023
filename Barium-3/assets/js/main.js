@@ -146,18 +146,28 @@
     myCarousel.addEventListener("slid.bs.carousel", function(){
       if (document.getElementById("hcc-1").classList.contains('active')){
         document.getElementById("hero").style.background = `linear-gradient(0deg, rgba(156, 115, 82, 0.95), rgba(142, 113, 82, 0.95)), url(assets/img/concepts-1.jpg)`;
+        document.getElementById("hero").style.backgroundRepeat = `no-repeat`;
+        document.getElementById("hero").style.backgroundSize = `cover`;
       }
       else if (document.getElementById("hcc-2").classList.contains('active')){
         document.getElementById("hero").style.background = `linear-gradient(0deg, rgba(156, 115, 82, 0.95), rgba(142, 113, 82, 0.95)), url(assets/img/concepts-2.jpg)`;
+        document.getElementById("hero").style.backgroundRepeat = `no-repeat`;
+        document.getElementById("hero").style.backgroundSize = `cover`;
       }
       else if (document.getElementById("hcc-3").classList.contains('active')){
         document.getElementById("hero").style.background = `linear-gradient(0deg, rgba(156, 115, 82, 0.95), rgba(142, 113, 82, 0.95)), url(assets/img/concepts-1.jpg)`;
+        document.getElementById("hero").style.backgroundRepeat = `no-repeat`;
+        document.getElementById("hero").style.backgroundSize = `cover`;
       }
       else if (document.getElementById("hcc-4").classList.contains('active')){
         document.getElementById("hero").style.background = `linear-gradient(0deg, rgba(156, 115, 82, 0.95), rgba(142, 113, 82, 0.95)), url(assets/img/concepts-1.jpg)`;
+        document.getElementById("hero").style.backgroundRepeat = `no-repeat`;
+        document.getElementById("hero").style.backgroundSize = `cover`;
       }
       else if (document.getElementById("hcc-5").classList.contains('active')){
         document.getElementById("hero").style.background = `linear-gradient(0deg, rgba(156, 115, 82, 0.95), rgba(142, 113, 82, 0.95)), url(assets/img/concepts-5.jpg)`;
+        document.getElementById("hero").style.backgroundRepeat = `no-repeat`;
+        document.getElementById("hero").style.backgroundSize = `cover`;
       }
     });
   });
