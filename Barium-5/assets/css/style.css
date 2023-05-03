@@ -213,11 +213,10 @@ section {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  font-size: 2.5vw;
+  font-size: 3.5rem;
 }
 
 .section-subtitle {
-  font-size: 2vw;
   color: #111;
   text-transform: uppercase;
   text-align: center;
@@ -387,37 +386,23 @@ section {
 }
 
 .maintitle h4 {
-  font-size: 2vw;
+  font-size: 2.5rem;
 }
 
-@media screen and (min-width: 1920px) {
-  .about-content h2 {
-    font-size: 2.5vw;
-  }
-  .maintitle h3 {
-    font-size: 3.5vw;
-  }
-  .about-text {
-    font-size: 2.5vh;
-  }
+.about-content h2 {
+  font-size: 3rem;
 }
-
-@media screen and (max-width: 1919px) {
-  .maintitle h3 {
-    font-size: 4.5vw;
-  }
-  .maintitle h4 {
-    font-size: 2.5vw;
-  }
-  .about-content h2 {
-    font-size: 3.5vw;
-  }
-  .about-text {
-    font-size: 3.5vh;
-  }
+.maintitle h3 {
+  font-size: 4rem;
+}
+.about-text {
+  font-size: 1.4rem;
 }
 
 @media (max-width: 720px) {
+  .about-content h2 {
+    font-size: 7vw;
+  }
   .maintitle h3  {
     font-size: 50px;
   }
@@ -435,6 +420,13 @@ section {
   display: block;
 }
 
+@media (max-width: 800px) {
+  .main-img {
+    width: 400px;
+  }
+}
+
+
 #about {
   background: #fff;
   padding: 80px 0;
@@ -445,9 +437,14 @@ section {
 }
 
 #about .about-img img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 500px;
   margin: 0 auto !important;
   display: block;
 }
+
+
 
 @media (max-width: 720px) {
   #about .about-img {
@@ -540,16 +537,13 @@ section {
     height: 65vh;
   }
   .carousel-container h3 {
-    font-size: 4vw;
-  }  
-  .item1 h3 {
-    margin-bottom: 1vw;
+    font-size: 5rem;
   }  
   .carousel-container p {
-    font-size: 1.3vw;
+    font-size: 1.5rem;
   }  
   .carousel-container h4 {
-    font-size: 4vw;  
+    font-size: 4rem;  
     margin-bottom: 1.5vw;
   }   
   .carousel-container .small-text {
@@ -562,28 +556,35 @@ section {
     height: 85vh;
   }
   .carousel-container h3 {
-    font-size: 4vw;
+    font-size: 5vw;
   }  
   .carousel-container p {
-    font-size: 1.15vw;
+    font-size: 1.5vw;
   }  
   .carousel-container h4 {
-    font-size: 3vw;  
+    font-size: 5vw;  
+  }   
+    .carousel-container .small-text {
+    font-size: 2.5vw;  
   }   
 }
 
 @media screen and (max-width: 719px) {
   .carousel-container  {
-    height: 90vh;
+    height: 80vh;
+    padding: 5% 15% 5%;
   }
   .carousel-container h3 {
-    font-size: 10vw;
+    font-size: 8vw;
   }  
   .carousel-container p {
-    font-size: 1.15vw;
+    font-size: 2.3vw;
   }  
   .carousel-container h4 {
-    font-size: 3vw;  
+    font-size: 8vw;  
+  }   
+  .carousel-container .small-text {
+    font-size: 4vw;  
   }   
 }
 
@@ -659,7 +660,30 @@ section {
   line-height: 24px;
 }
 
+.card {
+  border-radius: 0;
+}
 
+.card-body h5 {
+  font-size: 2rem;
+}
+
+.card-body p {
+  font-size: 1.5rem;
+}
+
+.btn-card {
+  background: none;
+  border: 2px solid black;
+  color: black;
+  padding: 0.5vw 2vw;
+}
+
+.btn-card:hover {
+  border: 2px solid white;
+  background: black;
+  color: white;
+}
 
 /* Team Section
 --------------------------------*/
@@ -701,7 +725,7 @@ section {
 #team .member span {
   font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 1rem;
 }
 
 
