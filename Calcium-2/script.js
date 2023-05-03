@@ -1,3 +1,15 @@
+const obvserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => obvserver.observe(el));
+
 const sunrisebtn = document.getElementById("05:30");
 const noonbtn = document.getElementById("12:00");
 const sunsetbtn = document.getElementById("17:30");
@@ -14,8 +26,92 @@ var midnightopacity = 0;
 
 const container1 = document.getElementById("container1");
 const buttons = document.querySelectorAll(".timebutton");
+const btndiv = document.querySelectorAll(".timebuttondiv");
 const interactivebardiv = document.getElementById("interactive-bar");
 var darkmodergb = 0;
+
+const sunComponents = document.getElementById("sun-components");
+var posX = sunComponents.offsetLeft;
+var posY = sunComponents.offsetLeft;
+var sunopacity = 1;
+
+function sunToNorth() {
+    let targetX = 650;
+    let targetY = 0;
+    var stepX = (targetX - posX) / 30;
+    var stepY = (targetY - posY) / 30;
+
+    function move() {
+        posX += stepX;
+        posY += stepY;
+        sunComponents.style.left = posX + "px";
+        sunComponents.style.top = posY + "px";
+        if ((stepX > 0 && posX >= targetX) || (stepX < 0 && posX <= targetX) ||
+            (stepY > 0 && posY >= targetY) || (stepY < 0 && posY <= targetY)) {
+          return;
+        }
+        requestAnimationFrame(move);
+      }
+      move();
+}
+function sunToSouthWest() {
+    let targetX = 25;
+    let targetY = 500;
+    var stepX = (targetX - posX) / 30;
+    var stepY = (targetY - posY) / 30;
+  
+    function move() {
+      posX += stepX;
+      posY += stepY;
+      sunComponents.style.left = posX + "px";
+      sunComponents.style.top = posY + "px";
+      if ((stepX > 0 && posX >= targetX) || (stepX < 0 && posX <= targetX) ||
+          (stepY > 0 && posY >= targetY) || (stepY < 0 && posY <= targetY)) {
+        return;
+      }
+      requestAnimationFrame(move);
+    }
+    move();
+}
+function sunToSouthEast() {
+    if(posX !== 650 && posY !== 0){
+        sunToNorth();
+        return;
+    } 
+    else {
+        let targetX = 1000;
+        let targetY = 800;
+        var stepX = (targetX - posX) / 30;
+        var stepY = (targetY - posY) / 30;
+      
+        function move() {
+          posX += stepX;
+          posY += stepY;
+          sunComponents.style.left = posX + "px";
+          sunComponents.style.top = posY + "px";
+          if ((stepX > 0 && posX >= targetX) || (stepX < 0 && posX <= targetX) ||
+              (stepY > 0 && posY >= targetY) || (stepY < 0 && posY <= targetY)) {
+            return;
+          }
+          requestAnimationFrame(move);
+        }
+        move();    
+    }
+}
+function sunFadeOut() {
+    let id = null;
+
+    id = setInterval(sunfadeout, 6);
+    function sunfadeout() {
+        if (sunopa>=1){
+            clearInterval(id);
+        } else {
+            sunopacity = sunopacity+0.05;
+            sunComponents.style.opacity = sunopacity;
+        }
+    }
+
+}
 
 function setsunrise() {
     if (midnightopacity !== 0){
@@ -27,19 +123,13 @@ function setsunrise() {
     if (noonopacity !== 0){
         removenoon();
     }
-        
-    if (darkmodergb < 255){
-        adddarkmode();
-    }
    
-    sunrisebtn.style.backgroundColor = "white";
+    sunrisebtn.style.backgroundColor = "black";
     noonbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     sunsetbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     midnightbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
 
-    function suntoeast() {
-
-    }
+    sunToSouthWest();
 }
 function setnoon() {
     removedarkmode();
@@ -59,9 +149,7 @@ function setnoon() {
     sunsetbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     midnightbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
 
-    function suntonorth() {
-
-    }
+    sunToNorth();
 }
 function setsunset() {  
     removedarkmode();
@@ -78,9 +166,7 @@ function setsunset() {
     sunsetbtn.style.backgroundColor = "black";
     midnightbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
 
-    function suntowest() {
-
-    }
+    sunToSouthEast();
 }
 function setmidnight() {
     if (midnightopacity !== 1){
@@ -90,15 +176,14 @@ function setmidnight() {
     if (darkmodergb < 255){
         adddarkmode();
     }
+    if (sunopacity !== 0){
+        sunFadeOut();
+    }
 
     sunrisebtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     noonbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     sunsetbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     midnightbtn.style.backgroundColor = "white";
-
-    function sunfade() {
-
-    }
 }
 
 function removenoon() {
@@ -165,7 +250,7 @@ function removemidnight() {
         } else {
             midnightopacity = midnightopacity-0.05;
             midnightbg.style.backgroundImage = "linear-gradient(rgb(13, 7, 54, "+ midnightopacity +"), rgb(46, 40, 111, "+ midnightopacity +"), rgb(50, 48, 106, "+ midnightopacity +"), antiquewhite)";
-            document.getElementById("stars2").style.opacity = midnightopacity
+            document.getElementById("stars2").style.opacity = midnightopacity;
         }
     }
 }
@@ -198,6 +283,9 @@ function removedarkmode() {
             buttons.forEach(timebutton => {
                 timebutton.style.border = "3px solid rgb("+ darkmodergb +", "+ darkmodergb +", "+ darkmodergb +")";
             });
+            btndiv.forEach(timebuttondiv => {
+                timebuttondiv.style.color = "rgb("+ darkmodergb +", "+ darkmodergb +", "+ darkmodergb +")";
+            });
         }
     }
 }
@@ -214,6 +302,9 @@ function adddarkmode() {
             interactivebardiv.style.color = "rgb("+ darkmodergb +", "+ darkmodergb +", "+ darkmodergb +")";
             buttons.forEach(timebutton => {
                 timebutton.style.border = "3px solid rgb("+ darkmodergb +", "+ darkmodergb +", "+ darkmodergb +")";
+            });
+            btndiv.forEach(timebuttondiv => {
+                timebuttondiv.style.color = "rgb("+ darkmodergb +", "+ darkmodergb +", "+ darkmodergb +")";
             });
         }
     }
