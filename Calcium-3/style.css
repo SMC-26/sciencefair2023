@@ -150,14 +150,9 @@ aside{
     margin: 0;
     padding-left: 10px;
     list-style: none;
-    padding-top: 5rem;
+    padding-top: 10px;
     padding-bottom: 10px;
     background-color: #f6f6f6;
-}
-.bc{
-    list-style: none;
-    background-color: #f6f6f6;
-    text-align: center;
 }
 .breadcrumb a+a:before {
     padding: 8px;
@@ -201,4 +196,17 @@ aside{
     font-size: 50px;
     text-align: center;
     font-weight: bolder;
+}
+footer{
+    background-color: #f6f6f6;
+    padding: 25px;
+}
+footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer-col{
+    width: 33.333333333333333333333333333333333%;
+    float: left;
 }

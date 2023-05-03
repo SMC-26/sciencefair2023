@@ -5,25 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://smc-26.github.io/sciencefair2023/bootstrap.css" rel="stylesheet">
     <script src="https://smc-26.github.io/sciencefair2023/bootstrap.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="slideshow">
-        <div class="mySlides fade">
-            <a href="biology.html"><img src="pexels-egor-kamelev-927497.jpg" style="width:100%; height:720px;"></a>
-            <div class="text">Biology</div>
+    <nav aria-label="breadcrumb" style="position: fixed; padding: 10px; background-color: #f6f6f6;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-2"><a href="#biology-page" style="text-decoration: none; color: #000;">Biology / </a>
+            <li class="breadcrumb-2"><a href="#chemistry-page" style="text-decoration: none; color: #000;">Chemistry / </a>
+            <li class="breadcrumb-2"><a href="#physics-page" style="text-decoration: none; color: #000;">Physics</a>
+        </ol>
+    </nav>
+    <div class="container-fluid p-0 carousel-container">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pexels-egor-kamelev-927497.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Chemistry.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Physics.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="mySlides fade">
-            <li><a href="chemistry.html"><img src="Chemistry.png" style="width:100%; height:720px;"></a>
-            <div class="text">Chemistry</div>
-        </div>
-        <div class="mySlides fade">
-            <a href="physics.html"><img src="Physics.png" style="width:100%; height:720px;"></a>
-        <div class="text">Physics</div>
-        </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
     <div class="container">
         <div class="subcontainer">
@@ -34,6 +49,42 @@
             <img src="BD.png" style="width: 530px; height: 295px;">
         </aside>
     </div>
+    <div class="biology-pic" id="biology-page">
+        <img src="pexels-egor-kamelev-927497.jpg" style="width:100%; height:720px;">
+        </div>
+        <div class="text-2">Biology</div>
+        <div class="sub">
+            <div class="sub-bio">
+                <h3>Gecko-inspired adhesive mechanisms rely on the millions of hair-like structures called setae that cover the footpads of geckos. Each seta is approximately 100 nanometers in diameter and ends in hundreds of smaller branches called spatulae, which create a large surface area for contact with the surface (Autumn et al., 2002). The high surface area allows for the utilization of van der Waals forces, which are weak intermolecular forces that arise when two surfaces come into close contact, enabling geckos to cling to surfaces with incredible strength relative to their body weight (Autumn et al., 2002; Niewiarowski et al., 2008).</h3>
+            </div>
+            <div class="sub-bio">
+                <img src="biopic.png">
+            </div>
+        </div>
+    <div class="biology-pic" id="chemistry-page">
+        <img src="Chemistry.png" style="width:100%; height:720px;">
+        </div>
+        <div class="text-4">Chemistry</div>
+        <div class="sub">
+            <div class="sub-che">
+                <h3>Van der Waals forces are the primary adhesion mechanism used by geckos to climb vertical surfaces and cling to ceilings. These forces are created due to the interaction of electron clouds on the gecko's setae and the surface it is climbing on, and are proportional to the surface area of contact between the two surfaces (Autumn et al., 2002). The setae on the gecko's footpad are believed to be critical to the strength of these forces, as they increase the surface area of contact and create a high density of van der Waals interactions (Autumn et al., 2000).</h3>
+            </div>
+            <div class="sub-che">
+                <img src="chepic.png">
+            </div>
+        </div>
+    <div class="biology-pic" id="physics-page">
+        <img src="Physics.png" style="width:100%; height:720px;">
+        </div>
+        <div class="text-3">Physics</div>
+        <div class="sub">
+            <div class="sub-phy">
+                <h3>The physics behind gecko-inspired adhesives is based on the principles of contact mechanics and intermolecular forces. When the adhesive comes into contact with a surface, the setae hairs conform to the surface and create a large contact area, which allows for strong adhesion through Van der Waals interactions. The adhesive can be designed to have different properties, such as stiffness and compliance, to optimize the adhesion for specific applications.</h3>
+            </div>
+            <div class="sub-phy">
+                <img src="phy-pic.png">
+            </div>
+        </div>
     <div class="index-team">
         <h3 class="exam">Our Team</h3>
         <p class="inte">Why people choose us</p>
@@ -52,18 +103,17 @@
     </div>
     <footer>
         <div class="footer-col">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad minima deleniti, voluptates ut placeat necessitatibus modi quidem molestiae perspiciatis, dolorum dolorem eius illo hic eaque voluptas!</p>
+            <h3>PHILIPPINE SCIENCE HIGHSCHOOL SOUTHERN MINDANAO CAMPUS</h3>
+            <p>Lorem ipsum dolor<br>sit amet consectetur<br>adipisicing elit.</p>
         </div>
         <div class="footer-col">
-            <p>Lorem Ipsum</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad minima deleniti, voluptates ut placeat necessitatibus modi quidem molestiae perspiciatis, dolorum dolorem eius illo hic eaque voluptas!</p>
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor<br>sit amet consectetur<br>adipisicing elit.</p>
         </div>
         <div class="footer-col">
-            <p>Lorem Ipsum</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad minima deleniti, voluptates ut placeat necessitatibus modi quidem molestiae perspiciatis, dolorum dolorem eius illo hic eaque voluptas!</p>
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor<br>sit amet consectetur<br>adipisicing elit.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
