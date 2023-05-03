@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 body, html {
     background-color: rgb(44, 44, 44);
-    
+    overflow-x: hidden;
 }
 
 
@@ -10,7 +10,7 @@ body, html {
 header {
     position: relative;
     background-color: black;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     padding-top: 16px;
     padding-right: 25px;
