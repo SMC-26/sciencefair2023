@@ -26,8 +26,11 @@ header{
 hgroup{
 	padding-top: 40vh;
 }
-h1, h2, h3{
+h1, h3{
 	font-family: 'Raleway', sans-serif;
+}
+.content{
+	margin-left: 8%;
 }
 p {
 	text-align: justify;
@@ -37,10 +40,6 @@ p {
 aside {
 	text-align: center;
 	font-style: italic;
-	margin: 20px 0 30px 0;
-}
-b{
-	font-style: normal;
 }
 #title{
 	font-size: 70px;
@@ -106,20 +105,26 @@ section{
 #phys_link:hover{
 	color: #d0d1ae;
 }
-main img{
-	display: block;
-	margin: auto;
-	width: 500px;
-}
-.reference, #application, #intro, .content, #objectives{
-	width: 1000px;
+img{
 	display: block;
 	margin: auto;
 }
-.reference p{
-	font-size: 12px;
-	text-indent: 0;
-	margin: 10px 0;
-	padding-left: 36px;
-	text-indent: -36px;
+.ml13{
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 1000;
+}
+.ml13 .letter{
+    display: inline-block;
+    line-height: 1em;
+}
+.ml16{
+    font-weight: 800;
+    font-size: 2em;
+    overflow: hidden;
+}
+.ml16 .letter{
+    display: inline-block;
+    line-height: 1em;
 }
