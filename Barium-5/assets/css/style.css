@@ -470,6 +470,7 @@ section {
 
 #about .about-text {
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 #about .about-text:last-child {

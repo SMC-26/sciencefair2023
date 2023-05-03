@@ -1,14 +1,11 @@
-# Biomimicry in Aeronautics: Studying Fly Wing Characteristics to Improve Aircraft Aerodynamics
-## Group 4 - Sodium
-### Members:
-- Faye Abian
-- Bruce Bragat
-- Mich Emin
-- Alexandrea Gamale
-- Anton Lozada
+# <div align="center"> Biomimicry in Aeronautics: Studying Fly Wing Characteristics to Improve Aircraft Aerodynamics
+
+## <div align="center"> Group 4 - Sodium <br> <sub>*Abian, Apale, Bragat, Emin, Gamale, Lozada*</sub>
+
 ### Topic Description:
-In aeronautics, animal wing designs have long been applied to aircraft innovation. Researchers have looked into butterfly, bee, and dragonfly wings to improve the flight of objects, like airplanes. However, there has been a lack of focus in analyzing the advantages of fly wing designs to be applied in aeronautics, resulting in missed opportunities to improve aircraft. <br>
+  
+  Flying is now possible as a result of technological advancements and in aeronautics, animal wing designs have long been applied to aircraft innovation. The ornithopter from the 1870s is an aircraft that flies by flapping its wings and is inspired by birds. Recently, micro-unmanned ornithopters have been critical in the surveillance of people and terrain. Locally, flapping-wing micro-air vehicles (FWMAVs) could aid in the surveillance of seismic areas, forest degradation due to climate change, and difficult terrain, such as mountains where Filipino trekkers have perished. <br>
+  
+  In a recent study by Zhang et al. (2023), the design and aerodynamics of FWMAVs were analyzed, including the currently-popular DelFly Nimble, inspired by fruit flies. This review showcased how mimicking fly wing characteristics in the innovation of ornithopters stems from biology, chemistry, and physics.
 
-A recent study highlights the critical wing characteristics of different species of flies that have helped them maneuver in the air efficiently, some of which are flexibility, shape, orientation, and chemical composition (Krishna et al., 2019). <br>
-
-Flies are known for their exceptional flight stability and unconventional, but unique and effective, clap-and-fling flight mechanism (Jadhav et al., 2019). This study will essentially employ biomimicry by investigating the structure, chemical composition, and dynamics of blowfly wings with air in order to apply them to aircraft wings to make them more flight-efficient but sustainable and lightweight.
+![The DelFly Nimble in hover.](images/delflynimble.jpg)

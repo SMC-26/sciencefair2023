@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&family=Righteous&display=swap');
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Jost', sans-serif;
+font-family: 'Righteous', cursive;*/
+
+body {
+  background-image: url(leaves.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+}
+
+#ul-nav{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#ul-nav li{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+}
+
+a {
+  background-color: #4e8545;
+  opacity: 87%;
+  color: white;
+  text-decoration: none;
+  font-size: 165%;
+}
+
+nav{
+  position: sticky;
+  text-align: center;
+}
+
+#div-intro{
+
+}
+
+div.welcome{
+
+}
+
+#div-concepts{
+
+}
+
+#div-uses{
+
+}
