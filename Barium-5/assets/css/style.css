@@ -53,6 +53,7 @@ hr {
   margin: 3rem 0 3rem;
 }
 
+
 /*--------------------------------------------------------------
 # Welcome
 --------------------------------------------------------------*/
@@ -399,6 +400,24 @@ section {
   font-size: 1.4rem;
 }
 
+@media screen and (max-width: 1919px) {
+  .maintitle h4 {
+    font-size: 2rem;
+  }
+  hr {
+    margin: 1rem 0 1rem;
+  }
+  .about-content h2 {
+    font-size: 2.5rem;
+  }
+  .maintitle h3 {
+    font-size: 4rem;
+  }
+  .about-text {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 720px) {
   .about-content h2 {
     font-size: 7vw;
@@ -442,6 +461,13 @@ section {
   max-height: 500px;
   margin: 0 auto !important;
   display: block;
+}
+
+@media screen and (max-width: 1919px) {
+  #about .about-img img {
+    max-width: 400px;
+    max-height: 400px;
+  }
 }
 
 
