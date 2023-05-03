@@ -1,14 +1,13 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
-html{
-    scroll-behavior: smooth;
-}
-
 #header{
+    background-image: url('header.png');
+    height: 100vh;
     overflow:hidden;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-position-y:30px;
 }
-
 #healingwonders_h1{
-    margin-top:6%;
     font-size:70px;
     margin-left:auto;
     margin-right:auto;
@@ -17,59 +16,56 @@ html{
 #healingpowers_p{
     font-size:17px;
 }
+#animation_div{
+    border:1px solid black;
+    border-radius: 50px;
+}
 .healingwonders{
     margin:10px;
     text-shadow: 3px 3px #000000;
     text-indent:20px;
-/*MINECRAF TFONT TO BE ADDED OWO UWU CLARENCE WAS HERE */
-}
-#containerimg{
-    background-position:center;
-    background-repeat:no-repeat;
-    background-image:url('header.png');
-    display:fixed;
-    height:95vh;
-    width:100vw;
-    overflow:hidden;
-    margin-top:2.8%;
-    color:white;
     font-weight:bolder;
+    color:white;
 }
-.mainDiv {
-    width: 100%;
-    height: 60px;
-    bottom: 0px;
-    z-index: 100;
-    opacity: 0;
+h2{
+    text-shadow: 2px 2px #000000;
+    color:white !important;
+    font-size:35px;
+    font-family: "Minecraft", sans-serif;
 }
-.card{
-    margin-left:7%;
-    margin-bottom:2%;
-    transform:translateX(-50%);
-    transition:transform 1000ms ease-in-out;
+.card-text{
+    color:white;
+    font-family: Verdana, sans-serif;
 }
-.card.gone{
-    transform:translateX(0);
+.btn{
+    color:whitesmoke !important;
+    font-family: Verdana, sans-serif !important;
 }
-.fadeDiv{
-    margin-top:2%;
-    height:550px;
-    width:90%;
+@keyframes scissoring{
+    0%{transform:translateX(0%); width:0;}
+    25%{transform:translateX(25%); width:25;}
+    50%{transform:translateX(50%); width:50;}
+    75%{transform:translateX(80%); width:75;}
+    100%{transform:translateX(150%); width:100;}
+}
+@keyframes scissoringx{
+    0%{transform:translateX(150%);width:100;}
+    25%{transform:translateX(80%);width:75;}
+    50%{transform:translateX(50%);width:50;}
+    75%{transform:translateX(25%); width:25;}
+    100%{width:0; transform:translateX(0%); visibility:hidden;}
+}
+.container{
     opacity:0;
-    border-radius:50px;
-    box-shadow:5px 10px 8px #888888;
-    border:1px solid black;
-    margin-left:auto;
-    margin-right:auto;
     text-align:center;
     transition:opacity 500ms ease-in; 
 }
-.fadeDiv.gone{
+.container.gone{
     opacity:1;
 }
-#divMain{
-    width: 100%;
-    margin:0px;
-    padding:0px;
-    height:30rem;
+#mainDiv{
+    border:2px solid rgb(106, 162, 207);
+}
+hr{
+    border-top:2px solid rgb(106, 162, 207);
 }
