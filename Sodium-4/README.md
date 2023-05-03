@@ -10,4 +10,4 @@
 
 ![The DelFly Nimble in hover.](images/delflynimble.jpg)
 
-**Figure 1.** _DelFly Nimble (DelFly, n.d.)._
+_DelFly Nimble (DelFly, n.d.)._
