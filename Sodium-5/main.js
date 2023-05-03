@@ -50,3 +50,37 @@
   }, true);
 })();
 
+const dots = document.querySelectorAll(".dot");
+const content = document.querySelector(".content");
+const initialText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+const secondText = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
+const thirdText = "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur?";
+
+let currentText = initialText;
+
+function updateContent() {
+  content.innerHTML = `<p class="fst-italic">${currentText}</p>`;
+}
+
+function handleDotClick(index) {
+  if (index === 1) {
+    currentText = initialText;
+  } else if (index === 2) {
+    currentText = secondText;
+  } else if (index === 3) {
+    currentText = thirdText;
+  }
+
+  updateContent();
+
+  dots.forEach((dot) => {
+    dot.classList.remove("active");
+  });
+  dots[index - 1].classList.add("active");
+}
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => handleDotClick(index + 1));
+});
+
+
