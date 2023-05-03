@@ -14,6 +14,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
+    color: white;
     background-image: url(leaves.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -24,7 +25,6 @@ body {
     animation-fill-mode: forwards;
 }
 header {
-  color: white;
   font-size: 700%;
   text-align: left;
   font-family: 'Righteous', cursive;
@@ -35,7 +35,6 @@ header {
   animation-fill-mode: forwards;
 }
 #title {
-  color: white;
   font-size: 270%;
   text-align: left;
   font-family: 'Righteous', cursive;
@@ -43,6 +42,12 @@ header {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+#wc{
+  margin-left: 30px;
+}
+#intro{
+  margin-left: 30px;
 }
 #fb{
   float: left;
