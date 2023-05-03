@@ -40,6 +40,7 @@ header{
 body {
 			margin: 0;
 			padding: 0;
+			background-color: blue;
 		}
 
 .container {
@@ -51,7 +52,7 @@ body {
 }
 
 .sidebar {
-	margin-top: 100px;
+	margin-top: 58px;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	height: 497px;
@@ -87,10 +88,10 @@ nav ul li a:hover {
 .content {
 	display: table;
 	padding: 20px;
-	margin-left: 0px; 
+	margin-left: 0; 
 	margin-right: 20px;
 	margin-bottom: 30px;
-	margin-top: 98px;
+	margin-top: 58px;
 	width: 100%;
 	border: solid black 5px;
 	background-color: #8bced3;
