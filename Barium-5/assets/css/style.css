@@ -614,26 +614,7 @@ section {
 }
 
 #showcases .showcase-item {
-  margin-bottom: 20px;
-}
-
-#showcases .showcase-icon {
-  float: left;
-  background: #03C4EB;
-  border-radius: 50%;
-  transition: 0.10s;
-  border: 1px solid #03C4EB;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-}
-
-#showcases .showcase-icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
+  margin: 3vh 0  ;
 }
 
 #showcases .showcase-item:hover .showcase-icon {
@@ -710,6 +691,10 @@ section {
 
 .pic {
   overflow: hidden;
+}
+
+.ourt {
+  margin-bottom: 3vh;
 }
 
 
