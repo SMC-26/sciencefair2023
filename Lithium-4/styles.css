@@ -119,3 +119,27 @@ hr {
     height: 20px;
     opacity: 0%;
 }
+
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .githubLink a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .githubLink a:hover {
+    background-color: black;
+    transition: 0.5s;
+  }
+
+  .copyright p{
+    text-align: center;
+  }
