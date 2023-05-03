@@ -3,7 +3,8 @@
 *{
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    color: #ffff
+    color: #ffff;
+    overflow-y: hidden;
 }
 .title{
     color: #ffff;

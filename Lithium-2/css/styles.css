@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 body, html {
     background-color: rgb(44, 44, 44);
-    
+    overflow-x: hidden;
 }
 
 
@@ -10,7 +10,7 @@ body, html {
 header {
     position: relative;
     background-color: black;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     padding-top: 16px;
     padding-right: 25px;
@@ -129,7 +129,7 @@ article {
   height: 378.67px;
   width:  213.33px;
   display: inline-block;
-  margin: 50px;
+  margin: 5vw;
 }
 
 #faceimage1a {
@@ -157,6 +157,14 @@ article {
   object-position: 100% 0;
 }
 
+#faceimage4a {
+  position: relative;
+  width:  213.33px;
+  height: 378.67px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 #faceimage5a {
   position: relative;
   width:  213.33px;
@@ -180,7 +188,3 @@ article {
   object-fit: cover;
 }
 /* qkvyj jahup tylnt ecevm lxljx romhw meybw ejtji jcvse ooite efhlq vrxtg zskkc dhsnc aasxp zafas qoxjx kunnj wuxja rbepa gxjug ssufo wemsm txlts azjcw cenmf oympf drnqy jmwjh qtlbq ttvkg xrjxh hyaeh jotlk todoi isuks ws */
-
-
-
-

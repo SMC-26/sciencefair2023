@@ -2,62 +2,95 @@
 /*font-family: 'Bebas Neue', cursive;
 font-family: 'Jost', sans-serif;
 font-family: 'Righteous', cursive;*/
-
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 body {
-  background-image: url(leaves.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center;
-  background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    color: white;
+    background-image: url(leaves.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
-h1 {
-  color: white;
-  font-size: 300%;
-  text-align: center;
+header {
+  font-size: 700%;
+  text-align: left;
   font-family: 'Righteous', cursive;
+  margin-top: 300px;
+  margin-left: 30PX;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-
-#ul-nav{
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+#title {
+  font-size: 270%;
+  text-align: left;
+  font-family: 'Righteous', cursive;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-
-#ul-nav li{
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  display: inline;
+#wc{
+  margin-left: 30px;
 }
-
-a {
-  background-color: #4e8545;
-  opacity: 87%;
-  color: white;
-  text-decoration: none;
-  font-size: 165%;
+#intro{
+  margin-left: 30px;
+  text-align: justify;
+  width: 80em;
 }
-
-nav{
-  position: sticky;
-  text-align: center;
+#fb{
+  float: left;
+	background: url(logos.png) no-repeat -10px -20px;
+	width: 140px;
+	height: 125px;
+  transform: scale(0.7,0.7);
 }
-
-#div-intro{
-
+#instgrm{
+  float: left;
+	background: url(logos.png) no-repeat -150px -20px;
+	width: 130px;
+	height: 125px;
+  transform: scale(0.7,0.7);
 }
-
-div.welcome{
-
+#twitter{
+  float: left;
+	background: url(logos.png) no-repeat -278px -20px;
+	width: 130px;
+	height: 125px;
+  transform: scale(0.7,0.7);
 }
-
-#div-concepts{
-
+#fb:hover{
+  float: left;
+	background: url(logos.png) no-repeat -7px -155px;
+	width: 140px;
+	height: 125px;
+  transform: scale(0.7,0.7);
 }
-
-#div-uses{
-
+#instgrm:hover{
+  float: left;
+	background: url(logos.png) no-repeat -147px -155px;
+	width: 130px;
+	height: 125px;
+  transform: scale(0.7,0.7);
+}
+#twitter:hover{
+  float: left;
+	background: url(logos.png) no-repeat -275px -155px;
+	width: 130px;
+	height: 125px;
+  transform: scale(0.7,0.7);
 }
