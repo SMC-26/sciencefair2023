@@ -29,13 +29,13 @@ hgroup{
 h1, h3{
 	font-family: 'Raleway', sans-serif;
 }
-.concepts_contents{
-	margin-left: 100px;
+.content{
+	margin-left: 8%;
 }
 p {
 	text-align: justify;
 	text-justify: inter-word;
-	text-indent: 50px;
+	text-indent: 5%;
 }
 aside {
 	text-align: center;
