@@ -158,8 +158,8 @@ body {
 
 .tm-banner-title {
   font-size: 70px;
-  font-weight: 3000;
-  font-style: bold;
+  font-weight: 700; 
+  text-transform: uppercase;
   margin-bottom: 40px;
   margin: 0px 20px;
   color: #1e1e1e;
