@@ -84,9 +84,10 @@ section {
 }
 
 
+
 ::-webkit-scrollbar {
   width: 5px;
-  height: 7px;
+  
 }
 
 
@@ -96,7 +97,7 @@ section {
  
 
 ::-webkit-scrollbar-thumb {
-  background: #5b3e31; 
+  background: #808080; 
 }
 
 
