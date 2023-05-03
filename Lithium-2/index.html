@@ -4,114 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylsheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://smc-26.github.io/sciencefair2023/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <title>Lithium 2 | Science Fair 2023</title>
+    
+    <title>Document</title>
 </head>
 <body>
+    <!--navbar here-->
+    
+    <main class="mx-auto">
 
-    <script style="font-family: Helvetica, sans-serif;">addNavbar();</script>
-    <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
-        <header>
-
-            <br>
-            <br>
-            <br>
-
-            <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-            <div class="overlay"></div>
-          
-            <!-- The HTML5 video element that will create the background video on the header -->
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src="files/bgv.mp4" type="video/mp4">
-            </video>
-          
-            <!-- The header content -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-9">
-                            <div class="container text-white align-text-bottom">
-                              <h1 class="maintitle" class="display-1">The Visual Qualities of an Eagle eye to improve a Closed Circuit Television System (CCTV) Perceptual Video Quality</h1>
-                              <p class="namemain" class="display-6"><span>By </span><a class="cc" href="#">Cyrelle Capuno</a><span class="namecomma">, </span>
-                                <a class="zd" href="#">Zuleika Dalian</a><span class="namecomma">, </span> 
-                                <a class="pdc" href="#">Paulo De Castro</a><span class="namecomma">, </span> 
-                                <a class="fe" href="#">Franz Eduque</a><span class="namecomma">, </span>
-                                <a class="rl" href="#">Royce Lariego</a><span><span class="namecomma">, </span></span>
-                                <a class="yp" href="#">Yohane Perez</a></p>
-                            </div>
-        
-                    </div>
+                <!-- make sure that the banner images in the slideshow are of the same dimensions-->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/1.png" class="d-block w-100" style="height:300px;  object-fit: cover;
+                    object-position: center;" alt="...">
                 </div>
+                <div class="carousel-item">
+                    <img src="images/2.png" class="d-block w-100" style="height:300px;  object-fit: cover;
+                    object-position: top;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/3.png" class="d-block w-100" style="height:300px;object-fit: cover;
+                    object-position: center" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/4.png" class="d-block w-100" style="height:300px;object-fit: cover;
+                    object-position: center" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/5.png" class="d-block w-100" style="height:300px;object-fit: cover;
+                    object-position: center" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/6.png" class="d-block w-100" style="height:300px;object-fit: cover;
+                    object-position: center" alt="...">
+                </div>
+
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!--
+        if you dont want an image carousel(slideshow) and rather use static banner instead use one below:
 
-            <br>
+        <img src="banner.jpg" alt="nature" class="img-fluid w-100" >
+        -->
+        <br>
 
-          </header>
-
-          <nav class="navbar navbar-expand-sm fixed-bottom navbar-dark" style="background-color: rgba(0, 0, 0, 0.87);">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar1">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Prelude</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Science Concepts Involved</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Technical Application</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">References</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Authors</a>
-                        </li>
-                    </ul>
-            </div>
-        </nav>
-
-        <article class="container w-100 mx-auto my-4 border p-3">
-            <h2>Prelude</h2>
+        <hgroup class="w-75 mx-auto text-center">
+            <h1 class="display-4">The Visual Qualities of an Eagle's Eye on Improving a Closed-Circuit Television System (CCTV) Video Quality</h1>
+            <h5 class="display-8 fst-italic">Franz Eduque; Royce Lariego; YOURNAMEHERE; et. al.</h5>
+        </hgroup>
+        <article class="w-75 mx-auto my-4 border p-3">
             <p>
-                As observed from television news, surveillance footage from most Closed-Circuit Television System, also known as CCTV cameras, footages are of poor quality and have low resolution. Aside from this, CCTV cameras are short ranged devices and can only view limited spaces and short distances. The previously mentioned flaws of CCTV cameras affect our lives in many different ways for it has important applications in areas such as public safety, law enforcement, and homeland security.
-            </p>
-            <p>
-                This project aims to improve CCTV video quality by replicating the characteristics of an animal deemed to have outstanding eye vision— an eagle.
+                testing testing testing etur adipisicing elit. Pariatur illo provident hic explicabo, aperiam a! Possimus dolore molestiae consectetur quidem tempora officia deserunt quam sit, sint, debitis, asperiores similique laboriosam?
+                Animi tenetur vero cupiditate saepe nulla. Iusto atque neque doloremque facilis eos ratione. Quis eos amet quas adipisci, delectus eligendi quaerat mollitia deserunt, distinctio earum nam voluptates accusamus, laudantium quibusdam.
             </p>
             <img src="banner.jpg" alt="nature" class="img-fluid w-100" >
             <p>
-                The genus Aquila, commonly known as the eagle, is considered to have the best vision within the animal kingdom and it can be studied to learn how to make improvements. Researchers have discovered that the eagle's eye possesses distinctive characteristics that contribute to its superior visual quality, such as high-density photoreceptor cells, a larger and more spherical lens, and a good blood supply. In order to achieve better results, it is important that the image-processing portion of the CCTV camera, which contains the video file of the obtained footage, should not be overlooked even though these alterations only affect the image-receiving part of the camera. Some parts of a Camera function just like a human eye. For example, a camera's sensor and an eye's retina function similarly since both are responsible for receiving light to process into an image, among others. We can presume that the human eye is alike to the quality of an ordinary camera, meaning that using better eyes as a reference for mechanism, like that of an eagle's, can result in better and improved camera quality.
+                Sed perspiciatis minima facere numquam mollitia voluptas doloribus natus harum temporibus saepe perferendis qui et molestiae soluta, ipsa repudiandae doloremque sequi aspernatur magnam, unde fugit expedita obcaecati, ea earum? Ipsam!
+                Repudiandae, perspiciatis. Placeat iusto quisquam, dolores, facilis totam reiciendis pariatur repellat tempore odio expedita consectetur sit excepturi quae aliquam amet aspernatur nisi natus voluptatibus quo. Nam, fugit. Atque, molestiae. Aliquid?
+                Veritatis pariatur maxime molestiae praesentium consequuntur iure quaerat eveniet ad velit incidunt suscipit at laborum fugiat veniam perspiciatis ab, cum quae ullam recusandae autem aliquam libero voluptate cumque. Qui, ut!
             </p>
             <img src="1.jpg" alt="nature" class="img-fluid w-100" >
-            </article>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus distinctio quam sed quo iusto, maiores unde. Aperiam harum eaque quae, distinctio, ab eius, quod atque autem cumque quibusdam impedit veritatis!
+                Distinctio exercitationem inventore, cumque vero dignissimos recusandae velit omnis doloribus facere, doloremque nobis harum cupiditate porro ex rerum sit eaque maiores ipsum quos nam, dolore impedit aspernatur tempore! Vero, eos?
+                
+                Vel velit excepturi ad cum blanditiis ea tempora facere quod debitis mollitia recusandae doloremque pariatur dolorum delectus nulla laborum, impedit nam quis voluptate id quam! Dolorum dicta eligendi architecto quas?
+                Qui obcaecati recusandae consequuntur nesciunt enim voluptatum repellendus ipsum quidem earum soluta libero, repudiandae nam odit quasi eligendi error exercitationem facere, ab esse! Reiciendis dolorum molestiae dolore accusamus nobis assumenda?
 
-            <article class="container w-100 mx-auto my-4 border p-3">
-            <h2>Science Concepts Involved</h2>
-            <p>An eagle's eye is deemed better than a human eye because of several factors related to its structure. According to Journey North Bald Eagles (n.d.): An example is its high-density photoreceptor cells, such as cone and rod cells, in their retinas responsible for detecting light and transmitting visual information to the brain. The foveas, small areas in the retina, contain a high concentration of these cells, allowing eagles to perceive fine details and distinguish colors at long distances. Compared to humans, eagles have multiple foveas with around a million photoreceptor cells per square millimeter, while humans only have a single fovea comprising 200 thousand photoreceptor cells per square millimeter, which makes them better at perceiving details than us. 
-Furthermore, an eagle's eye has three eyelids, two of which function for closing the bird's eye, whereas the third eyelid is called the Nictitating membrane (Hay, 2016). The Nictitating membrane is responsible for protecting and moisturizing the eyes, producing immunoglobulins, and is part of the precorneal tear film, which is composed of oil, water, and mucin layers (Nictitating Membrane - an Overview | ScienceDirect Topics, n.d.). The oil or lipid layer is composed of a glycerol backbone, two hydrophobic fatty acid tails, and a hydrophilic phosphate group. Thus, lipids are amphipathic, which is a term to describe substances with hydrophilic and hydrophobic parts. The bilayer arrangement of phospholipids in the cell membrane protects the cell and acts as a barrier to some chemicals. The hydrophobic portion is facing in, while the hydrophilic portion is facing out. This aids in controlling which molecules can enter and leave the cell (Ahmed et al., 2022). 
-Secondly, a CCTV camera's primary function is to capture light and convert it into a video signal. A CCD sensor (Charge Coupled Device) is the essential component of a CCTV camera and it converts light into an electric signal. The lens of an eagle's eye is also larger in proportion to its body size than in most other animals, allowing more light to enter the eye. The physics of light is important for seeing in low-light conditions and enhances the sharpness of their vision. The electrical signal is converted by electric signal processing into a video signal that can be captured or presented on screen. Electrons from the silver foil collectors can be ejected by light with enough energy to produce an action-reaction effect resulting in the cross spin. In accordance with the light intensity, electrons are released when light photons "hit" the silicon region. Essentially, this is how information from light is transformed into an electrical signal (Damjanovski, 2012). Aside from size, the shape of their lenses is also unique and more spherical than in most other birds of prey, reducing spherical aberration, which is a distortion of the image that can occur when light passes through a curved surface. They can also change the shape of their lenses and corneas through accommodation, making them thinner to focus on far objects and thicker to focus on near objects.Additionally, their eyes also have a good blood supply, which helps maintain the health of the photoreceptor cells in the foveas. Together, these factors contribute to the excellent visual quality of an eagle's eye, allowing it to see with much greater clarity and detail than humans (Journey North Bald Eagles, n.d.).
-On the other hand, CCTV cameras function through the involvement of data cables and several electrical connections. An example is Ethernet cables, which allow data to travel between wires through a set of protocols (Optimum, 2022). The transmission of data across a cable is similar to electrical conduction through metal. It is translated into binary code, a collection of 1s and 0s. The data transmission device will send two distinct voltages of current over the cable (for example, zero volts and 5 volts), with one voltage standing in for one and the other for zero. Data is then translated into binary code, which will be converted back to its original format. The Ethernet Standards encompass the volume and speed of processing data over a defined time. Like electrical lines, fiber optic cables convey pulses of light down a cable rather than electrons (picture turning a torch on and off; when the light is on, you are transmitting a one, and when it is off, you are transmitting a zero). Fiber optic cables can transfer far more data than copper cables because light travels farther and faster than electrons and electricity (Eland Cables. n.d).   
+                Atque error soluta at aspernatur nostrum temporibus laudantium. Perferendis, perspiciatis? At nostrum dolor laboriosam ducimus animi, molestiae labore tempora soluta repellendus modi? Natus sapiente animi iusto voluptatum molestiae doloremque assumenda.
+                Esse voluptatum est reiciendis quae vero adipisci deserunt tempore! Quae nihil necessitatibus quis nulla illum, laboriosam eveniet voluptas earum optio ullam rem officiis voluptatibus dolorum praesentium ipsam! Aut, reprehenderit sunt.
+                <img src="2.jpg" alt="nature" class="img-fluid w-100" >
+                Numquam impedit tempora illum maxime harum architecto mollitia dignissimos omnis, eveniet nemo? Fugiat perferendis deserunt illo ducimus a sequi quod amet accusamus quidem esse tempore autem cum, ipsam numquam obcaecati!
+                Quos autem explicabo laboriosam sit porro non blanditiis esse maxime dicta, nulla at dolore libero in dolores quod dignissimos animi sequi illum nesciunt vitae adipisci obcaecati. Molestias perspiciatis sint quia!
             </p>
         </article>
-
-
         <div class="about-container w-75 mx-auto my-4 p-3">
             <h2>About the Researchers</h2>
             <div class="researcher border p-2 my-4">
                 <img src="face1.jpg" alt="face" class="img-fluid w-25">
-                <h6 class="display-6">Hugh Mungous</h6>
+                <h6 class="display-6">Test Mungous</h6>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque expedita ipsam deleniti nesciunt aliquam repellendus quidem magni autem modi harum assumenda distinctio nulla, aut laboriosam esse nihil fuga ratione.
                 </p>
-            </div>
+            </div>m\
             <div class="researcher border p-2 my-4">
                 <img src="face1.jpg" alt="face" class="img-fluid w-25">
                 <h6 class="display-6">Ben Dover</h6>
@@ -141,8 +128,6 @@ On the other hand, CCTV cameras function through the involvement of data cables 
                 </p>
             </div>
         </div>
-
-
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
