@@ -44,3 +44,45 @@ header {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+#fb{
+  float: left;
+	background: url(logos.png) no-repeat -10px -20px;
+	width: 140px;
+	height: 125px;
+  transform: scale(0.7,0.7);
+}
+#instgrm{
+  float: left;
+	background: url(logos.png) no-repeat -150px -20px;
+	width: 130px;
+	height: 125px;
+  transform: scale(0.7,0.7);
+}
+#twitter{
+  float: left;
+	background: url(logos.png) no-repeat -278px -20px;
+	width: 130px;
+	height: 125px;
+  transform: scale(0.7,0.7);
+}
+#fb:hover{
+  float: left;
+	background: url(logos.png) no-repeat -7px -155px;
+	width: 140px;
+	height: 125px;
+  transform: scale(0.7,0.7);
+}
+#instgrm:hover{
+  float: left;
+	background: url(logos.png) no-repeat -147px -155px;
+	width: 130px;
+	height: 125px;
+  transform: scale(0.7,0.7);
+}
+#twitter:hover{
+  float: left;
+	background: url(logos.png) no-repeat -275px -155px;
+	width: 130px;
+	height: 125px;
+  transform: scale(0.7,0.7);
+}
