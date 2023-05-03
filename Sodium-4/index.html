@@ -27,26 +27,35 @@
 	  		<a href="#content"><button class="btn btn-light mt-5" id="link">Learn more</button></a>
 	  	</hgroup>
 	</header>
+	
 	<nav class="local">
 		<ul>
+			<li><a href="#objectives">Objectives</a></li>
 			<li><a href="#intro">Introduction</a></li>
-			<li><a href="#concepts">Science Concepts</a></li>
+			<li><a href="#bio" id="bio_link">Biology</a></li>
+			<li><a href="#chem" id="chem_link">Chemistry</a></li>
+			<li><a href="#phys" id="phys_link">Physics</a></li>
 			<li><a href="#application">Application</a></li>
 			<li><a href="#references">References</a></li>
 			<li><a href="#authors">Authors</a></li>
 		</ul>
 	</nav>
+	
 	<main id="content">
+		
+		<section id="objectives"><h1>Objectives</h1>
+			<ol>
+				<li>To analyze the structure and composition of fly wings.</li>
+				<li>To deduce the advantages and disadvantages of ornithopter wings modeled after fly wings.</li>
+				<li>To apply fly-inspired ornithopters in the context of geology and security in the Philippines.</li>
+			</ol>
+		</section>
+		
 		<section id="intro"><h1>Introduction</h1></section>
-		<ol>
-			<li>To analyze the structure and composition of fly wings.</li>
-			<li>To deduce the advantages and disadvantages of ornithopter wings modeled after fly wings.</li>
-			<li>To apply fly-inspired ornithopters in the context of geology and security in the Philippines.</li>
-		</ol>
-
-				<section id="concepts"><h1>Science Concepts</h1></section>
+		
+		<section id="concepts"><h1>Science Concepts</h1>
 			<div class="content">	
-				<h2>Biology</h2><br>
+				<h2 id="bio">Biology</h2><br>
 
 					<p>This study centers on biomimicry – the science of mimicking and applying structures and mechanisms from organisms in nature to create efficient man-made designs. The netting patterns of spiderwebs, for example, have been copied onto glass windows to deter birds from colliding. The chemical composition of leaves has also influenced the development of long-lasting foams and plastics. Even the dynamics of an Australian forest have been used to establish sustainable factories (Biomimicry 2.8, n.d.). The overall anatomy and structure of fly wings were studied and deemed fit to be mimicked onto ornithopter wings.</p>
 					<p>The features of fly wings, which were applied in the DelFly Nimble, have evolved over time to maximize aerodynamic efficiency: flexibility, shape, frequency, and stroke (Krishna et al., 2020).</p>
@@ -57,7 +66,7 @@
 					<aside><b>Figure 4.</b> Varying fly wings’ structures (a) detached blowfly Calliphora vomitoria wing (b) blowfly wing deformation (green-shaded) after being subjected to an amount of force (c-e) Drosophila melanogaster, Musca domestica, and Calliphora vomitoria wing profiles (Krishna et al., 2020).</aside>
 					<aside><b>Figure 5.</b> Flight turn comparison between the DelFly Nimble (left) and a fruit fly (right) (DelFly, n.d.).</aside><br>
 
-				<h2>Chemistry</h2><br>
+				<h2 id="chem">Chemistry</h2><br>
 				
 					<p>In designing wings for FWMAVs, chemical composition is vital. The DelFly Nimble’s wings are made of polyethylene terephthalate (PET), which is a thin but tension-resistant polyester film used commercially (The Index Project, n.d.). Its molecular structure is shown in Figure 6.</p>
 					<aside><b>Figure 6.</b> Molecular structure of polyethylene terephthalate (Omnexus, n.d.).</aside><br>
@@ -69,7 +78,7 @@
 					<aside><b>Figure 7.</b> Chitin structure (BD Editors, 2017).</aside>
 					<aside><b>Figure 8.</b> Molecular structure and hydrogen bonding in (a)-chitin and (b)-chitin (reproduced from Ref. [51] by permission of Elsevier Science, Amsterdam) (Pillai et al., 2009).</aside><br>
 				
-				<h2>Physics</h2><br>
+				<h2 id="phys">Physics</h2><br>
 				
 					<p>The Theory of Flight is the basis of the functionalities of the DelFly Nimble. This theory involves four vectors: the horizontal forces, thrust and drag, and the vertical forces, lift and weight (Figure 9). In order for heavier-than-air objects—birds, airplanes, and butterflies—to fly, these forces must be balanced (MIT Department of Aeronautics and Astronautics, 1997).
 					<aside><b>Figure 8.</b> Four physical forces of flight (MIT Department of Aeronautics and Astronautics, 1997).</aside><br>
@@ -99,8 +108,9 @@
 					<p>At a flapping frequency of 79 Hz, the wing flexibility shows a reduction in energetic costs by as much as 25%. From 60-90 Hz, the flexible wing requires 60% more maximum twisting forces and approximately 15% more maximum positive energy output than the rigid wing. This suggests a potential trade-off between maximum force generation and overall efficiency (Reid et al., 2019).</p>
 					<p>Assuming the insect weighs between 1.5-2.5 g and both wings are flapping symmetrically, the mass-normalized peak power is between 46-77 W/kg for the rigid wing and 75-125 W/kg for the flexible wing; the flexible wing produces more power for its weight. It is further estimated that the flexible wing can store approximately 30% of the total energy required over a wingbeat (Reid et al., 2019)</p>
 			</div>
+		</section>
 
-		<section id="application"><h1>Application</h1></section>
+		<section id="application"><h1>Application</h1>
 			<div class="content">
 				<p>FWMAVs like the DelFly Nimble can be used in biology and geology field research, search and rescue, and surveillance and reconnaissance (The Ornithopter Society, n.d.). This potential comes from how the DelFly can carry a load of up to 4 g, which a micro camera suffices (DelFly, n.d.).</p>
 				<p>The Philippines is home to many active volcanoes and faults. Roughly 60% and 74% of the country’s land and population, respectively, are exposed to the brunt of natural disasters like earthquakes and volcanic activity. In 2020, the key natural hazard was volcanic activity, affecting more than 700,000 Filipinos (Climate Change Knowledge Portal, 2021). Just recently, the Department of Science and Technology (DOST) called for the Philippine Institute of Volcanology and Seismology to make room for more equipment in order to maximize its monitoring of tectonic activity, especially given that in the past decade, several strong earthquakes have claimed the lives of thousands (De Vera, 2023). With this, FWMAVs could help concerned governmental agencies survey faults, volcanoes, and affected areas. It could be a lightweight and energy-efficient solution to monitoring seismic developments or the damage inflicted by these developments.</p>
@@ -108,8 +118,9 @@
 				<p>Lastly, FWMAVs could be used for military surveillance. In the 1970s, the United States developed a tiny ornithopter mimicking a dragonfly to spy on civilians; however, it was discarded because it flew for only a minute and had ineffective control mechanisms (The Ornithopter Society, n.d.). Nevertheless, this shows the potential of FWMAVs as military equipment during wars. For example, in the Marawi Siege, the perpetrators were settled in tight hideouts, making it hard for the military to monitor movement (Hincks, n.d.). But with FWMAVs crafted to look and sound like real insects, monitoring could be made safer.</p>
 				<p>The applications listed above only scratch the surface of the potential of FWMAVs. There are also limitations that should be considered, such as battery life and runtime; however, the possible uses of these vehicles modeled from flies call for more research, discussion, and focus on this topic.</p>
 			</div>
-		
-		<section id="references"><h1>References</h1></section>
+		</section>
+
+		<section id="references"><h1>References</h1>
 			<div class="content">
 				<p>BD Editors. (2017, April 28). Chitin. Biology Dictionary. Retrieved May 1, 2023 from <a href="https://biologydictionary.net/chitin/">https://biologydictionary.net/chitin/</a></p>
 				<p>Bhat, S. V., Zhao, J., Sheridan, J. A., Hourigan, K., & Thompson, M. M. (2019). Aspect ratio studies on insect wings. Physics of Fluids, 31(12), 121301.<a href="https://doi.org/10.1063/1.5129191 ">https://doi.org/10.1063/1.5129191</a></p>
@@ -127,7 +138,10 @@
 				<p><a href=""></a></p>
 				<p><a href=""></a></p>
 			</div>
+		</section>
+
 		<section id="authors"><h1>Authors</h1></section>
+
 	</main>
 </body>
 </html>
