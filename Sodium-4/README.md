@@ -9,3 +9,5 @@
   In a recent study by Zhang et al. (2023), the design and aerodynamics of FWMAVs were analyzed, including the currently-popular DelFly Nimble, inspired by fruit flies. This review showcased how mimicking fly wing characteristics in the innovation of ornithopters stems from biology, chemistry, and physics.
 
 ![The DelFly Nimble in hover.](images/delflynimble.jpg)
+
+**Figure 1.** _DelFly Nimble (DelFly, n.d.)._
