@@ -15,6 +15,7 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
 header{
   color: white;
   height: 500px;
@@ -47,6 +48,7 @@ header{
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 #wc{
   margin-left: 30px;
 }
@@ -55,6 +57,13 @@ header{
   text-align: justify;
   width: 80em;
 }
+
+section{
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
 #fb{
   float: left;
 	background: url(logos.png) no-repeat -10px -20px;
