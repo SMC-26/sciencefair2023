@@ -45,21 +45,33 @@ header {
   padding-top: 50px;
   padding-left: 60px;
   font-family: Georgia, serif;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 #m {
   width: 1000px;
   padding-left: 60px;
   padding-bottom: 50px;
   font-family: Georgia, serif;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 .intro {
   background-color: #3C6255;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 #o {
   color: white;
   padding-top: 50px;
   padding-left: 60px;
   font-family: Georgia, serif;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 #intro {
   color: white;
@@ -67,8 +79,10 @@ header {
   padding-left: 60px;
   padding-bottom: 50px;
   font-family: Georgia, serif;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-
 #fb{
   float: left;
 	background: url(logos.png) no-repeat -10px -20px;
