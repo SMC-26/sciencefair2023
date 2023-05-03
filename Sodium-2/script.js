@@ -92,7 +92,9 @@ function gamestart(){
 
 
 
-
+function Morb(){
+    document.getElementById("Egg").style.display = "inline-block";
+}
 
 function reveal(){
     document.getElementById("Fl").style.display = "inline-block";
