@@ -1,7 +1,7 @@
 const faders = document.querySelector('.fadeDiv');
 const faders_subs = document.querySelectorAll('.card');
 const options = {
-    threshold: 0.80,
+    threshold: 0.60,
     root:null
 };
 const appear = new IntersectionObserver(
