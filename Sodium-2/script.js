@@ -94,6 +94,7 @@ function gamestart(){
 
 function Morb(){
     document.getElementById("Egg").style.display = "inline-block";
+    alert("You have found the easter egg!")
 }
 
 function reveal(){
