@@ -104,3 +104,24 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: #8b6c56; 
 }
+
+.members1, .members2{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .memberpic{
+            border-radius: 50%;
+            height: 275px;
+            width: 275px;
+            float: left;
+            text-align: center;
+            background-color: #c89e71;
+            opacity: 50%;
+        }
+        .name{
+            text-align: center;
+        }
+        .desc{
+            text-align: center;
+        }
