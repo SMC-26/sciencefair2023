@@ -18,7 +18,7 @@
 	background: #7891ab;
 }
 header{
-	background-image: url(img/sky.jpg);
+	background-image: url(images/sky.jpg);
 	height: 100vh;
 	background-position: 0 -700px;
 	background-size: cover;
@@ -28,6 +28,18 @@ hgroup{
 }
 h1, h3{
 	font-family: 'Raleway', sans-serif;
+}
+.content{
+	margin-left: 8%;
+}
+p {
+	text-align: justify;
+	text-justify: inter-word;
+	text-indent: 5%;
+}
+aside {
+	text-align: center;
+	font-style: italic;
 }
 #title{
 	font-size: 70px;

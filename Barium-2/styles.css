@@ -37,10 +37,67 @@ h3{
 }
 
 p{
-  color: #33125a;
+  color: #5a5a5a;
   font-size: 18px;
   line-height: 22px;
   padding: 10px;
+}
+
+/* justify content */
+#intro-paragraph-1 {
+  text-align: justify;
+}
+
+#intro-paragraph-2 {
+  text-align: justify;
+}
+
+#intro-paragraph-3 {
+  text-align: justify;
+}
+
+#intro-paragraph-4 {
+  text-align: justify;
+}
+
+#sci-paragraph {
+  text-align: justify;
+}
+
+#bio-paragraph-1 {
+  text-align: justify;
+}
+
+#bio-paragraph-2 {
+  text-align: justify;
+}
+
+#bio-paragraph-3 {
+  text-align: justify;
+}
+
+#bio-paragraph-4 {
+  text-align: justify;
+}
+
+#chem-paragraph-1 {
+  text-align: justify;
+}
+
+#chem-paragraph-2 {
+  text-align: justify;
+}
+
+#phys-paragraph-1 {
+  text-align: justify;
+}
+
+#phys-paragraph-2 {
+  text-align: justify;
+}
+
+#app-paragraph {
+  text-align: justify;
 }
 
 /* scroll bar */

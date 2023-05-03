@@ -19,12 +19,14 @@
     <script>addNavbar();</script>
     <img src="Field.png" alt="Red roses too" class="And-I-think-to-myself">
     <div class="What-a-wonderful-world">
+        <br>
         <h1 class="Everything-is-on-fire">
             <b>THE WORLD IS BURNING</b>
         </h1>
         <h2>
             Presenting solutions to ensure the survival of crops
         </h2>
+        <br>
         <p>
             Hi, there! It is really nice to meet you &#9829 We hope that you are enjoying elementary. We are one of the many websites you will be looking through today. You have looked through many websites and probably been amazed by most of them, and now you are looking through ours. Now, what makes us different? Let me tell you. As you can see from our animation, we are gonna be talking about plants and in particular, their survival. We want to talk to you about "Engineering climate SMART crops"., and as you scroll through this website, you are gonna learn about the basics of photosynthesis, some facts about a climate change, the latest news on engineering climate smart crops, and an extra surprise at the end so stay tuned.... In the end, we truly hope that you have fun looking at this website (You will go through the same hardwork when you go to our school). <br><br> HAVE FUN From your ates and kuyas in Grade 9 Sodium-Group2
         </p> 
@@ -43,9 +45,10 @@
             <img src="DNA.png" class="One-Pic MargTop">
             <h1 class="Zero-Text MargTop">Engineering Climate SMART crops for the future</h1> 
         </div>
-        <h1 class="Learn">What you will learn today</h1>
+        <h1 class="Learn"><b>What you will learn today</b></h1>
     </div>
     <div class="Phsynth">
+        <br>
         <h1 class="BigText MargTop"><b>Photosynthesis</b></h1>
         <div class="VPH MargTop">Video Placeholder</div>
         <div class="PPH MargTop">Placeholder Placeholder</div>
@@ -60,72 +63,74 @@
     <div class="DNA">
     </div>
     <div class="Future">
+        <br>
         <h1 class="BigText MargTop"><b>ENGINEERING CLIMATE SMART <br>CROPS FOR THE FUTURE</b></h1>
         <div class="VVVPH MargTop">Video Placeholder cubed</div>
         <div class="AAPH MargTop">Animation Placeholder squared</div>
     </div>
-    <div class="Game">
-        <button class="Button">Click Me!</button>
+    <div class="GamePH" id="GPH">
+        <button class="Button" onclick="gamestart()">Click Me!</button>
     </div>
+    <canvas class="Game" id="Game"></canvas>
     <div class="Doxx">
         <h1 class="DoxxHeader MargTop"><b>Meet the <br>creators</b></h1> <br>
             <p class="DoxxText">Let's introduce you to the people who did the research, encoded the website, and amongst other things. Let's meet the people from Group 2 from section Sodium.</p>
-            <div class="Floro">
+            <div class="Floro" id="Fl">
                 <img src="Plant.png" class="SmallPlant" alt="Green">
                 <p class="Info FloroText">
                     Name: Floro James S. Bernal <br>
-                    Email: <br>
-                    Phone number: <br>
-                    FB messenger: <br>
+                    Email: N/A<br>
+                    Phone number: N/A<br>
+                    FB messenger: N/A<br>
                     Role: Lead programmer <br>
                     Message:
                 </p>
             </div>
-            <div class="Eve">
+            <div class="Eve" id="Ev">
                 <img src="Plant.png" class="SmallPlant" alt="Green">
                 <p class="Info EveText">
                     Name: Eve <br>
-                    Email: <br>
-                    Phone number: <br>
-                    FB messenger: <br>
+                    Email: rudianevesimbulan@gmail.com<br>
+                    Phone number: 09566125551<br>
+                    FB messenger: Eve Simbulan<br>
                     Role: Climate and Physics <br>
-                    Message:
+                    Message: Slay!
                 </p>
             </div>
-            <div class="Zild">
+            <div class="Zild" id="Zi">
                 <img src="Plant.png" class="SmallPlant" alt="Green">
                 <p class="Info ZildText">
                     Name: Zildjian Laid <br>
-                    Email: <br>
-                    Phone number: <br>
-                    FB messenger: <br>
+                    Email: N/A<br>
+                    Phone number: N/A<br>
+                    FB messenger: N/A<br>
                     Role: Photosynthesis and Chemistry researcher <br>
                     Message:
                 </p>
             </div>
-            <div class="Bato">
+            <div class="Bato" id="Ba">
                 <img src="Plant.png" class="SmallPlant" alt="Green">
                 <p  class="Info BatoText">
                     Name: Joaquin Sebastino M. Matobato<br>
-                    Email: <br>
-                    Phone number:<br>
-                    FB messenger:<br>
+                    Email: N/A<br>
+                    Phone number:N/A<br>
+                    FB messenger:N/A<br>
                     Role: Lead speaker and presenter<br>
                     Message:
                 </p>
             </div>
-            <div class="Sam">
+            <div class="Sam" id="Sa">
                 <img src="Plant.png" class="SmallPlant" alt="Green">
                 <p  class="Info SamText">
                     Name: Samantha Magallon <br>
                     Email: samanthanicole.magallon@smc.pshs.edu.ph<br>
-                    Phone number:<br>
+                    Phone number: N/A<br>
                     FB messenger: Sam Magallon<br>
                     Role: Genetic engineering researcher <br>
                     Message:
                 </p>
             </div>
-            <div class="Marita">
+            <div class="Marita" id="Ma">
                 <img src="Plant.png" class="SmallPlant" alt="Green">
                 <p class="Info MaritaText">
                     Name: Marita Natasha P. Bautista <br>
@@ -136,8 +141,10 @@
                     Message:  "I hope that you enjoy our work. We have spent hours on something you will only look for a few minutes. Savor each moment and have fun."
                 </p>
             </div>
-            <img src="Cactus.png" class="Cactus" alt="Cute cactus">
-            <img src="Dirt.png" class="Dirt" alt="Dirt">
+            <button  class="Cactus" id="Cac" onclick="reveal()">
+                <img src="Cactus.png" alt="Cute cactus">
+            </button>
+            <img src="Dirt.png" class="Dirt" id="Dirt" alt="Dirt">
         </div>
     <div class="Soil">
         <h1 class="SoilText MargTop"><b>THANK YOU</b></h1>

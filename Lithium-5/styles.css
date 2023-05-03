@@ -106,6 +106,9 @@ body {
 }
 
 .bgcolor {
+  margin: auto;
+  width: 40% !important;
+  z-index: 10;
   color: white;
   background-color: rgba(255,255,255, 0.3);
   padding: 15px;
@@ -287,10 +290,6 @@ section {
   background-color: #8fffd6;
 }
 
-.section-title {
-  padding-bottom: 30px;
-}
-
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -341,6 +340,6 @@ section {
   background-color: #1e1e1e;
 }
 
-a {
+.blacklink {
   color: black !important;
 }

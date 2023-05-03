@@ -9,6 +9,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 body {
   background: #fff;
   color: #666666;
@@ -470,6 +473,7 @@ section {
 
 #about .about-text {
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 #about .about-text:last-child {
@@ -492,28 +496,49 @@ section {
   color: white;
 }
 
+.carousel-container h5 {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
 .carousel-container p {
   color: white;
+  text-align: center;
 }
 
 .carousel-container h4 {
   color: white;
-  font-weight: 600;
   text-align: center;
+  font-family: "Roboto Mono"
+}
+
+.skytext {
+  background-image: url("../img/sky.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
 @media screen and (min-width: 1920px) {
   .carousel-container  {
-    height: 65vh;
+    height: 70vh;
   }
   .carousel-container h3 {
-    font-size: 3vw;
+    font-size: 4vw;
+  }  
+  .item1 h3 {
+    margin-bottom: 3vw;
   }  
   .carousel-container p {
-    font-size: 1vw;
+    font-size: 1.3vw;
   }  
   .carousel-container h4 {
+    font-size: 4vw;  
+    margin-bottom: 4vw;
+  }   
+  .carousel-container .small-text {
     font-size: 2.5vw;  
   }   
 }
@@ -555,8 +580,14 @@ section {
 }
 
 .item2 {
-  background-image: url("../img/carousel-2.jpg");
+  background-image: url("../img/lastslong.jpg");
   background-size: cover;
+}
+
+.item2 h4 {
+  font-size: 3rem;
+  font-family: "Raleway";
+  font-style: italic;
 }
 
 .item3 {

@@ -1,0 +1,121 @@
+.ram {
+    display: inline-block;
+    margin-top: 10px;
+}
+.rpicture {
+    display: block;
+    width: 310px;
+    float: left;
+}
+.rimg {
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+.rdescription {
+    display: block;
+    width: 550px;
+    float: right;
+}
+
+.divw {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    font-family: Poppins;
+}
+
+.divb {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+}
+
+.divi {
+    text-align: center;
+}
+
+.divt{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.vid {
+    height: 350px;
+    width: 750px;
+}
+
+.divv {
+    text-align: center;
+}
+
+.bio{
+    display: inline;
+    font-style: bold;
+    color: #4397e6;
+}
+
+.chem{
+    display: inline;
+    font-style: bold;
+    color: #09e12f;
+}
+
+.phys{
+    display: inline;
+    font-style: bold;
+    color: #ff6666;
+}
+
+.diagram {
+    height: 320px;
+    width: 510px;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+h1 {
+    font-family: Righteous;
+    color: gold;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: Poppins;
+    font-style: italic;
+}
+h3 {
+    text-align: center;
+    font-family: Poppins;
+}
+h4{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: lighter;
+    font-style: italic;
+}
+p{
+    text-align: justify;
+    font-family: Poppins;
+}
+img {
+    width: 943px;
+    height: 450px;
+}
+hr {
+    height: 20px;
+    opacity: 0%;
+}
