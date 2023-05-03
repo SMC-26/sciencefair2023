@@ -26,11 +26,13 @@ header{
 hgroup{
 	padding-top: 40vh;
 }
-h1, h2, h3{
+h1, h3{
 	font-family: 'Raleway', sans-serif;
 }
 .content{
 	margin-left: 8%;
+}
+p {
 	text-align: justify;
 	text-justify: inter-word;
 	text-indent: 5%;
@@ -38,11 +40,6 @@ h1, h2, h3{
 aside {
 	text-align: center;
 	font-style: italic;
-}
-.reference{
-	text-align: justify;
-	text-justify: inter-word;
-	margin-left: 8%;
 }
 #title{
 	font-size: 70px;
@@ -111,4 +108,22 @@ section{
 img{
 	display: block;
 	margin: auto;
+}
+.ml7{
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+}
+.ml7 .text-wrapper{
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+.ml7 .letter{
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
 }
