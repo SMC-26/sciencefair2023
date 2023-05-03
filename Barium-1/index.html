@@ -62,17 +62,17 @@
         </section>
 
         <section class="desc" id="desc">
-            <div class="section-title">
+            <div class="reveal active section-title">
                 <h2>Description</h2>     
             </div>
 
             <div class="container">
-                <div class="row">
+                <div class="row reveal">
                     <div class="col-lg-4">
                       <img src="images/paper-honeycomb.png" class="img-fluid" alt="paper-honeycomb img">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content">
-                      <h3>Heat Transfer Mechanism of LHPs </h3>
+                      <h3 class="reveal active">Heat Transfer Mechanism of LHPs </h3>
                       <p class="fst-italic">
                         This study examines the heat transfer performance of laminated honeycomb panels
                         (LHPs) in the context of possible applications in engineering projects. 
@@ -98,20 +98,18 @@
         </section>
 
         <section class="conc" id="conc">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>Science Concepts </h2>
             </div>
 
-            <div class="container">
+            <div class="container reveal">
                 <div class="row">
                     <i class="fas fa-leaf"></i>
-                    <!-- <h2>Biomimetics</h2> -->
                     <p>The honeycomb sandwich panel design is inspired by the structure of a beetle’s elytron. The hardened forewings of beetles, the elytra, resemble honeycomb panels in structure and consist of a series of interconnected hollow chambers. This natural structure is known to give elytra strength and flexibility while maintaining a lightweight, making it an ideal material for use in weight-sensitive applications. </p>
                 </div>
 
                 <div class="row">
                     <i class="fas fa-atom"></i>
-                    <!-- <h2>Physics</h2> -->
                     <p>In LHPs, heat transfer is mainly by conduction and radiation. Conduction is the transfer of heat through a material by direct contact. Using materials with insulating properties can minimize heat radiation and improve the heat transfer performance of the LHP. This model provided insight into the intrinsic heat transfer mechanisms that affect LHP performance.</p>
                 </div>
 
@@ -124,11 +122,11 @@
         </section>
 
         <section class="app" id="app">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>Application</h2>
             <div>
             
-            <div class="container">
+            <div class="container reveal">
                     <div class="row1">
                         <div class="text">
                             <h3>Application of LHPs in our Daily Lives </h3>
@@ -151,11 +149,11 @@
         </section>
 
         <section class="team" id="team">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>Our Team </h2>
             <div>
 
-            <div class="container">
+            <div class="container reveal">
                 <div class="row">
                     <div class="column">
                       <div class="card">
@@ -269,17 +267,37 @@
             </div>
         </section>
 
+        <script src="script.js"></script>
+
         <script>
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 50;
+
+                if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+                }
+                else{
+                reveals[i].classList.remove('active');
+                }
+            }
+            }
             window.addEventListener("load", () => {
-            const loader = document.querySelector(".loader");
+                const loader = document.querySelector(".loader");
 
-            loader.classList.add("loader--hidden");
+                loader.classList.add("loader--hidden");
 
-            loader.addEventListener("transitionend", () => {
-                document.body.removeChild(loader);
+                loader.addEventListener("transitionend", () => {
+                    document.body.removeChild(loader);
+                });
             });
-            });
-
         </script>
 	</body>
 
