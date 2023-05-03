@@ -137,3 +137,22 @@ footer p{
 	font-weight: bold;
 	color: white;
 }
+.ml13{
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 1000;
+}
+.ml13 .letter{
+    display: inline-block;
+    line-height: 1em;
+}
+.ml16{
+    font-weight: 800;
+    font-size: 2em;
+    overflow: hidden;
+}
+.ml16 .letter{
+    display: inline-block;
+    line-height: 1em;
+}
