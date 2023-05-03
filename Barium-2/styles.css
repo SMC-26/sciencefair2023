@@ -43,6 +43,59 @@ p{
   padding: 10px;
 }
 
+/* justify content */
+#intro-paragraph-1 {
+  text-align: justify;
+}
+
+#intro-paragraph-2 {
+  text-align: justify;
+}
+
+#intro-paragraph-3 {
+  text-align: justify;
+}
+
+#intro-paragraph-4 {
+  text-align: justify;
+}
+
+#bio-paragraph-1 {
+  text-align: justify;
+}
+
+#bio-paragraph-2 {
+  text-align: justify;
+}
+
+#bio-paragraph-3 {
+  text-align: justify;
+}
+
+#bio-paragraph-4 {
+  text-align: justify;
+}
+
+#chem-paragraph-1 {
+  text-align: justify;
+}
+
+#chem-paragraph-2 {
+  text-align: justify;
+}
+
+#phys-paragraph-1 {
+  text-align: justify;
+}
+
+#phys-paragraph-2 {
+  text-align: justify;
+}
+
+#app-paragraph {
+  text-align: justify;
+}
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 15px;

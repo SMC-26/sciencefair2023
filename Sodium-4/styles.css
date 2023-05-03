@@ -37,6 +37,10 @@ p {
 	text-justify: inter-word;
 	text-indent: 50px;
 }
+aside {
+	text-align: center;
+	font-style: italic;
+}
 #title{
 	font-size: 70px;
 }
