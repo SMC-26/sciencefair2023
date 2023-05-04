@@ -1,0 +1,399 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffff;
+}
+#all{
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background: linear-gradient(to right,  #ff3131, #ff914d);
+}
+#firstpage{
+    margin: 0px;
+    height: 75.75757575757575vh;
+    width: 100%;
+    background-color: #1F1F1F;
+}
+#title{
+    color: #ffff;
+    font-size: 3.75rem;
+}
+#Tcontainer{
+    margin-left: 3.90625vw;
+    margin-top: 19vh;
+    width: 52vw;
+    height: 37.878787878787875vh;
+    padding: 0.625em;
+    float: left;
+    z-index: 9;
+    position: absolute;
+    /* border: 1px solid white; */
+}
+.SScontainer{
+    width: 70vw;
+    display: flex;
+    justify-content:flex-end;
+    float: right;
+    position: relative;
+    margin-right: 6vw;
+    /* border: 2px solid white; */
+}
+.SS{
+    float: right;
+    transform: scale(1.4);
+    margin-top: 20vh;
+    margin-right: 70px;
+    width: 40%;
+    height: 37.878787878787875vh;
+    /* border: 1px solid white; */
+
+}
+.slider {
+    position: relative;
+    border-radius: 25px 25px 25px 25px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+    
+
+}
+.images img {
+    height: 300px;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #FFCAE9 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #FFCAE9;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+
+
+.slider .images img{
+	border-radius: 25px 25px 25px 25px ; 
+	
+}
+.b{
+    margin: 0;
+}
+.waves {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 0.08463541666666667vw);
+    height: 27vh;
+}
+
+.waves .shape-fill {
+    fill: #1F1F1F;
+}
+#secondpage{
+    margin-top: 5vh;
+    height: 95vh;
+    width: 100%;
+}
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.15s ease;
+}
+.cursor img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.image:hover + .cursor {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 1;
+}
+
+.butcontainer {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+    float: left;
+    margin: auto    ;
+}
+
+.cursor2 {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.15s ease;
+}
+.cursor2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.image2:hover + .cursor2 {
+    transform: translate(-50%, +50%) scale(4);
+    opacity: 1;
+}
+.solcontainer {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+    float: right;
+    margin: auto;
+}
+.butsol-container{
+    height: 56.81818181818182vh;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin-top: 12vh;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+}
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.image2 {
+    max-width: 100%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.buttsola-container{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* border: 2px solid black; */
+    float: left;
+}
+#butsoltext{
+    margin-left: 5%;
+    text-align: center;
+    float: left;
+}
+.Icontainer{
+    width: 45%;
+    float: right;
+    padding: 0.625em;
+    margin-right: 5.208333333333333vw;
+    text-align: justify;
+}
+#intro{
+   margin-left: 3.90625vw;
+    font-size: 4.375rem;
+}
+#bf{
+    position: absolute;
+    margin-top: 2.525252525252525vh;
+    height: 6.313131313131313vh;
+}
+
+#bf:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1.7s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+  
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-5deg); }
+    20% { transform: translate(-3px, 0px) rotate(5deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(5deg); }
+    50% { transform: translate(-1px, 2px) rotate(-5deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-5deg); }
+    80% { transform: translate(-1px, -1px) rotate(5deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-5deg); }
+}
+
+#thirdpage{
+    height: 200vh;
+    width: 100%;
+}
+.SCcontainer{
+    margin-left: 5.208333333333333vw;
+}
+/* .spacing{
+    height: 7.5vh;
+} */
+.draggable-slider .inner .slide {
+    width: 30vw;
+    margin-right: 5vw;
+  }
+  .draggable-slider .inner > div:nth-of-type(even) {
+    opacity: .7;
+  }
+  .draggable-slider .inner > div:nth-of-type(odd) {
+    opacity: .7;
+  }
+  .draggable-slider .inner > div:nth-of-type(even).active {
+    opacity: 1;
+  }
+  .draggable-slider .inner > div:nth-of-type(odd).active {
+    opacity: 1;
+  }
+
+.carouwrapper{
+    /* border: 2px solid black; */
+    width: 30vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: visible;
+    margin-left: 5vw;
+    margin-right: auto;
+    position: absolute;
+}
+.carouwrapper #SCsubtext{
+    text-align: center;
+    position: relative;
+}
+.caroutext{
+    text-align: right;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.caroutext button, input[type="button"]{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-align: right;
+    font-size: large;
+    color: #1F1F1F;
+    text-decoration: none;
+}
+
+.caroutext h1{
+    margin-top: 20vh;
+    /* border: 2px solid black; */
+    font-size: 2.5rem;
+}
+.caroutext p{
+    width: 15vw;
+    float: right;
+    /* border: 2px solid black; */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: large;
+}
+.carouimg{
+    width: 27vw;
+    height: 100%;
+    /* border: 2px solid black; */
+    border-radius: 25px 25px 25px 25px;
+}
+#bioimg{
+    background-image: url(images/biology.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#chemimg{
+    background-image: url(images/chemistry.jpg);
+    background-size: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#physimg{
+    background-image: url(images/physics.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.readmore{
+    border: 2px solid black;
+    width: 55vw;
+    height: 100vh;
+    position: relative;
+    float: right;
+    margin-right: 5vw;
+    display: none;
+}
+#biomore{
+    height: 40vh;
+}
