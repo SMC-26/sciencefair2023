@@ -1,43 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/blobby-chug?styles=130691');
+@import url('https://fonts.cdnfonts.com/css/blobby-chug');
+                
+
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins';
+    font-weight: 100;
 }
+
 .content{
     text-align: center;
     color: #ffffff;
     position: absolute;
     width: 100%;
     top: 40%;
-    left: 18.5%;
     transform: translateY(-50%);
     z-index: 2;
     transition: 0.3s;
     justify-content: center;
     align-items: center;
 }
+
 .cont h1{
-    left: 10px;
-    font-family: Questrial;
-    font-weight: bolder;
-    letter-spacing: 13px;
+    font-weight: bold;
+    letter-spacing: 10px;
     font-size: 75px;
     margin: 10px;
     line-height: 80px;
 }
+
 .cont h3{
-    font-family: Calibri Light;
     font-size: 24px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     word-spacing: 3px;
 }
-.contwo h1{
-    margin-left: 25%;
-    font-family: 'Montserrat';
-    text-shadow: 3px 3px rgba(59, 76, 39, 0.459);
 
-}
 .but button{
     color: #fbfcfd;
     margin-right: 20px;
@@ -48,13 +47,16 @@
     outline: none;
     cursor: pointer;
 }
+
 .but{
     transition: 0.3s;
     padding-top: 10px;
 }
+
 .but a{
     text-decoration: none;
 }
+
 span{
     width: 0;
     height: 100%;
@@ -66,31 +68,38 @@ span{
     z-index: -1;
     transition: 0.5s;
 }
+
 .but button:hover span{
     width: 100%;
 }
+
 .but button:hover{
     background-color: #20a77a9e;
     border: none;
 }
+
 .bottom{
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    background-image: url(file:///C:/Users/ADMIN/Desktop/Lithium-1/images/intro.jpg);
+    background-image: url(images/intro.png);
     background-size: cover;
     background-position: center;
     position: absolute;
+    overflow: hidden;
 }
+
 .container {
     padding: 30px;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    text-align:justify;
+    text-align: justify;
 }
+
 .container.show{
     pointer-events: auto;
     opacity: 1;
 }
+
 .modal{
     display: none; 
     position: fixed; 
@@ -101,25 +110,33 @@ span{
     margin-bottom: 20%;
     background-color: #1e3c4590;
 }
+
 .modal-content {
-    background: linear-gradient(rgba(23, 29, 111, 0.819), rgba(64, 123, 168, 0.72)) ;
+    background: linear-gradient(rgba(109, 159, 197, 0.72), rgba(24, 77, 143, 0.819)) ;
     margin: 5% auto 15% auto; 
-    border: 1px solid #fcfcfc;
+    border: 1px solid #0d2a2f;
     width: 80%; 
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
-}   
+}
+   
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
+    from {-webkit-transform:scale(0)}
+ 
     to {-webkit-transform:scale(1)}
+
   }
+
   
   @keyframes zoom {
-    from {transform:scale(0)} 
+    from {transform:scale(0)}
+ 
     to {transform:scale(1)}
+
 }
+
 .close {
     padding-top: 80px;
     position: absolute;
@@ -127,20 +144,24 @@ span{
     font-size: 40px;
     font-weight: bold;
     color: #f1f1f1;
-} 
+}
+ 
 .close:hover,
 .close:focus {
     color: #2f267b;
     cursor: pointer;
-} 
+}
+ 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
+
 p{
     color: rgb(255, 255, 255);
 }
+
 .bubone{
     width: 150px;
     height: 150px;
@@ -149,9 +170,11 @@ p{
     cursor: pointer;
     z-index: 3;
 }
+
 .bubone:hover{
     opacity: 0.5;
 }
+
 .side-bar{
     width: 50px;
     height: 100%;
@@ -162,24 +185,29 @@ p{
     top: 0;
     z-index: 999;
 }
+
 .social-links img{
     margin-left: 12px;
     width: 27px;
     margin-bottom: 25px;
     cursor: pointer;
 }
+
 .social-links img:hover{
     background-color: rgb(255, 225, 192);
     border-radius: 50%;
 }
+
 .social-links{
     width: 20px;
     position: absolute;
 }
+
 .social{
     text-align: center;
     padding-top: 250px;
 }
+
 .carousel-control-prev{
   width: 40px;
   height: 40px;
@@ -190,6 +218,7 @@ p{
   border-radius: 100%;
   opacity: 1;
 }
+
 .carousel-control-next{
     background-color: rgba(83, 116, 143, 0.95);
     width: 40px;
@@ -200,9 +229,11 @@ p{
     border-radius: 100%;
     opacity: 1;
 }
+
 .carousel-control-prev:hover{
     opacity: 0.7;
-} 
+}
+ 
 .boat{
     top: 13%;
     margin-left: 160px;
@@ -213,6 +244,7 @@ p{
     position: absolute;
     cursor: pointer;
 }
+
 .boattwo{
     top: 15%;
     margin-left: 840px;
@@ -223,16 +255,20 @@ p{
     position: absolute;
     cursor: pointer;
 }
+
 .boattwo:hover{
     opacity: 0.7;
 }
+
 .boat:hover{
     opacity: 0.7;
 }
+
 .bubbles img{
     width: 200px;
     animation: bubble 9s linear infinite;
 }
+
 .bubbles{
     opacity: 0.5;
     width: 100%;
@@ -241,96 +277,71 @@ p{
     position: fixed;
     z-index: 3;
 }
+
 @keyframes bubble{
     0%{
         transform: translateY(0);
         opacity: 1;
     }
+
     50%{
         opacity: 1;
     }
+
     70%{
         opacity: 1;
     }
+
     100%{
         transform: translateY(-150vh);
         opacity: 1;
     }
+
 }
+
 .bubbles img:nth-child(1){
     animation-delay: 0s;
 }
+
 .bubbles img:nth-child(2){
     animation-delay: 1s;
 }
+
 .bubbles img:nth-child(3){
     animation-delay: 0s;
 }
+
 .bubbles img:nth-child(4){
     animation-delay: 3s;
 }
+
 .bubbles img:nth-child(5){
     animation-delay: 1.5s;
 }
+
 .bubbles img:nth-child(6){
     animation-delay: 2s;
 }
-.kelp img{
-    width: 110px;
-}
-.kelp .one{
-    margin-left: 570px;
-    top: 355px;
-    position: absolute;
-    transform: rotate(-15deg);
-    align-items: center;
-    margin-top: 85px;
-    z-index: 1;
 
-}
-.kelp .two{
-    margin-left: 170px;
-    top: 355px;
-    position: absolute;
-    transform: rotate(-15deg);
-    align-items: center;
-    margin-top: 85px;
-}
-.kelp .three{
-    margin-left: 200px;
-    top: 355px;
-    position: absolute;
-    transform: rotate(15deg);
-    align-items: center;
-    margin-top: 85px;
-}
-.kelp .four{
-    margin-left: 570px;
-    top: 355px;
-    position: absolute;
-    transform: rotate(15deg);
-    align-items: center;
-    margin-top: 85px;
-}
-.diver img{
-    width: 100px;
-}
-.diver{
-    margin-left: 770px;
-    margin-top: 275px;
+.corals {
+    width: 100%;
+    margin: 0px;
+    top: -121px;
     position: absolute;
 }
+
 .treasure{
-    width: 160px;
-    margin-left: 640px;
-    top: 430px;
+    width: 25%;
+    margin-left: 724px;
+    margin-top: 129px;
     position: absolute;
-    transform: rotate(10deg);
     cursor: pointer;
 }
+
 .treasure:hover{
     opacity: 0.7;
 }
+
 .bubtwo{
     width: 150px;
     height: 150px;
@@ -339,22 +350,28 @@ p{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .bubtwo:hover{
     opacity: 0.5;
 }
+
 .container h1{
-    font-family: Century Gothic;
-    color: #ffffff;
+    color: #0d2a2f;
     text-align: center;
     padding-bottom: 30px;
 }
+
 .container p{
-    font-family: Century Gothic;
+    color: #0d2a2f;
+    font-family: 'Poppins';
+    font-weight: 100;
     padding-bottom: 10px;
 }
+
 .sign img{
     width: 150px;
 }
+
 .sign{
     margin-left: 830px;
     top: 360px;
@@ -363,6 +380,7 @@ p{
     align-items: center;
     margin-top: 85px;
 }
+
 .inside p{
     font-family: 'BLOBBY CHUG', sans-serif;
     text-shadow: 2px 2px rgb(63, 80, 109);
@@ -372,8 +390,8 @@ p{
     left: 13%;
     transform: rotate(7deg);
 }
+
 .biotext h1{
-    font-family: Comic Sans MS;
     position: absolute;
     margin-left: 880px;
     margin-top: -110px;
@@ -389,11 +407,12 @@ p{
     transition: 0.3s ease-out;
 }
 
+
 .biotext h1:hover{
     background-position: -100%;
 }
+
 .chemtext h1{
-    font-family: Comic Sans MS;
     position: absolute;
     margin-left: 215px;
     margin-top: -120px;
@@ -408,21 +427,26 @@ p{
     -webkit-text-fill-color: transparent;
     transition: 0.3s ease-out;
 }
+
 .chemtext h1:hover{
     background-position: -100%;
 }
+
 ::-webkit-scrollbar{
     width: 9px;
 }
+
 ::-webkit-scrollbar-track {
     background: #3f6671dc; 
     
 }
+
 ::-webkit-scrollbar-thumb {
     background: rgb(4, 46, 52); 
     padding-left: 5px;
     border-radius: 15px;
 }
+
 .bubthree{
     width: 170px;
     height: 170px;
@@ -430,11 +454,12 @@ p{
     margin-left: 450px;
     position: absolute;
 }
+
 .bubthree:hover{
     opacity: 0.5;
 }
+
 .physicstext h1{
-    font-family: Comic Sans MS;
     position: absolute;
     margin-left: 465px;
     font-size: 32px;
@@ -449,9 +474,11 @@ p{
     -webkit-text-fill-color: transparent;
     transition: 0.3s ease-out;
 }
+
 .physicstext h1:hover{
     background-position: -100%;
 }
+
 .pic{
     display: inline-block;
     width: 170px;
@@ -460,45 +487,53 @@ p{
     margin-left: 100px;
     z-index: 3;
 }
+
 .pic:hover{
     opacity: 0.5;
 }
 
+
 .science{
     width: 100%;
     height: 105vh;
-    background-image: url(file:///C:/Users/ADMIN/Desktop/Lithium-1/images/sci.jpg);
+    background-image: url(images/sci.jpg);
     background-position: center;
     background-size: cover;
 
-}   
+}
+
 .intro h1{
-    font-family: Lucida Handwriting;
+    font-weight: bold;
     text-align: center;
-    padding-bottom: 10px;
+    font-size: 10em;
+    padding-bottom: 0px;
     color: #1c5c68;
     margin-top: 45px;
 }
+
 .sci-text{
     text-align: center;
     padding-top: 30px;
     margin-right: 30px;
     margin-top: 600px;
     font-size: 40px;
-    font-family: Lucida Handwriting;
+    font-weight: bold;
     color: white;
     z-index: 3;
 }
+
 .research{
     width: 100%;
     height: 100vh;
-    background-image: url(file:///C:/Users/ADMIN/Desktop/Lithium-1/images/waterthree.jpg);
+    background-image: url(images/waterthree.jpg);
     background-position: center;
     background-size: cover;
 }
+
 .re-text h1{
     text-align: center;
     padding-top: 30px;
-    font-family: Lucida Handwriting;
+    font-weight: bold;
     color: white;
 }
+
