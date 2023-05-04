@@ -1,60 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    scroll-behavior: smooth;
-}
-.hero{
-    width: 100%;
-    height: 100vh;
-    background-image: url(media/kelp.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-    transition: 0.5s;
-}
-.logo{
-    top: 0;
-    left: 0;
-    width: 70px;
-    cursor: pointer;
-}
-.navbar{
-    width: 90%;
-    margin: auto;
-    margin-right: 0;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    transition: 0.5s;
 }
 .content{
-    color: #fbfcfd;
+    text-align: center;
+    color: #ffffff;
     position: absolute;
     top: 40%;
-    left: 17%;
+    left: 18.5%;
     transform: translateY(-50%);
     z-index: 2;
-    text-align: center;
     transition: 0.3s;
+    justify-content: center;
+    align-items: center;
 }
-.content h1{
-    font-family: 'Montserrat';
-    text-shadow: 3px 3px rgba(138, 165, 107, 0.434);
-    letter-spacing: 7px;
-    font-size: 80px;
+.cont h1{
+    left: 40px;
+    font-family: Questrial;
+    font-weight: bolder;
+    letter-spacing: 13px;
+    font-size: 75px;
     margin: 10px;
     line-height: 80px;
 }
-.content h3{
-    font-size: 20px;
+.cont h3{
+    font-family: Calibri Light;
+    font-size: 24px;
     letter-spacing: 3px;
     word-spacing: 3px;
 }
-button{
+.contwo h1{
+    margin-left: 25%;
+    font-family: 'Montserrat';
+    text-shadow: 3px 3px rgba(59, 76, 39, 0.459);
+
+}
+.but button{
     color: #fbfcfd;
+    margin-right: 20px;
     padding: 10px 25px;
     background: transparent;
     border: 1px solid #fff;
@@ -64,7 +49,7 @@ button{
 }
 .but{
     transition: 0.3s;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .but a{
     text-decoration: none;
@@ -80,28 +65,118 @@ span{
     z-index: -1;
     transition: 0.5s;
 }
-button:hover span{
+.but button:hover span{
     width: 100%;
 }
-button:hover{
-    background-color: #82d05579;
+.but button:hover{
+    background-color: #20a77a9e;
     border: none;
+}
+.bottom{
+    width: 100%;
+    height: 100vh;
+    background-image: url(file:///C:/Users/ADMIN/Desktop/Lithium-1/images/underwater.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.container {
+    padding: 30px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align:justify;
+}
+.container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    width: 100%; 
+    height: 100%; 
+    padding-top: 30px;
+    background-color: #1e3c4590;
+}
+.modal-content {
+    background: linear-gradient(rgba(23, 29, 111, 0.819), rgba(64, 123, 168, 0.72)) ;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #fcfcfc;
+    width: 80%; 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}   
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+.close {
+    padding-top: 50px;
+    position: absolute;
+    padding-left: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+} 
+.close:hover,
+.close:focus {
+    color: #2f267b;
+    cursor: pointer;
+} 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+p{
+    color: rgb(255, 255, 255);
+}
+.bubone{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.bubone:hover{
+    opacity: 0.5;
+}
+.logo{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 35px;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(rgba(3, 46, 51, 0.937), rgba(62, 114, 114, 0.796));
+    display: fixed; 
+    z-index: 9999;    
 }
 .side-bar{
     width: 0;
     height: 100%;
-    background: linear-gradient(#2986987a, #c1de6b72);
-    position: fixed;
-    z-index: 1;
+    background: linear-gradient(#062f45bb, #27817872);
+    position: fixed;                                                                                                                                
+    z-index: 3;
     right: 0;
     top: 0;
     overflow-x: hidden;
     transition: 0.5s;
 }
 .social-links img{
-    padding-left: 30px;
-    width: 35px;
-    margin: 5px;
+    margin-left: 40px;
+    width: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .social-links{
@@ -113,19 +188,17 @@ button:hover{
     padding-top: 250px;
 }
 .menu{
-  height: 100%;
-  position: relative;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.meu{
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 5px;
     width: 30px;
+    height: 25px;
+    margin-top: 6px;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 0;
+}
+.menu:hover{
+    opacity: 0.3;
 }
 .closebtn{
   position: absolute;
@@ -133,73 +206,302 @@ button:hover{
   left: 15px;
   font-size: 30px;
   color: #fafffb;
-  text-decoration: none;
+  text-decoration: none;    
 }
 .buto .closebtn:hover{
     color: #f1f1f196;
 }
-.fish-container{
-    float: right;
-    position: fixed;
-    height: 100%;
-    width: 100%;
+.nav-side{
+    margin: auto;
+    margin-right: 15px;
     display: flex;
+    justify-content: right;
+    right: 0;
 }
-.fish-container img{
-    position: absolute;
+.navbar-item{
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    cursor: pointer; 
 }
-.fish1{
-    top: 10%;
-    right: -10%;
-    float: right;
+.carousel-control-prev{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(83, 116, 143, 0.95);
+  top: 47%;
+  float: left;
+  margin-left: 20px;
+  border-radius: 100%;
+  opacity: 1;
+}
+.carousel-control-next{
+    background-color: rgba(83, 116, 143, 0.95);
     width: 40px;
-    transform: translateY(-50%);
-    animation: fish1 10s linear infinite;
-}
-.fish2{
-    top: 40%;
-    right: -10%;
+    height: 40px;
+    top: 47%;
     float: right;
-    width: 60px;
-    transform: translateY(-50%);
-    animation: fish2 12s linear infinite;
+    margin-right: 25px;
+    border-radius: 100%;
+    opacity: 1;
 }
-@keyframes fish1{
+.carousel-control-next:hover,
+.carousel-control-prev:hover{
+    opacity: 0.7;
+} 
+.boat{
+    top: 13%;
+    margin-left: 270px;
+    transform: rotate(-10deg);
+    width: 460px;
+    height: 280px;
+    position: absolute;
+    cursor: pointer;
+}
+.boattwo{
+    top: 15%;
+    margin-left: 840px;
+    transform: rotate(10deg);
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    cursor: pointer;
+}
+.boattwo:hover{
+    opacity: 0.7;
+}
+.boat:hover{
+    opacity: 0.7;
+}
+.bubbles img{
+    width: 200px;
+    animation: bubble 9s linear infinite;
+}
+.bubbles{
+    opacity: 0.5;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 3;
+}
+@keyframes bubble{
     0%{
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
     50%{
-        opacity: 0.5s;
-    }
-    75%{
-        opacity: 0.5s;
-    }
-    100%{
-        transform: translateX(-250vh);
         opacity: 1;
     }
-}
-@keyframes fish2{
-    0%{
-        transform: translateX(0);
+    70%{
         opacity: 1;
     }
     100%{
-        transform: translateX(-350vh);
+        transform: translateY(-150vh);
         opacity: 1;
     }
 }
-.bod{
-    width: 100%;
-    height: 100vh;
-    background-image: url(media/underwater.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    line-height: 80%;
+.bubbles img:nth-child(1){
+    animation-delay: 0s;
 }
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 0s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 1.5s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 2s;
+}
+.kelp img{
+    width: 110px;
+}
+.kelp .one{
+    margin-left: 570px;
+    top: 355px;
+    position: absolute;
+    transform: rotate(-15deg);
+    align-items: center;
+    margin-top: 85px;
+    z-index: 1;
 
-
-
+}
+.kelp .two{
+    margin-left: 170px;
+    top: 355px;
+    position: absolute;
+    transform: rotate(-15deg);
+    align-items: center;
+    margin-top: 85px;
+}
+.kelp .three{
+    margin-left: 200px;
+    top: 355px;
+    position: absolute;
+    transform: rotate(15deg);
+    align-items: center;
+    margin-top: 85px;
+}
+.kelp .four{
+    margin-left: 570px;
+    top: 355px;
+    position: absolute;
+    transform: rotate(15deg);
+    align-items: center;
+    margin-top: 85px;
+}
+.diver img{
+    width: 100px;
+}
+.diver{
+    margin-left: 700px;
+    top: 138px;
+    position: absolute;
+}
+.treasure{
+    width: 160px;
+    margin-left: 640px;
+    top: 430px;
+    position: absolute;
+    transform: rotate(10deg);
+    cursor: pointer;
+}
+.treasure:hover{
+    opacity: 0.7;
+}
+.bubtwo{
+    width: 120px;
+    height: 120px;
+    margin-left: 870px;
+    cursor: pointer;
+    margin-top: 70px;
+    opacity: 0.8;
+}
+.bubtwo:hover{
+    opacity: 0.5;
+}
+.container h1{
+    font-family: Century Gothic;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container p{
+    font-family: Century Gothic;
+    padding-bottom: 10px;
+}
+.sign img{
+    width: 150px;
+}
+.sign{
+    margin-left: 830px;
+    top: 360px;
+    position: absolute;
+    transform: rotate(-25deg);
+    align-items: center;
+    margin-top: 85px;
+}
+.inside p{
+    font-family: Century Gothic;
+    text-shadow: 2px 2px rgb(63, 80, 109);
+    position: absolute;
+    top: 14%;
+    left: 13%;
+    transform: rotate(7deg);
+}
+.biotext h1{
+    font-family: Comic Sans MS;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 110px;
+    top: 20%;
+    transform: rotate(-7deg);
+    cursor: pointer;
+    font-weight: 300;
+    text-shadow: 2px 2px rgb(117, 165, 189);
+    background: linear-gradient(to right, rgb(255, 255, 255) , #b1d6d4 , #1c5c68);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease-out;
+}
+.chemtext h1{
+    font-family: Comic Sans MS;
+    position: absolute;
+    font-size: 35px;
+    margin-left: 880px;
+    top: 50%;
+    transform: rotate(-5deg);
+    cursor: pointer;
+    font-weight: 300;
+    text-shadow: 2px 2px rgb(208, 141, 172);
+    background: linear-gradient(to right, rgb(255, 255, 255) , #d6b1cd , #a80c62);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease-out;
+}
+.biotext h1:hover{
+    background-position: -100%;
+}
+.chemtext h1:hover{
+    background-position: -100%;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #3f6671dc; 
     
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(4, 46, 52); 
+    padding-left: 5px;
+    width: 10px;
+    border-radius: 15px;
+}
+.bubthree{
+    width: 140px;
+    height: 140px;
+    margin-left: 400px;
+    margin-top: 400px;
+    position: absolute;
+}
+.bubthree:hover{
+    opacity: 0.5;
+}
+.physicstext h1{
+    font-family: Comic Sans MS;
+    position: absolute;
+    margin-left: 407px;
+    margin-top: 450px;
+    font-size: 27px;
+    transform: rotate(5deg);
+    cursor: pointer;
+    text-shadow: 2px 2px rgb(224, 213, 111);
+    font-weight: 300;
+    background: linear-gradient(to right, rgb(255, 255, 255) , #d1d188 , #c3b40f);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease-out;
+}
+.physicstext h1:hover{
+    background-position: -100%;
+}
+.pic{
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-left: 100px;
+    z-index: 3;
+}
+.pic:hover{
+    opacity: 0.5;
+}

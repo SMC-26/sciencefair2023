@@ -129,7 +129,7 @@ article {
   height: 378.67px;
   width:  213.33px;
   display: inline-block;
-  margin: 50px;
+  margin: 5vw;
 }
 
 #faceimage1a {
@@ -188,3 +188,7 @@ article {
   object-fit: cover;
 }
 /* qkvyj jahup tylnt ecevm lxljx romhw meybw ejtji jcvse ooite efhlq vrxtg zskkc dhsnc aasxp zafas qoxjx kunnj wuxja rbepa gxjug ssufo wemsm txlts azjcw cenmf oympf drnqy jmwjh qtlbq ttvkg xrjxh hyaeh jotlk todoi isuks ws */
+
+#authorspart {
+  font-family: Poppins, sans-serif;
+}

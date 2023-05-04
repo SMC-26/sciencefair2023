@@ -85,6 +85,8 @@ header {
   z-index: 997;
   transition: all 0.5s;
   background: url(../img/header-1.jpg) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header div p {
@@ -320,6 +322,8 @@ header div p {
   width: 100%;
   overflow: hidden;
   background: linear-gradient(0deg, rgba(156, 115, 82, 0.95), rgba(142, 113, 82, 0.95)), url(../img/concepts-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   padding: 0;
 }
@@ -333,6 +337,8 @@ header div p {
   position: relative;
   height: 60vh;
   padding-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #hero h2 {
