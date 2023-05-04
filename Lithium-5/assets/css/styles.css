@@ -21,15 +21,6 @@ body {
   border-bottom: 5px solid #fff;
 }
 
-.dark-mode .services .icon-box {
-  padding: 60px 30px;
-  transition: all ease-in-out 0.3s;
-  background: #1e1e1e;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
-  border-radius: 18px;
-  border-bottom: 5px solid #1e1e1e;
-}
-
 .services .icon-box .icon {
   width: 64px;
   height: 64px;
@@ -43,19 +34,6 @@ body {
   color: #fff;
 }
 
-.dark-mode .services .icon-box .icon {
-  width: 64px;
-  height: 64px;
-  background: white;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transition: ease-in-out 0.3s;
-  color: #1e1e1e;
-}
-
 .services .icon-box .icon {
   width: 64px;
   height: 64px;
@@ -67,19 +45,6 @@ body {
   margin-bottom: 20px;
   transition: ease-in-out 0.3s;
   color: #fff;
-}
-
-.dark-mode .services .icon-box .icon {
-  width: 64px;
-  height: 64px;
-  background: white;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transition: ease-in-out 0.3s;
-  color: #1e1e1e;
 }
 
 .services .icon-box .icon i {
@@ -97,11 +62,6 @@ body {
   transition: ease-in-out 0.3s;
 }
 
-.dark-mode .services .icon-box h4 a {
-  color: white;
-  transition: ease-in-out 0.3s;
-}
-
 .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
@@ -113,18 +73,9 @@ body {
   border-color: #1e1e1e;
 }
 
-.dark-mode .services .icon-box:hover {
-  transform: translateY(-10px);
-  border-color: white;
-}
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-
-.section-bg {
-  background-color: #8fffd6;
-}
 
 .section-title {
   padding-bottom: 30px;
@@ -155,17 +106,6 @@ body {
   left: 0;
 }
 
-.dark-mode .section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 75px;
-  height: 3px;
-  background: white;
-  bottom: 0;
-  left: 0;
-}
-
 .section-title p {
   margin-top: 10px;
   margin-bottom: 0;
@@ -175,25 +115,11 @@ body {
   line-height: 150%;
 }
 
-.dark-mode .section-title p {
-  margin-bottom: 0;
-  color: white;
-  font-size: 15px;
-}
-
-#bottom {
-  background-color: white;
-}
-
-.dark-mode #bottom {
-  background-color: #1e1e1e;
-}
-
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
 
-#team-1 {
+#team {
   margin-top: 50px;
 }
 
@@ -314,25 +240,21 @@ a h4{
 
 .placeholder1{
   float: right;
-  width: 300px;
+  width: 325px;
   height: auto;
-  padding: 10px 0px 10px 10px;
+  padding: 15px 0px 15px 15px;
 }
 
 .placeholder2{
   float: left;
-  width: 300px;
+  width: 325px;
   height: auto;
-  padding: 10px 10px 10px 0px;
-}
-
-.placeholder1, .placeholder2 {
-  border-radius: 25px;
+  padding: 15px 15px 15px 0px;
 }
 
 /* sets up image in header */
 header {
-  background-image: url(../../media/banner.jpg);
+  background-image: url(../../media/banner2.jpg);
   background-position: center center;
   margin-top: 50px;
   height: 100vh;
@@ -362,27 +284,6 @@ header h1 {
 
 #services {
   margin-top: 10px;
-}
-
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
 }
 
 html {
@@ -455,4 +356,24 @@ color: white;
 
 .socmed { 
   float: right;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4e4e4e; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
 }
