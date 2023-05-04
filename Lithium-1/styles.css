@@ -502,3 +502,12 @@ p{
 .pic:hover{
     opacity: 0.5;
 }
+span.bio{
+  color: limegreen;
+}
+span.chem{
+  color: yellow;
+}
+span.phys{
+  color: darkblue;
+}
