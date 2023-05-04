@@ -364,6 +364,11 @@ body {
   padding-bottom: 30px;
 }
 
+.section-title p{
+  padding: 5px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
 .section-title h2 {
   margin-top: 10px;
   font-size: 32px;
