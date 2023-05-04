@@ -7,8 +7,12 @@
     background-position: center;
     background-position-y:30px;
 }
+body{
+    margin:0;
+    padding:0;
+}
 #healingwonders_h1{
-    font-size:70px;
+    font-size:65px;
     margin-left:auto;
     margin-right:auto;
     font-family: "Minecraft", sans-serif;
@@ -69,3 +73,50 @@ h2{
 hr{
     border-top:2px solid rgb(106, 162, 207);
 }
+.filter-btn.active {
+    background: var(--primary);
+    color: var(--white);
+}
+.container-tab-mode{
+    overflow: hidden;
+    height:300px;
+    position: relative;
+    margin:0 auto;
+}
+.tab-item.tab_select {
+    transform: translateY(0);
+    visibility:visible;
+    transition: transform 0.5s ease-in-out;
+    background: var(--white-light);
+    animation: feadIn 0.6s ease-in-out;
+}
+.tab-item {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0rem 3rem;
+    transform: translateY(100%);
+    background: var(--white-light);
+    transition: transform 0.5s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    place-items: start start;
+}
+@media only screen and (max-width: 768px) {
+    *, html, body, .row {
+       margin-left:0 !important;
+       margin-right:0 !important;
+       padding-left:0 !important;
+       padding-right:0 !important;
+    }
+    .card-text{
+        font-size:10px;
+    }
+    .col-sm{
+        width:8.12rem !important;
+    }
+    #chemistry, #physics{
+        margin-left:2px !important;
+    }
+ }
