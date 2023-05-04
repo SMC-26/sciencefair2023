@@ -23,7 +23,6 @@ const midnightbg = document.getElementById("bg-wrapper-midnight");
 var noonopacity = 1;
 var sunsetopacity = 0;
 var midnightopacity = 0;
-var loader = document.getElementById("preloader");
 
 const container1 = document.getElementById("container1");
 const buttons = document.querySelectorAll(".timebutton");
@@ -31,90 +30,9 @@ const btndiv = document.querySelectorAll(".timebuttondiv");
 const interactivebardiv = document.getElementById("interactive-bar");
 var darkmodergb = 0;
 
-const sunComponents = document.getElementById("sun-components");
-var posX = sunComponents.offsetLeft;
-var posY = sunComponents.offsetLeft;
-var sunopacity = 1;
-
-function sunToNorth() {
-    let targetX = 650;
-    let targetY = 0;
-    var stepX = (targetX - posX) / 30;
-    var stepY = (targetY - posY) / 30;
-
-    function move() {
-        posX += stepX;
-        posY += stepY;
-        sunComponents.style.left = posX + "px";
-        sunComponents.style.top = posY + "px";
-        if ((stepX > 0 && posX >= targetX) || (stepX < 0 && posX <= targetX) ||
-            (stepY > 0 && posY >= targetY) || (stepY < 0 && posY <= targetY)) {
-          return;
-        }
-        requestAnimationFrame(move);
-      }
-      move();
-}
-function sunToSouthWest() {
-    let targetX = 25;
-    let targetY = 500;
-    var stepX = (targetX - posX) / 30;
-    var stepY = (targetY - posY) / 30;
-  
-    function move() {
-      posX += stepX;
-      posY += stepY;
-      sunComponents.style.left = posX + "px";
-      sunComponents.style.top = posY + "px";
-      if ((stepX > 0 && posX >= targetX) || (stepX < 0 && posX <= targetX) ||
-          (stepY > 0 && posY >= targetY) || (stepY < 0 && posY <= targetY)) {
-        return;
-      }
-      requestAnimationFrame(move);
-    }
-    move();
-}
-function sunToSouthEast() {
-    if(posX !== 650 && posY !== 0){
-        sunToNorth();
-        return;
-    } 
-    else {
-        let targetX = 1000;
-        let targetY = 800;
-        var stepX = (targetX - posX) / 30;
-        var stepY = (targetY - posY) / 30;
-      
-        function move() {
-          posX += stepX;
-          posY += stepY;
-          sunComponents.style.left = posX + "px";
-          sunComponents.style.top = posY + "px";
-          if ((stepX > 0 && posX >= targetX) || (stepX < 0 && posX <= targetX) ||
-              (stepY > 0 && posY >= targetY) || (stepY < 0 && posY <= targetY)) {
-            return;
-          }
-          requestAnimationFrame(move);
-        }
-        move();    
-    }
-}
-function sunFadeOut() {
-    let id = null;
-
-    id = setInterval(sunfadeout, 6);
-    function sunfadeout() {
-        if (sunopa>=1){
-            clearInterval(id);
-        } else {
-            sunopacity = sunopacity+0.05;
-            sunComponents.style.opacity = sunopacity;
-        }
-    }
-
-}
-
 function setsunrise() {
+    removedarkmode();
+
     if (midnightopacity !== 0){
         removemidnight();
     } 
@@ -129,8 +47,6 @@ function setsunrise() {
     noonbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     sunsetbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     midnightbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
-
-    sunToSouthWest();
 }
 function setnoon() {
     removedarkmode();
@@ -149,8 +65,6 @@ function setnoon() {
     noonbtn.style.backgroundColor = "black";
     sunsetbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     midnightbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
-
-    sunToNorth();
 }
 function setsunset() {  
     removedarkmode();
@@ -166,8 +80,6 @@ function setsunset() {
     noonbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     sunsetbtn.style.backgroundColor = "black";
     midnightbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
-
-    sunToSouthEast();
 }
 function setmidnight() {
     if (midnightopacity !== 1){
@@ -176,9 +88,6 @@ function setmidnight() {
 
     if (darkmodergb < 255){
         adddarkmode();
-    }
-    if (sunopacity !== 0){
-        sunFadeOut();
     }
 
     sunrisebtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
