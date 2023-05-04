@@ -22,6 +22,8 @@ header{
 	height: 100vh;
 	background-position: 0 -100vh;
 	background-size: cover;
+	animation-name: fadein;
+	animation-duration: 2s;
 }
 hgroup{
 	padding-top: 40vh;
@@ -68,7 +70,9 @@ section{
 	opacity: 0.5;
 }
 .local:hover{
-	opacity: 1;
+	animation-name: fadeto;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
 }
 .local ul{
 	margin: 0 auto;
@@ -155,4 +159,12 @@ footer p{
 .ml16 .letter{
     display: inline-block;
     line-height: 1em;
+}
+@keyframes fadein{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+@keyframes fadeto{
+	from{opacity: 0.5}
+	to{opacity: 1}
 }
