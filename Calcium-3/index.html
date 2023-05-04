@@ -4,55 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://smc-26.github.io/sciencefair2023/js/bootstrap.js"></script>
-    <link href="https://smc-26.github.io/sciencefair2023/css/bootstrap.css" rel="stylesheet">
-    <script src="https://smc-26.github.io/sciencefair2023/js/util.js"></script>
+    <script src="https://smc-26.github.io/sciencefair2023/x-assets/js/bootstrap.js"></script>
+    <script src="https://smc-26.github.io/sciencefair2023/x-assets/js/util.js"></script>
+    <link href="styles/style.css" rel="stylesheet">
     <title>Sticking Power and Adaptability: Gecko-Inspired Adhesive Mechanisms</title>
 </head>
 <body>
     <script>addNavbar();</script>
-    
-    <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="old/chameleon.jpg" class="d-block w-100" style="height: 720px;">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/chemistry.jpg" class="d-block w-100" style="height: 720px;">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/physics.jpg" class="d-block w-100" style="height: 720px;">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <header>
+        <div class="carousel-container container-fluid">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><!-- each of this div is a slide-->
+                    <img src="images/chameleon.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/chemistry.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/biology.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="images/physics.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div><!-- carousel contents end-->
+            </div>
+        </div>
+        <h1 class="display-1">Sticking Power and Adaptability: Gecko-Inspired Adhesive Mechanisms</h1>
+    </header>
+    <main class=""><!--contents container-->
+        <p class="text-center py-1 bg-info border bg-gradient">
+            <button class="btn btn-primary rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#physicstxt" aria-expanded="false" aria-controls="collapseExample">
+            Physics
+            </button>
+            <button class="btn btn-primary rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#chemtxt" aria-expanded="false" aria-controls="collapseExample">
+            Chemistry
+            </button>
+            <button class="btn btn-primary rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#biotxt" aria-expanded="false" aria-controls="collapseExample">
+            Biology
+            </button>
+            <button class="btn btn-primary rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#papertxt" aria-expanded="false" aria-controls="collapseExample">
+            Download Research Paper
+            <!-- please upload the PDF file in either google drive or one drive, NOT github. Then, link it here-->
+            </button>
+            <button class="btn btn-primary rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#peopletxt" aria-expanded="false" aria-controls="collapseExample">
+            Researchers
+            </button>
+            <button class="btn btn-primary rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#reftxt" aria-expanded="false" aria-controls="collapseExample">
+            References
+            </button>
+        </p>
 
-<div class="brief-description-container">
-</div>
-
+        <div class="content-container"><!-- container for all the content-->
+            <div class="collapse px-5" id="physicstxt"><!--physics text container-->
+                <div class="card card-body">
+                  Physics Phyiscs Physics Phyiscs Physics Phyiscs Physics Phyiscs Physics Phyiscs Physics Phyiscs Physics Phyiscs 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Physics Phyiscs Physics Phyiscs Physics Phyiscs Physics Phyiscs Physics Phyiscs 
+                </div>
+            </div>
+            <div class="collapse px-5" id="chemtxt"><!--physics text container-->
+                <div class="card card-body">
+                  Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry  
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry Chemistry  
+                </div>
+            </div>
+            <div class="collapse px-5" id="biotxt"><!--biology text container-->
+                <div class="card card-body">
+                  Biology Biology Biology Biology Biology Biology Biology Biology Biology Biology Biology Biology Biology Biology   
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Biology Biology Biology Biology Biology Biology Biology Biology Biology Biology  
+                </div>
+            </div>
+            <div class="collapse px-5" id="papertxt"><!--research paper text container-->
+                <div class="card card-body">
+                  Download Research Pape rDownload Research Paper Download Research Paper Download Research Paper   
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Download Research Paper  Download Research Paper Download Research Paper
+                </div>
+            </div>
+            <div class="collapse px-5" id="peopletxt"><!--researchers text container-->
+                <div class="card card-body">
+                  Researchers Researchers Researchers Researchers Researchers Researchers Researchers Researchers Researchers 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Researchers Researchers Researchers Researchers Researchers Researchers 
+                </div>
+            </div>
+            <div class="collapse px-5" id="reftxt"><!--references text container-->
+                <div class="card card-body">
+                  References References References References References References References References References References 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. References References References References References References References 
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
