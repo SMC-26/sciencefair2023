@@ -564,3 +564,18 @@ section .card .image img{
   opacity: 1;
   color: #7d2ae8;
 }
+
+/* download */
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);a:link{text-decoration:none}
+.vn a{
+  background-color:#87ceeb;
+  position:relative;
+  margin:30px 5px;
+  padding:20px 20px 20px 20px;
+  color:#fff;
+  transition:all 0.4s ease;
+  border-radius:3px;
+}
+.vn a:hover{ 
+  background:#7f8c8d
+}
