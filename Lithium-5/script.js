@@ -24,18 +24,3 @@ function showTopic(name) {
     main_desc.innerHTML = document.getElementById(name + "-desc").innerHTML;
     main_text.innerHTML = document.getElementById(name).innerHTML;
 }
-
-function themeSwitch(event) {
-  var element = document.body;
-  var theme = document.getElementById("theme-switcher");
-  element.classList.toggle("dark-mode");
-  if (theme.classList.contains("light")){
-    theme.classList.remove("light");
-    theme.classList.add("dark");
-    theme.src = "media/dark-light_theme2.svg";
-  } else {
-    theme.classList.remove("dark");
-    theme.classList.add("light");
-    theme.src = "media/dark-light_theme1.svg";
-  }
-}
