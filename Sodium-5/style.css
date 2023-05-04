@@ -30,7 +30,7 @@ h6 {
 
 #header {
   margin-top: 2.5%;
-  background: #B0ABCB;
+  background: #4F5257;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -222,7 +222,7 @@ section {
 }
 
 #Intro {
-  background-color: #F3B1CD;
+  background-color: #F8F7F2;
 }
 
 .Intro .content h3 {
@@ -270,7 +270,7 @@ section {
   width: 16px;
   margin: 0 8px;
   border-radius: 50%;
-  background-color: #EBE084;
+  background-color: #F7948F;
   transition: background-color 0.3s ease;
   cursor: pointer;
   display: inline-block;
@@ -278,7 +278,7 @@ section {
 
 #main {
 
-  background-color: #FFFFFF;
+  background-color: #F8F7F2;
 
 }
 
@@ -378,7 +378,7 @@ section {
 }
 
 #footer .socials a:hover {
-  background: #E6B693;
+  background: #F7948F;
   color: #85364B;
   text-decoration: none;
 }
