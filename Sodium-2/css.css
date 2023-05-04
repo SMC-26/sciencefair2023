@@ -162,6 +162,9 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.FutVid{
+    margin-left: 20px;
+}
 .Future{
     height: 100%;
     background-image: url(EngiBack.png);
