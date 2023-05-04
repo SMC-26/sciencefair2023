@@ -83,4 +83,17 @@ dots.forEach((dot, index) => {
   dot.addEventListener("click", () => handleDotClick(index + 1));
 });
 
+var coll = document.getElementsByClassName("more-btn");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var topicContent = this.nextElementSibling;
+    if (topicContent.style.maxHeight){
+      topicContent.style.maxHeight = null;
+    } else {
+      topicContent.style.maxHeight = topicContent.scrollHeight + "px";
+    } 
+  });
+}
