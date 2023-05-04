@@ -225,7 +225,7 @@ a h4{
 
 #brief {
   display: block;
-  height: 40px;
+  height: 45px;
 }
 
 #concept {
@@ -235,7 +235,7 @@ a h4{
 
 #application {
   display: block;
-  height: 10px;
+  height: 15px;
 }
 
 .placeholder1{
@@ -397,4 +397,27 @@ color: white;
 @media only screen and (max-width: 480px) {
   header h1 { font-size:30px; padding: 15px; }
   .mx-auto { max-width:95%; }
+}
+
+.sec1 {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
+.sec1 p{
+  color: white !important;
+}
+
+.sec1 h2{
+  padding-top: 10px;
+}
+
+.sec1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 3px;
+  background: white !important;
+  left: 0;
 }
