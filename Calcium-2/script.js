@@ -278,7 +278,7 @@ function lensclear() {
     if (lensopacity !== 0){
         id = setInterval(makeclear, 4);
         function makeclear() {
-            if (lensopacity == 0){
+            if (lensopacity == 10){
                 clearInterval(id);
             } else {
                 lensopacity = lensopacity-0.5;
