@@ -13,7 +13,7 @@
   <body>
     <script>addNavbar();</script>
     <header>
-      <a href="#" class="brand">SciFair2026</a>
+      <a href="#" class="brand"></a>
       <div class="menu-btn"></div>
       <div class="navigation">
         <div class="navigation-items">
@@ -31,6 +31,7 @@
       <div class="content active">
         <h1>Human Hair Against<br><span>Oil Pollution</span></h1>
         <p>Oil pollution is caused by oil spills, which often occur in instances when cargo ships leak oil into the water or if there are accidents involving drilling rigs and storage facilities. This is a big problem, because the presence of oil in marine waters can damage sea life and can contaminate waters. If large scale oil spills occur, it can lead to big risks for humans to have severe health problems like heart damage, stunted growth, immune system effects and even death (NOAA, n.d.).</p>
+        <a href="Science Fair Write up - Human Hair Against Oil Pollution.pdf">Learn more!</a>
       </div>
       <div class="media-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -99,18 +100,115 @@
     	</section>
     	<section id="application" class="application">
     		<div>
-    			<h1>
-    				Using the Output
-    			</h1>
-    			<p>
-    				Polypropylene mats are commonly used for removing oil from land. Producing polypropylene, however, involves more oil drilling because it is a non-biodegradable material. Instead, we can use hair to create these hair mats. Hair is an abundant, renewable resource that is both hydrophobic and biosorbent, and has been shown to be as effective as polypropylene.
+          <h1>
+            Involved Science Concepts
+          </h1>
+    			 <div class="slider">
+              <div class="slide active">
+                <img src="oil-spill2.jpeg" alt="">
+                <div class="info">
+                  <h2>Hairmats as an Alternative</h2>
+                   <p>Before these hair mats, chemicals such as petroleum were used to clean big oil spills which caused more problems to the environment and marine life. Thus it is not a sustainable resource compared to human hair, and human hair is a more efficient and environmentally-friendly solution against oil pollution.</p>
+                 </div>
+               </div>
+               <div class="slide">
+                <img src="mats.jpeg" alt="">
+                <div class="info">
+                  <h2>The Harms of Other Equipment</h2>
+                  <p>Polypropylene mats are commonly used for removing oil from land. Producing polypropylene, however, involves more oil drilling because it is a non-biodegradable material. Instead, we can use hair to create these hair mats. Hair is an abundant, renewable resource that is both hydrophobic and biosorbent, and has been shown to be as effective as polypropylene. </p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="hair-mats2.jpeg" alt="">
+                <div class="info">
+                  <h2>So, what are hair mats?</h2>
+                  <p>Hair mats are manufactured from leftover human hair from salons or donated by businesses or other people, which are trimmed, sown, and turned into mats which are placed in areas where there are oil spills. To filter water in cities, airports, and other locations, they can be put in storm drains, wells, filtration systems, and rivers. Hair booms (long tubes) can even be used to sandbag coves and beaches to conserve natural habitats and prevent soil erosion. A hair mat soaks up roughly five times as much oil as it weighs. However, the mat has to be removed quickly and cannot stay in the oil spill area for a long period of time because there is no plastic to keep them buoyant, and they can be weighed down by plastics, seaweeds, and other substances (Kiger, 2022).</p>
+                </div>
+              </div>
+      
+      <div class="navigation">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
+      <script type="text/javascript">
+        const slider = document.querySelector(".slider");
+        const nextBtn = document.querySelector(".next-btn");
+        const prevBtn = document.querySelector(".prev-btn");
+        const slides = document.querySelectorAll(".slide");
+        const slideIcons = document.querySelectorAll(".slide-icon");
+        const numberOfSlides = slides.length;
+        var slideNumber = 0;
 
-    				Hair mats are manufactured from leftover human hair from salons or donated by businesses or other people, which are trimmed, sown, and turned into mats which are placed in areas where there are oil spills. To filter water in cities, airports, and other locations, they can be put in storm drains, wells, filtration systems, and rivers. Hair booms (long tubes) can even be used to sandbag coves and beaches to conserve natural habitats and prevent soil erosion. A hair mat absorbs roughly five times as much oil as it weighs. However, the mat has to be removed quickly and cannot stay in the oil spill area for a long period of time because there is no plastic to keep them buoyant, and they can be weighed down by plastics, seaweeds, and other substances (Kiger, 2022).
+        nextBtn.addEventListener("click", () => {
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+          });
 
-    				Before these hair mats, chemicals such as petroleum were used to clean big oil spills which caused more problems to the environment and marine life. Thus it is not a sustainable resource compared to human hair.
+          slideNumber++;
+          if(slideNumber > (numberOfSlides - 1)){
+            slideNumber = 0;
+          }
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+        });
+        prevBtn.addEventListener("click", () => {
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+          });
+          slideNumber--;
 
-    				When the user enters the home page of the website, they can stroll down and see the general information about hair mats and an introduction as to how they can help against oil pollution. The user can further explore the website by pressing the how to use icon in the navigation bar. A new tab will be opened, revealing the applications of the three science branches to using human hair against hair pollution. Another icon in the navigation bar is dedicated to explaining the immense importance of said innovation and also elaborates as to the significance of the promotion of this innovation.
-    			</p>
+          if(slideNumber < 0){
+            slideNumber = numberOfSlides - 1;
+          }
+
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+        });
+
+        var playSlider;
+        var repeater = () => {
+          playSlider = setInterval(function(){
+            slides.forEach((slide) => {
+              slide.classList.remove("active");
+            });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+          });
+
+          slideNumber++;
+
+          if(slideNumber > (numberOfSlides - 1)){
+            slideNumber = 0;
+          }
+
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+        }, 4000);
+      }
+      repeater();
+
+    //stop the image slider autoplay on mouseover
+      slider.addEventListener("mouseover", () => {
+        clearInterval(playSlider);
+      });
+
+    //start the image slider autoplay again on mouseout
+      slider.addEventListener("mouseout", () => {
+        repeater();
+      });
+    </script>
+    </div>
     			<video>
     				
     			</video>
