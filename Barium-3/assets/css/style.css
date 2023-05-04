@@ -33,6 +33,10 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+p {
+  font-size: 18px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -412,6 +416,10 @@ header div p {
   }
 }
 
+.carousel-indicators {
+  margin-top: 14px;
+}
+
 .tpwv {
   transform: rotateX(180deg) rotateY(180deg);
 }
@@ -485,7 +493,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -508,7 +516,7 @@ section {
 .section-title p {
   margin: 0;
   margin: 0;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
