@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (() => {
   "use strict";
 
@@ -150,4 +149,3 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
->>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98

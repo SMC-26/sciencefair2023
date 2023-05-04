@@ -27,3 +27,17 @@ $(document).ready(function() {
     });
   });
 });
+$(document).ready(function() {
+  $('#chemtext').click(function() {
+    $('#chemmore').toggle('default', function() {
+      // Animation complete.
+    });
+  });
+});
+$(document).ready(function() {
+  $('#phystext').click(function() {
+    $('#physmore').toggle('default', function() {
+      // Animation complete.
+    });
+  });
+});
