@@ -145,9 +145,14 @@ hiddenElements.forEach((el) => observer.observe(el));
 /* parallax */
 let text = document.getElementById('text')
 
-window.addEventListener('scroll', () =>{
+window.addEventListener('scroll', () => {
   let value = window.scrollY;
-  text.style.marginTop = value * 1.1 + 'px';
+  
+  if (value < 1000) {
+    text.style.marginTop = value * 1.1 + 'px';
+  } else {
+    text.style.marginTop = '1100px'; // set to a fixed value after 1000 pixels
+  }
 });
 
 
