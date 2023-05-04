@@ -3,75 +3,149 @@
 font-family: 'Jost', sans-serif;
 font-family: 'Righteous', cursive;*/
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 * {
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+animation: fadeInAnimation ease 0.1s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
 }
-header {
-  color: white;
-  font-size: 700%;
-  text-align: left;
-  font-family: 'Righteous', cursive;
-  padding-top: 300px;
-  padding-left: 30px;
+#gen {
+color: white;
+font-size: 7vw;
+text-align: center;
+font-family: 'Righteous', cursive;
+padding-top: 12%;
+border-right: 2px solid;
+overflow: hidden;
+white-space: nowrap;
+width: 0;
+animation: typing;
+animation-duration: 2s;
+animation-timing-function: steps(30, end);
+animation-fill-mode: forwards;
 }
 #title {
-  color: white;
-  font-size: 270%;
-  text-align: left;
-  font-family: 'Righteous', cursive;
-  padding-left: 30px;
+color: white;
+font-size: 3vw;
+text-align: center;
+font-family: 'Righteous', cursive;
+padding-bottom: 3%;
+overflow: hidden;
+white-space: nowrap;
+width: 0;
+animation: typing;
+animation-duration: 2s;
+animation-timing-function: steps(30, end);
+animation-fill-mode: forwards;
+}
+@keyframes typing {
+from { width: 0% }
+to { width: 100% }
 }
 .home {
-  height: 601px;
-  width: 100%;
-  background-image: url(leaves.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
+background-image: url(leaves.jpg);
+background-repeat: no-repeat;
+background-size: cover; 
 }
+
 #w {
-  padding-top: 50px;
-  padding-left: 60px;
+  margin-top: 50px;
+  margin-left: 5%;
   font-family: Georgia, serif;
 }
 #m {
-  width: 1100px;
-  padding-left: 60px;
-  padding-bottom: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+  text-align: justify;
   font-family: Georgia, serif;
 }
-.pic1 {
-  float: right;
-  position: relative;
-  left: 60px;
-  bottom: 70px;
-  height: 180px;
-  width: 150px;
-}
+
 .intro {
   background-color: #3C6255;
 }
 #o {
   color: white;
-  padding-top: 50px;
-  padding-left: 60px;
+  padding-top: 2%;
+  padding-left: 5%;
   font-family: Georgia, serif;
 }
 #intro {
   color: white;
-  width: 1000px;
-  padding-left: 60px;
-  padding-bottom: 50px;
   font-family: Georgia, serif;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+.intro-last{
+  padding-bottom: 2%;
+}
+
+.concept-title{
+  text-align: center;
+  margin-top: 2%;
+}
+.concept-cards{
+  margin-left: 10%;
+}
+.card{
+  float: left;
+  color: white;
+  width: 180px;
+}
+#bio-card{
+  background-color: #516a44;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+#bio-icon{
+  margin-top: 3%;
+  background: url(icons.png) no-repeat -20px -50px;
+  width: 140px;
+  height: 150px;
+  margin-left: 20px;
+}
+#chem-card{
+  background-color: #9ecd74;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+#chem-icon{
+  margin-top: 3%;
+  background: url(icons.png) no-repeat -185px -50px;
+  width: 140px;
+  height: 150px;
+  margin-left: 20px;
+}
+#phys-card{
+  background-color: #42863e;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+#phys-icon{
+  margin-top: 3%;
+  background: url(icons.png) no-repeat -30px -200px;
+  width: 140px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+#bio{
+  clear: left;
+}
+
 #fb{
   float: left;
 	background: url(logos.png) no-repeat -10px -20px;

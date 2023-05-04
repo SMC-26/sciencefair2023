@@ -48,17 +48,21 @@
 				<li>To analyze the structure and composition of fly wings.</li>
 				<li>To deduce the advantages and disadvantages of ornithopter wings modeled after fly wings.</li>
 				<li>To apply fly-inspired ornithopters in the context of geology and security in the Philippines.</li>
+				<li>To learn, discover, and have fun!</li>
 			</ol>
 		</section>
 		
 		<h1>Introduction</h1><section id="intro">
-			<p>Flying is now possible as a result of technological advancements. The Wright brothers invented the first airplane, and Russia was the first country to send astronauts outside the planet in a spaceship. The French invented ornithopters in the 1870s; they are aircraft that fly by flapping their wings and are inspired by birds.</p>
+		
+			<p>Hello and welcome! You must have came from the Science Fair! Feel free to browse around our website to learn about our research on employing fly wing designs on flapping-wing micro-air vehicles. We hope you enjoy ♡.</p>
+			
+			<p>Human flight has been made possible by advances in technology. The Wright brothers created the first airplane, while Russia sent the first astronauts into space. Ornithopters, which mimic birds by flapping their wings, were first invented by the French in the 1870s.</p>
 
 			<img src="images/ornithopter.jpg">
 
 			<aside><b>Figure 1.</b> Ornithopter (The Ornithopter Society, n.d.).</aside>
-
-			<p>Micro-unmanned ornithopters have been critical in the surveillance of people and terrain, despite receiving little attention (The Ornithopter Society, n.d.). Locally, flapping-wing micro-air vehicles (FWMAVs) could aid in the surveillance of seismic areas, forest degradation due to climate change, and difficult terrain, such as mountains where Filipino trekkers have perished.</p>
+		
+			<p>Although useful for surveillance, micro-unmanned ornithopters have received little attention (The Ornithopter Society, n.d.). Flapping-wing micro-air vehicles (FWMAVs) could be useful in monitoring Philippine seismic areas, forest degradation, and difficult terrain such as mountains where hikers have perished.</p>
 
 			<p>In a recent study by Zhang et al. (2023), the design and aerodynamics of FWMAVs were analyzed, including the currently-popular DelFly Nimble (Figure 2), inspired by fruit flies. This review showcased how mimicking fly wing characteristics in the innovation of ornithopters stems from biology, chemistry, and physics.</p>
 
@@ -71,14 +75,14 @@
 		<h1>Science Concepts</h1><section id="concepts">
 			<div class="content">	
 				<h2 id="bio">Biology</h2>
-
-					<p>Biomimicry</p>
+				
+					<p>This research focuses on biomimicry, which is the science of mimicking and applying structures and mechanisms from natural organisms to create efficient man-made designs. The overall anatomy and structure of fly wings were studied and determined to be suitable for mimicry on ornithopter wings.</p>
 
 					<p>The features of fly wings, which were applied in the DelFly Nimble, have evolved over time to maximize aerodynamic efficiency: flexibility, shape, frequency, and stroke (Krishna et al., 2020).</p>
 
-					<p>Fly wings are mostly made of chitin, a polysaccharide that is thin and elastic but durable (this will be further discussed in the Chemistry section) (Hou et al., 2021). However, these wings also require some structure and rigidity. Veins and sensory receptors such as campaniform sensilla, inverted bristles, and afferent nerves provide structural support while keeping weight to a minimum. Also, wing membranes are active aerodynamic surfaces composed of multiple layers of cuticle of varying thickness that form fine geometrical structures known as wing corrugation. This wing corrugation increases stiffness, preventing wing deformation during flight. The scale of these structures is much smaller than that of wing primary flow structures, such as wing tips and leading edge vortices, so that flight is not interfered with. Fly wings are finely tuned structures that allow them to fly with strength and endurance in general (Krishna et al., 2020).</p>
+					<p>Fly wings are made of chitin, which is a thin and elastic but durable structural polysaccharide (refer to Chem *link*). Veins and sensory receptors on the wings provide structure and rigidity. Cuticle layers form wing corrugation, which increases stiffness and prevents deformation during flight. In order to avoid interfering with flight, these structures are smaller than wing primary flow structures. Fly wings are fine-tuned for flight strength and endurance (Krishna et al., 2020).</p>
 
-					<p>Moreover, fly wings have a tapered shape, similar to Figure 3; the wing is thinner at its end. This allows the balancing of the four flight forces to be discussed in the Physics section. Because of this shape and the semi-flexible structure of fly wings, flies are able to flap their wings at high frequencies and maintain a rotating stroke of flapping, helping them fly fast, turn sharply, and hover in a stable manner (Krishna et al., 2020). In a broad sense, being able to fly efficiently is crucial to the flies’ survival. They are able to evade predators, reproduce in hard-to-find crevices, and latch onto food.</p>
+					<p>Fly wings have a tapered shape and a semi-flexible structure that allows them to flap their wings at high frequencies while maintaining a rotating flapping stroke for efficient flight. This shape also allows them to fly quickly, turn sharply, and hover steadily. Flies must be able to fly efficiently in order to avoid predators, reproduce in difficult-to-find crevices, and obtain food.</p>
 
 					<img src="images/taper.jpg">
 					<aside><b>Figure 3.</b> Wing thickness and surface diagram (Xu et al., 2020).</aside>
@@ -225,33 +229,7 @@
 	</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script>
-        var textWrapper = document.querySelector('.ml13');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-        
-        anime.timeline()
-        .add({
-            targets: '.ml13 .letter',
-            translateY: [100,0],
-            translateZ: 0,
-            opacity: [0,1],
-            easing: "easeOutExpo",
-            duration: 1400,
-            delay: (el, i) => 300 + 30 * i
-        })
-
-        var textWrapper = document.querySelector('.ml16');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-        anime.timeline()
-        .add({
-          targets: '.ml16 .letter',
-          translateY: [-100,0],
-          easing: "easeOutExpo",
-          duration: 1400,
-          delay: (el, i) => 30 * i
-        })
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>

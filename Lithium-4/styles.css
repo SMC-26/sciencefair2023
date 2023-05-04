@@ -1,275 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-.ram {
-    display: inline-block;
-    margin-top: 10px;
-}
-.rpicture {
-    display: block;
-    width: 310px;
-    float: left;
-}
-.rimg {
-    display: block;
-    height: 300px;
-    width: 300px;
-}
-.rdescription {
-    display: block;
-    width: 550px;
-    float: right;
-}
-
-.divw {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: white;
-    color: black;
-    font-family: Poppins;
-}
-
-.divb {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    background-color: black;
-    color: white;
-    font-family: Poppins;
-}
-
-.divi {
-    text-align: center;
-}
-
-.divt{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.vid {
-    height: 350px;
-    width: 750px;
-}
-
-.divv {
-    text-align: center;
-}
-
-.bio{
-    display: inline;
-    font-style: bold;
-    color: #4397e6;
-}
-
-.chem{
-    display: inline;
-    font-style: bold;
-    color: #09e12f;
-}
-
-.phys{
-    display: inline;
-    font-style: bold;
-    color: #ff6666;
-}
-
-.diagram {
-    height: 320px;
-    width: 510px;
-}
-
-body {
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    margin-left: 10em;
-    margin-right: 10em;
-}
-
-h1 {
-    font-family: Righteous;
-    color: gold;
-    text-align: center;
-    font-style: italic;
-    font-size: 50px;
-}
-h2 {
-    font-size: 30px;
-    text-align: center;
-    font-family: Poppins;
-    font-style: italic;
-}
-h3 {
-    text-align: center;
-    font-family: Poppins;
-}
-h4{
-    text-align: center;
-    font-family: Poppins;
-    font-weight: lighter;
-    font-style: italic;
-}
-p{
-    text-align: justify;
-    font-family: Poppins;
-}
-img {
-    width: 943px;
-    height: 450px;
-}
-hr {
-    height: 20px;
-    opacity: 0%;
-}
-=======
-.ram {
-    display: inline-block;
-    margin-top: 10px;
-}
-.rpicture {
-    display: block;
-    width: 310px;
-    float: left;
-}
-.rimg {
-    display: block;
-    height: 300px;
-    width: 300px;
-}
-.rdescription {
-    display: block;
-    width: 550px;
-    float: right;
-}
-
-.divw {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: white;
-    color: black;
-    font-family: Poppins;
-}
-
-.divb {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    background-color: black;
-    color: white;
-    font-family: Poppins;
-}
-
-.divi {
-    text-align: center;
-}
-
-.divt{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.vid {
-    height: 350px;
-    width: 750px;
-}
-
-.divv {
-    text-align: center;
-}
-
-.bio{
-    display: inline;
-    font-style: bold;
-    color: #4397e6;
-}
-
-.chem{
-    display: inline;
-    font-style: bold;
-    color: #09e12f;
-}
-
-.phys{
-    display: inline;
-    font-style: bold;
-    color: #ff6666;
-}
-
-.diagram {
-    height: 320px;
-    width: 510px;
-}
-
-body {
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    margin-left: 10em;
-    margin-right: 10em;
-}
-
-h1 {
-    font-family: Righteous;
-    color: gold;
-    text-align: center;
-    font-style: italic;
-    font-size: 50px;
-}
-h2 {
-    font-size: 30px;
-    text-align: center;
-    font-family: Poppins;
-    font-style: italic;
-}
-h3 {
-    text-align: center;
-    font-family: Poppins;
-}
-h4{
-    text-align: center;
-    font-family: Poppins;
-    font-weight: lighter;
-    font-style: italic;
-}
-p{
-    text-align: justify;
-    font-family: Poppins;
-}
-img {
-    width: 943px;
-    height: 450px;
-}
-hr {
-    height: 20px;
-    opacity: 0%;
-}
-
-footer {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #999;
-  }
-  
-  .githubLink a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 20px;
-    color: white;
-  }
-
-  .githubLink a:hover {
-    background-color: black;
-    transition: 0.5s;
-  }
-
-  .copyright p{
-    text-align: center;
-  }
->>>>>>> b7654991c87793c127a8d9b211d59ac4002ab49f
-=======
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -277,6 +7,7 @@ footer {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
 header{
   z-index: 999;
   position: absolute;
@@ -286,7 +17,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 200px;
+  padding: 15px 170px;
   transition: 0.5s ease;
 }
 
@@ -315,7 +46,7 @@ header .navigation .navigation-items a{
 header .navigation .navigation-items a:before{
   content: '';
   position: absolute;
-  background: #fff;
+  background: #E8B600;
   width: 0;
   height: 3px;
   bottom: 0;
@@ -328,7 +59,7 @@ header .navigation .navigation-items a:hover:before{
 }
 
 section{
-  padding: 100px 200px;
+  padding: 100px 170px;
 }
 
 .home{
@@ -353,7 +84,6 @@ section{
 
 .home .content{
   z-index: 888;
-  color: #fff;
   width: 70%;
   margin-top: 50px;
   display: none;
@@ -364,6 +94,7 @@ section{
 }
 
 .home .content h1{
+  color: #fff;
   font-size: 4em;
   font-weight: 900;
   text-transform: uppercase;
@@ -375,9 +106,11 @@ section{
 .home .content h1 span{
   font-size: 1.2em;
   font-weight: 600;
+  color: #EB8518;
 }
 
 .home .content p{
+  color: #fff;
   margin-bottom: 65px;
 }
 
@@ -423,6 +156,40 @@ section{
   height: 100%;
   object-fit: cover;
 }
+
+.slider-navigation{
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn{
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn.active{
+  background: #2696E9;
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+  margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover{
+  transform: scale(1.2);
+}
+
+
 @media (max-width: 1040px){
   header{
     padding: 12px 20px;
@@ -501,149 +268,108 @@ section{
     line-height: 60px;
   }
 }
-.ram {
-    display: inline-block;
-    margin-top: 10px;
+.intro{
+  background-color: #F3F5FF;
+  text-align: justify;
 }
-.rpicture {
-    display: block;
-    width: 310px;
-    float: left;
+.intro h1{
+  text-align: center;
+  color: #BD6200;
+  font-size: 40px;
 }
-.rimg {
-    display: block;
-    height: 300px;
-    width: 300px;
-}
-.rdescription {
-    display: block;
-    width: 550px;
-    float: right;
-}
+.intro .row{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
 
-.divw {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: white;
-    color: black;
-    font-family: Poppins;
 }
+.intro h3{
+  font-weight: 500;
+  color: #162C39;
+  text-align: center;
+}
+.intro .content p{
+  padding: 20px;
+  color: #293F4B;
+}
+.intro .content .two{
+  margin-top: 20px;
+  color: #293F4B;
+}
+.intro .content .img-container{
+  position: relative;
+}
+.intro .content .img-container img{
+  width: 50%;
+  height: 50%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  float: left;
+  margin-right: 15px;
+}
+.intro .content .img-container2 img{
+  margin-top: 40px;
+  width: 40%;
+  height: 50%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  float: right;
+  margin-left: 15px;
+}
+.concepts{
 
-.divb {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    background-color: black;
-    color: white;
-    font-family: Poppins;
 }
+.concepts .cards{
+  padding-top: 20px;
+  display: flex;
+}
+.concepts .text{
+  margin: 20px;
+  padding: 30px;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgb(128,128,128,.3)
+}
+.concepts h1{
+  text-align: center;
+  color: #BD6200;
+  font-size: 40px;
+}
+.concepts h2{
+  font-weight: 500;
+  text-align: center;
+  color: #162C39;
+  font-size: 20px;
+}
+.concepts p{
+  color: #293F4B;
+}
+.concepts .cards .text a{
+  padding-top: 5px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+  font-size: 30px;
+}
+.application{
+  background-color: #F3F5FF;
+}
+.application h1{
+  text-align: center;
+  color: #BD6200;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+.resources{
 
-.divi {
-    text-align: center;
 }
+.researchers{
 
-.divt{
-    padding-left: 50px;
-    padding-right: 50px;
 }
-
-.vid {
-    height: 350px;
-    width: 750px;
-}
-
-.divv {
-    text-align: center;
-}
-
-.bio{
-    display: inline;
-    font-style: bold;
-    color: #4397e6;
-}
-
-.chem{
-    display: inline;
-    font-style: bold;
-    color: #09e12f;
-}
-
-.phys{
-    display: inline;
-    font-style: bold;
-    color: #ff6666;
-}
-
-.diagram {
-    height: 320px;
-    width: 510px;
-}
-
-body {
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    margin-left: 10em;
-    margin-right: 10em;
-}
-
-h1 {
-    font-family: Righteous;
-    color: gold;
-    text-align: center;
-    font-style: italic;
-    font-size: 50px;
-}
-h2 {
-    font-size: 30px;
-    text-align: center;
-    font-family: Poppins;
-    font-style: italic;
-}
-h3 {
-    text-align: center;
-    font-family: Poppins;
-}
-h4{
-    text-align: center;
-    font-family: Poppins;
-    font-weight: lighter;
-    font-style: italic;
-}
-p{
-    text-align: justify;
-    font-family: Poppins;
-}
-img {
-    width: 943px;
-    height: 450px;
-}
-hr {
-    height: 20px;
-    opacity: 0%;
-}
-
-footer {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #999;
-  }
-  
-  .githubLink a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 20px;
-    color: white;
-  }
-
-  .githubLink a:hover {
-    background-color: black;
-    transition: 0.5s;
-  }
-
-  .copyright p{
-    text-align: center;
-  }
->>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98
