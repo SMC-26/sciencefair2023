@@ -219,7 +219,3 @@ function adddarkmode() {
         }
     }
 }
-
-window.addEventListener("load", "function"(){
-                        loader.style.display = "none";
-                        })
