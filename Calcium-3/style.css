@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box
 }
-
 html, body{
     margin: 0px;
     padding: 0px;
@@ -10,7 +9,6 @@ html, body{
 .carousel-container{
     height: 300px;
 }
-
 .text {
     color: #f2f2f2;
     font-size: 72px;
@@ -24,7 +22,16 @@ html, body{
 li{
     list-style: none;
 }
-
+.text {
+    color: #f2f2f2;
+    font-size: 72px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 300px;
+}
 .container{
     padding: 80px 139px;
     background-color: #f6f6f6;
