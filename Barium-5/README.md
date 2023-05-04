@@ -30,7 +30,7 @@ For now the website looks like a template but its gonna be an original webpage t
 - Modals
 
 
-### Lines of original code added by Revyel: 1,339  
+### Lines of original code added by Revyel: 1,691
 
 ### Lines of original code added by Rhyss: 10
 
