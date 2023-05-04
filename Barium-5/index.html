@@ -233,8 +233,9 @@
           <img src="assets/img/thumb1.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Size Comparison</h5>
-            <p class="card-text">See how much plasmonic paint can cover a car and a Boeing 747.</p>
-            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#sizeModal">LET'S GO!</button>
+            <p class="card-text">See how much plasmonic paint can cover a Toyota Fortuner and a Boeing 747.</p>
+            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#747Modal">PLANE</button>
+            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#fortunerModal">CAR</button>
           </div>
         </div>
       </div>
@@ -244,7 +245,7 @@
           <div class="card-body">
             <h5 class="card-title">Mini Painting</h5>
             <p class="card-text">View a miniature plasmonic paint "Impression, Sunrise" and compare them with other objects. </p>
-            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#sizeModal">LET'S GO!</button>
+            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#paintModal">LET'S GO!</button>
           </div>
         </div>
       </div>
@@ -254,7 +255,7 @@
           <div class="card-body">
             <h5 class="card-title">Behind the Scenes</h5>
             <p class="card-text">Get a deep dive into the paint's molecular makeup.</p>
-            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#sizeModal">LET'S GO!</button>
+            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#fortunerModal">LET'S GO!</button>
           </div>
         </div>
       </div>
@@ -264,12 +265,29 @@
 
 <!-- ======= Modals Section ======= -->
 
-<!-- Size Comparison -->
-<div class="modal fade" id="sizeModal" tabindex="-1" aria-labelledby="sizeModalLabel" aria-hidden="true">
+<!-- Size Comparison 1 -->
+<div class="modal fade" id="747Modal" tabindex="-1" aria-labelledby="747ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="sizeModalLabel">Size Comparison</h5>
+        <h5 class="modal-title" id="747Label">Size Comparison</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio-16-9">
+          <iframe class="ratio-inner" src="https://sketchfab.com/3d-models/scifair-showcase-58ed3ad2d74b4485a2c3399607791bcd/embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Size Comparison 2 -->
+<div class="modal fade" id="fortunerModal" tabindex="-1" aria-labelledby="fortunerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fortunerModalLabel">Size Comparison</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -277,9 +295,39 @@
           <iframe class="ratio-inner" src="https://sketchfab.com/3d-models/scifair-2-39d44062f47a4f4680b28e931df1fbe1/embed"></iframe>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-card">Boeing 747</button>
-        <button type="button" class="btn-card">Toyota Fortuner</button>
+    </div>
+  </div>
+</div>
+
+<!-- Painting -->
+<div class="modal fade" id="flakesModal" tabindex="-1" aria-labelledby="flakesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="flakesModalLabel">Size Comparison</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio-16-9">
+          <iframe class="ratio-inner" src="https://sketchfab.com/3d-models/painting-made-with-nano-paint-size-comparison-de17df91e54c43c897063285496490cb/embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Deepdive -->
+<div class="modal fade" id="paintModal" tabindex="-1" aria-labelledby="paintModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="paintModalLabel">Size Comparison</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio-16-9">
+          <iframe class="ratio-inner" src="https://sketchfab.com/3d-models/painting-made-with-nano-paint-size-comparison-de17df91e54c43c897063285496490cb/embed"></iframe>
+        </div>
       </div>
     </div>
   </div>
