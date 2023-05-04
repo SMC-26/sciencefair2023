@@ -7,9 +7,9 @@
 
 whew
 
-### Lines of original code added by Revyel: 1,691
+### Lines of original code added by Revyel: 1,738
 
-### Lines of original code added by Rhyss: 10
+### Lines of original code added by Rhyss: ~20
 
 ## Members and Credits
 
