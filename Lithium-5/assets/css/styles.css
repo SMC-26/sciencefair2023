@@ -557,7 +557,7 @@ a h4{
 
 /* sets up image in header */
 header {
-  background-image: url(../../media/banner.png);
+  background-image: url(../../media/banner.jpg);
   background-position: center center;
   margin-top: 50px;
   height: 100vh;
