@@ -82,3 +82,46 @@ section {
     float: left;
     padding-right: 10px;
 }
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #808080; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b6c56; 
+}
+
+.members1, .members2{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .memberpic{
+            border-radius: 50%;
+            height: 275px;
+            width: 275px;
+            float: left;
+            text-align: center;
+            background-color: #c89e71;
+            opacity: 50%;
+        }
+        .name{
+            text-align: center;
+        }
+        .desc{
+            text-align: center;
+        }

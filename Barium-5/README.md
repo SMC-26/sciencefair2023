@@ -3,34 +3,36 @@
 
 ![HOLY COW](https://media.discordapp.net/attachments/877147396449116210/934059063958990878/unknown.png)
 
-## Progress: 65% 
+## Progress: 70% 
 
 For now the website looks like a template but its gonna be an original webpage trust me :))
 
 **Totally Finished:**
 
-- None lol
+- About page
+
+- Carousel
 
 **Finished styling:**
 
 - Hero
 
-- About page
-
-- Carousel
-
-- About Us
+- Our Team
 
 **Under construction:**
 
 - Footer
+
+- Showcases
 
 **Not added:**
 
 - Modals
 
 
-### Lines of original code added: 1,149
+### Lines of original code added by Revyel: 1,339  
+
+### Lines of original code added by Rhyss: 10
 
 ## Members and Credits
 

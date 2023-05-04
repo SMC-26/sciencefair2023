@@ -5,33 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://smc-26.github.io/sciencefair2023/bootstrap.css" rel="stylesheet">
     <script src="https://smc-26.github.io/sciencefair2023/bootstrap.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid p-0 carousel-container">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="pexels-egor-kamelev-927497.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Chemistry.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Physics.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <a href="biology.html"><img src="pexels-egor-kamelev-927497.jpg" style="width:100%; height:720px;">
+            <div class="text">Biology</div></a>
         </div>
+        <div class="mySlides fade">
+            <li><a href="chemistry.html"><img src="Chemistry.png" style="width:100%; height:720px;"></a>
+            <div class="text">Chemistry</div>
+        </div>
+        <div class="mySlides fade">
+            <a href="physics.html"><img src="Physics.png" style="width:100%; height:720px;"></a>
+        <div class="text">Physics</div>
+        </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
     <div class="container">
         <div class="subcontainer">
@@ -60,16 +53,16 @@
     </div>
     <footer>
         <div class="footer-col">
-            <h3>PHILIPPINE SCIENCE HIGHSCHOOL SOUTHERN MINDANAO CAMPUS</h3>
-            <p>Lorem ipsum dolor<br>sit amet consectetur<br>adipisicing elit.</p>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad minima deleniti, voluptates ut placeat necessitatibus modi quidem molestiae perspiciatis, dolorum dolorem eius illo hic eaque voluptas!</p>
         </div>
         <div class="footer-col">
-            <h4>Lorem Ipsum</h4>
-            <p>Lorem ipsum dolor<br>sit amet consectetur<br>adipisicing elit.</p>
+            <p>Lorem Ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad minima deleniti, voluptates ut placeat necessitatibus modi quidem molestiae perspiciatis, dolorum dolorem eius illo hic eaque voluptas!</p>
         </div>
         <div class="footer-col">
-            <h4>Lorem Ipsum</h4>
-            <p>Lorem ipsum dolor<br>sit amet consectetur<br>adipisicing elit.</p>
+            <p>Lorem Ipsum</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad minima deleniti, voluptates ut placeat necessitatibus modi quidem molestiae perspiciatis, dolorum dolorem eius illo hic eaque voluptas!</p>
         </div>
     </footer>
     <script src="script.js"></script>

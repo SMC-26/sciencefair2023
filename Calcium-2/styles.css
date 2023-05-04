@@ -339,3 +339,12 @@ footer a:hover {
     text-decoration: underline;
     transition: 0.5s;
 }
+
+#preloader{
+    background: #000 url(yes.webp) no-repeat center;
+    background-size: 13%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

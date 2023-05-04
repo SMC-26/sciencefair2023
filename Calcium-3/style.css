@@ -187,3 +187,6 @@ footer:after {
     width: 33.333333333333333333333333333333333%;
     float: left;
 }
+@keyframes fadeIn{
+    0% { opacity: 0; }
+  100% { opacity: 1; }

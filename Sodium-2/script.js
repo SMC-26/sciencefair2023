@@ -1,4 +1,19 @@
 var myGamePiece;
+
+function gamestart(){
+    document.getElementById("GPH").style.display = "none";
+    document.getElementById("InsHead").style.display = "none";
+    document.getElementById("InsText").style.display = "none";
+    document.getElementById("Game").style.display = "block";
+    const canvas = document.getElementById("Game");
+    const ctx = canvas.getContext("2d");
+    canvas.width = 800;
+    canvas.height = 500;
+    myGamePiece = new component(30, 30, "red", 10, 120);
+}
+
+/*
+var myGamePiece;
 var InsertHere = document.getElementById("GameHolder")
 
 function gamestart(){
@@ -39,60 +54,33 @@ function updateGameArea() {
     myGamePiece.x += 1;
     myGamePiece.update();
 }
-
-
-
-/*
-var C3piece;
-
-function gamestart(){
-    document.getElementById("GPH").style.display = "none";
-    document.getElementById("InsHead").style.display = "none";
-    document.getElementById("InsText").style.display = "none";
-    document.getElementById("Game").style.display = "block";
-    C3piece = c3(30, 30, "red", 10, 90);
-    GameArea.start();
-
-    var canvas = document.getElementById("Game");
-    var canWid = canvas.offsetWidth;
-    var canHei = canvas.offsetHeight;
-    var ctx = canvas.getContext("2d");
-
-    var GameArea = {
-        start : function() {
-            this.canvas.width = 480;
-            this.canvas.height = 270;
-            this.context = ctx;
-            this.interval = setInterval(updateGameArea, 20);
-        },
-        clear : function() {
-            this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        }
-    }
-
-    function c3(width, height, color, x, y) {
-        this.width = width;
-        this.height = height;
-        this.x = x;
-        this.y = y;
-        this.update = function(){
-            this.context = ctx;
-            this.context.fillStyle = color;
-            this.context.fillRect(this.x, this.y, this.width, this.height);
-            }
-        }
-
-    function updateGameArea() {
-        GameArea.clear();
-        C3piece.x += 1;
-        C3piece.update();
-}
-}
 */
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Morb(){
+    document.getElementById("Egg").style.display = "inline-block";
+    alert("You have found the easter egg!")
+}
 
 function reveal(){
     document.getElementById("Fl").style.display = "inline-block";

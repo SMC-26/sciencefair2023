@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     
     <title>HUMAN HAIR AGAINST OIL POLLUTION</title>
 </head>
@@ -16,37 +17,50 @@
     
     <main class="mx-auto">
 
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <!-- make sure that the banner images in the slideshow are of the same dimensions-->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="hair-mats1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="hair-mats2.jpg" class="d-block w-100" alt="...">
-              </div>
-
+        <header>
+            <a href="#" class="brand">SciFair2026</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="#">Home</a>
+                    <a href="#intro">Intro</a>
+                    <a href="#concepts">Concepts</a>
+                    <a href="#application">Application</a>
+                    <a href="#researchers">Researchers</a>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        <!--
-        if you dont want an image carousel(slideshow) and rather use static banner instead use one below:
-        <img src="banner.jpg" alt="nature" class="img-fluid w-100" >
-        -->
+        </header>
+
+    <section class="home">
+      <img src="imong mama oil spill.jpg">
+      <div class="content active">
+        <h1>Human Hair Against<br><span>Oil Pollution</span></h1>
+        <p>Oil pollution is caused by oil spills, which often occur in instances when cargo ships leak oil into the water or if there are accidents involving drilling rigs and storage facilities. This is a big problem, because the presence of oil in marine waters can damage sea life and can contaminate waters. If large scale oil spills occur, it can lead to big risks for humans to have severe health problems like heart damage, stunted growth, immune system effects and even death (NOAA, n.d.).</p>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    </script>
         <hgroup class="divb">
             <hr>
             <h1 class="display-4">HUMAN HAIR AGAINST OIL POLLUTION</h1>
             <hr>
             <h3 class="display-6 fst-italic">By: Acelar, Ballera, Cervantes, Flores, Matanguihan, & San Miguel</h3>
             <hr>
-            <div class="divt">
+            <div id="intro" class="divt">
             <p>
                 Oil pollution is caused by oil spills, which often occur in instances when cargo ships leak oil into the water or if there are accidents involving drilling rigs and storage facilities. This is a big problem, because the presence of oil in marine waters can damage sea life and can contaminate waters. If large scale oil spills occur, it can lead to big risks for humans to have severe health problems like heart damage, stunted growth, immune system effects and even death (NOAA, n.d.). 
             </p>
@@ -58,7 +72,7 @@
             </div>
         </hgroup>
         <img src="hair-mats1.jpg" alt="humain hair near a drain" class="img-fluid w-100" >
-        <div class="divw">
+        <div id="concepts" class="divw">
             <h2>INVOLVED SCIENCE CONCEPTS</h2>
             <hr>
             <div class="divt">
@@ -82,7 +96,7 @@
         </div>       
             <img src="hair-mats2.jpg" alt="people using hair to clean up the ocean" class="img-fluid w-100" >
             <div class="divb">
-           <h2> USING THE OUTPUT</h2>
+           <h2 id="application"> USING THE OUTPUT</h2>
            <div class="divt">
            <p>Polypropylene mats are commonly used for removing oil from land. Producing polypropylene, however, involves more oil drilling because it is a non-biodegradable material. Instead, we can use hair to create these hair mats. Hair is an abundant, renewable resource that is both hydrophobic and biosorbent, and has been shown to be as effective as polypropylene. 
         </p>
@@ -127,7 +141,7 @@
         </p>
         </div>
         </div>
-    <div class="divw">
+    <div id="researchers" class="divw">
         <div>
             <h1>About the Researchers</h1>
         </div>
