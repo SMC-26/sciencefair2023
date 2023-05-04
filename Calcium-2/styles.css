@@ -29,8 +29,8 @@ p {
 
 .hidden {
     opacity: 0;
-    filter: blur(2px);
-    transform: translateY(25%);
+    filter: blur(1px);
+    transform: translateX(-25%);
     transition: all 2s;
 }
 .show {
