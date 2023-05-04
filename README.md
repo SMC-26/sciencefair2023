@@ -1,4 +1,3 @@
-
 # ![alt text](https://raw.githubusercontent.com/SMC-26/sciencefair2023/deployment/x-assets/img/smc-logo.png "PSHS-SMC Campus Logo") Science Fair 2023 Website
 ## Project Rubrics
 ### Project Proper (40 Pts Total)
