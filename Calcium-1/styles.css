@@ -99,7 +99,6 @@
     margin-left: -200%;
 }
 
-
 .slider .images img{
 	border-radius: 25px 25px 25px 25px ; 
 	
@@ -285,6 +284,7 @@
 #thirdpage{
     height: 130vh;
     width: 100%;
+    background-color: #1F1F1F;
 }
 .SCcontainer{
     margin-left: 5.208333333333333vw;
@@ -341,7 +341,7 @@
 	outline: inherit;
     text-align: right;
     font-size: large;
-    color: #1F1F1F;
+    color: #ff3131;
     text-decoration: none;
 }
 
@@ -432,8 +432,9 @@
     overflow: hidden;
 }
 #fifthpage{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
+    background-color: #1F1F1F;
 }
 .Rcontainer{
     float: left;
@@ -442,41 +443,12 @@
     margin-left: 5.208333333333333vw;
     text-align: justify;
 }
-/* Footer
-.footmems{
-    display: flex;
-    flex-direction: column;
-    justify-content: sp;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-}
-.mem{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    vertical-align: center;
-    height: 10vh;
-    text-decoration: none;
-    list-style-type: none;
-}
-.mem2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    vertical-align: center;
-    height: 10vh;
-    text-decoration: none;
-    list-style-type: none;
-} */
-
+/* Footer*/
 .footer {
     position: relative;
     width: 100%;
     background-image: linear-gradient(#ff3131, #ff914d);
-    min-height: 100px;
+    min-height: 250px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -497,6 +469,9 @@
     margin: 15px 0 10px 0;
     font-size: 1rem;
     font-weight: 300;
+  }
+  .footer ul {
+    padding: 2vh;
   }
   
   .wave {

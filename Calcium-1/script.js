@@ -37,7 +37,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#phystext').click(function() {
     $('#physmore').toggle('default', function() {
-      // Animation complete.
+      // Animation complete.  
     });
   });
 });
