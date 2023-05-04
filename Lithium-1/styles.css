@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/blobby-chug?styles=130691');
+                
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins';
 }
 .content{
     text-align: center;
     color: #ffffff;
     position: absolute;
     top: 40%;
-    left: 18.5%;
+    left: 25.5%;
     transform: translateY(-50%);
     z-index: 2;
     transition: 0.3s;
@@ -17,8 +19,7 @@
     align-items: center;
 }
 .cont h1{
-    left: 40px;
-    font-family: Questrial;
+    left: 30px;
     font-weight: bolder;
     letter-spacing: 13px;
     font-size: 75px;
@@ -26,14 +27,12 @@
     line-height: 80px;
 }
 .cont h3{
-    font-family: Calibri Light;
     font-size: 24px;
     letter-spacing: 3px;
     word-spacing: 3px;
 }
 .contwo h1{
     margin-left: 25%;
-    font-family: 'Montserrat';
     text-shadow: 3px 3px rgba(59, 76, 39, 0.459);
 
 }
@@ -75,7 +74,7 @@ span{
 .bottom{
     width: 100%;
     height: 100vh;
-    background-image: url(file:///C:/Users/ADMIN/Desktop/Lithium-1/images/underwater.jpg);
+    background-image: url(images/underwater.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -386,13 +385,11 @@ p{
     opacity: 0.5;
 }
 .container h1{
-    font-family: Century Gothic;
     color: #ffffff;
     text-align: center;
     padding-bottom: 30px;
 }
 .container p{
-    font-family: Century Gothic;
     padding-bottom: 10px;
 }
 .sign img{
@@ -415,9 +412,9 @@ p{
     transform: rotate(7deg);
 }
 .biotext h1{
-    font-family: Comic Sans MS;
+    font-family: 'BLOBBY CHUG', sans-serif;
     position: absolute;
-    font-size: 40px;
+    font-size: 50px;
     margin-left: 110px;
     top: 20%;
     transform: rotate(-7deg);
@@ -431,9 +428,9 @@ p{
     transition: 0.3s ease-out;
 }
 .chemtext h1{
-    font-family: Comic Sans MS;
+    font-family: 'BLOBBY CHUG', sans-serif;
     position: absolute;
-    font-size: 35px;
+    font-size: 40px;
     margin-left: 880px;
     top: 50%;
     transform: rotate(-5deg);
@@ -476,11 +473,11 @@ p{
     opacity: 0.5;
 }
 .physicstext h1{
-    font-family: Comic Sans MS;
+    font-family: 'BLOBBY CHUG', sans-serif;
     position: absolute;
     margin-left: 407px;
     margin-top: 450px;
-    font-size: 27px;
+    font-size: 33px;
     transform: rotate(5deg);
     cursor: pointer;
     text-shadow: 2px 2px rgb(224, 213, 111);
@@ -504,4 +501,13 @@ p{
 }
 .pic:hover{
     opacity: 0.5;
+}
+span.bio{
+  color: limegreen;
+}
+span.chem{
+  color: yellow;
+}
+span.phys{
+  color: darkblue;
 }

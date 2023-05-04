@@ -88,10 +88,6 @@ html, body{
     margin: 0%;
     width: 70%;
 }
-.BigText{
-    color: #73E2AC;
-    margin-left: 10px;
-}
 .VPH{
     background-color: black;
     margin-top: 3em;
@@ -125,6 +121,11 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.SynthText{
+    color: #73E2AC;
+    margin-left: 10px;
+    font-size: 75px;
+}
 .Leaf{
     height: 100%;
     background-image: url(Leaf.png);
@@ -136,6 +137,13 @@ html, body{
     background-image: url(AgriBack.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.ClimateText{
+    width: 75%;
+    color: #73E2AC;
+    margin-left: 10px;
+    font-size: 75px;
+    text-align: center;
 }
 .VVPH{
     background-color: black;
@@ -175,6 +183,13 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.FuText{
+    text-align: center;
+    width: 45%;
+    color: #73E2AC;
+    margin-left: 10px;
+    font-size: 43px;
+}
 .VVVPH{
     background-color: black;
     margin-top: 3em;
@@ -209,8 +224,6 @@ html, body{
     border-color: black;
     background-color: gray;
     border-style: solid;
-    height: 500px;
-    width: 800px;
     display: none;
 }
 .GamePH{
@@ -382,8 +395,15 @@ html, body{
 }
 .Salt{
     position: absolute !important;
-    right: 0;
-    bottom: 0;
+    right: 0%;
+    bottom: -1%;
+    border: none;
+    background-color: transparent;
+}
+.Shaker{
     height: 5px;
     width: 5px;
+}
+.MORB{
+    display: none;
 }
