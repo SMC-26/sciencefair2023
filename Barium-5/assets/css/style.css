@@ -671,23 +671,44 @@ section {
   border-radius: 0;
 }
 
+.card-body {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .card-body {
+    height: 30vh !important;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .card-body {
+    height: 40vh;
+  }
+}
+
+
+.card-img-top {
+  max-height: 250px;
+}
+
 .card-body h5 {
   font-size: 2rem;
 }
 
 .card-body p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .btn-card {
   background: none;
-  border: 2px solid black;
+  border: 1px solid black;
   color: black;
   padding: 0.5vw 2vw;
 }
 
 .btn-card:hover {
-  border: 2px solid white;
+  border: 1px solid white;
   background: black;
   color: white;
 }
