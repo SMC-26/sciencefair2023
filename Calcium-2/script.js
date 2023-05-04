@@ -32,9 +32,6 @@ const btndiv = document.querySelectorAll(".timebuttondiv");
 const interactivebardiv = document.getElementById("interactive-bar");
 var darkmodergb = 0;
 
-const lens = document.getElementById("lens-div");
-var lensopacity = 100;
-
 function setsunrise() {
     removedarkmode();
 
@@ -47,8 +44,6 @@ function setsunrise() {
     if (noonopacity !== 0){
         removenoon();
     }
-
-    lenstranslucent();
    
     sunrisebtn.style.backgroundColor = "black";
     noonbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
@@ -67,8 +62,6 @@ function setnoon() {
     if (noonopacity !== 1){
         addnoon();
     }
-
-    lensopaque();
        
     sunrisebtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     noonbtn.style.backgroundColor = "black";
@@ -85,8 +78,6 @@ function setsunset() {
         addsunset();
     }
 
-    lenstranslucent();
-
     sunrisebtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     noonbtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
     sunsetbtn.style.backgroundColor = "black";
@@ -95,8 +86,10 @@ function setsunset() {
 function setmidnight() {
     if (midnightopacity !== 1){
         addmidnight();
+    }
+
+    if (darkmodergb < 255){
         adddarkmode();
-        lensclear();
     }
 
     sunrisebtn.style.backgroundColor = "rgb(0, 0, 0, 0)";
@@ -211,7 +204,7 @@ function removedarkmode() {
 function adddarkmode() {
     let id = null;
 
-    id = setInterval(lighten, 5);
+    id = setInterval(lighten, 6);
     function lighten() {
         if (darkmodergb>=255){
             clearInterval(id);
@@ -229,61 +222,3 @@ function adddarkmode() {
     }
 }
 
-function lensopaque() {
-    let id = null;
-
-    if (lensopacity !== 100){
-        id = setInterval(makeopaque, 4);
-        function makeopaque() {
-            if (lensopacity >= 90){
-                clearInterval(id);
-            } else {
-                lensopacity = lensopacity+0.5;
-                lens.style.opacity = lensopacity + "%";
-            }
-        }
-    }
-    else return;
-}
-function lenstranslucent() {
-    let id = null;
-
-    if (lensopacity > 50){
-        id = setInterval(maketranslucent1, 4);
-        function maketranslucent1() {
-            if (lensopacity == 60){
-                clearInterval(id);
-            } else {
-                lensopacity = lensopacity-0.5;
-                lens.style.opacity = lensopacity + "%";
-            }
-        }
-    }
-    if (lensopacity < 50){
-        id = setInterval(maketranslucent2, 4);
-        function maketranslucent2() {
-            if (lensopacity == 60){
-                clearInterval(id);
-            } else {
-                lensopacity = lensopacity+0.5;
-                lens.style.opacity = lensopacity + "%";
-            }
-        }
-    }
-    else return;
-}
-function lensclear() {
-    let id = null;
-
-    if (lensopacity !== 0){
-        id = setInterval(makeclear, 4);
-        function makeclear() {
-            if (lensopacity == 0){
-                clearInterval(id);
-            } else {
-                lensopacity = lensopacity-0.5;
-                lens.style.opacity = lensopacity + "%";
-            }
-        }
-    }
-}

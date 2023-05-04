@@ -239,19 +239,7 @@ p {
     height: 200px;
 
     border-radius: 100%;
-    background-color: rgb(53, 50, 47);
-    opacity: 0.95;
-}
-#lenslayer2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75px;
-    height: 75px;
-
-    border-radius: 100%;
-    background-color: rgba(24, 23, 23, 0.436);
+    background-color: aqua;
 }
 /* #lens-img {
     z-index: 3;
@@ -297,7 +285,6 @@ h2 {
     height: 100%;
     width: 40%;
 
-    filter: sepia(0.7);
     box-shadow: 20px 20px 0px rgba(127, 91, 50, 0.6);
 }
 .half div {
