@@ -558,12 +558,17 @@ a h4{
 /* sets up image in header */
 header {
   background-image: url(../../media/banner.png);
-  background-position: center;
+  background-position: center center;
   margin-top: 50px;
-  height: 100%;
-  width: auto;
+  height: 100vh;
+  width: 100%;
+  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-flow: column;
 }
 
 /* sets up header text and design */
