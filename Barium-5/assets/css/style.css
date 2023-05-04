@@ -783,8 +783,18 @@ section {
   text-align: center;
 }
 
-#footer .p {
-  text-align: right;
+#footer p {
+  text-align: center;
+  margin: 0;
+}
+
+#footer h5 {
+  text-align: center;
+}
+
+
+#footer hr {
+  margin: 2vh;
 }
 
 #footer .credits {
