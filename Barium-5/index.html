@@ -234,7 +234,7 @@
           <div class="card-body">
             <h5 class="card-title">Size Comparison</h5>
             <p class="card-text">See how much plasmonic paint can cover a car and a Boeing 747.</p>
-            <a href="#about" class="btn-card">LET'S GO!</a>
+            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#sizeModal">LET'S GO!</button>
           </div>
         </div>
       </div>
@@ -244,7 +244,7 @@
           <div class="card-body">
             <h5 class="card-title">Mini Painting</h5>
             <p class="card-text">View a miniature plasmonic paint "Impression, Sunrise" and compare them with other objects. </p>
-            <a href="#about" class="btn-card">LET'S GO!</a>
+            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#sizeModal">LET'S GO!</button>
           </div>
         </div>
       </div>
@@ -254,7 +254,7 @@
           <div class="card-body">
             <h5 class="card-title">Behind the Scenes</h5>
             <p class="card-text">Get a deep dive into the paint's molecular makeup.</p>
-            <a href="#about" class="btn-card">LET'S GO!</a>
+            <button type="button" class="btn-card" data-bs-toggle="modal" data-bs-target="#sizeModal">LET'S GO!</button>
           </div>
         </div>
       </div>
@@ -262,81 +262,103 @@
   </div>
 </section><!-- End showcases Section -->
 
+<!-- ======= Modals Section ======= -->
 
-
-  <!-- ======= Team Section ======= -->
-  <section id="team">
-    <div class="container" data-aos="fade-up">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title ourt">Our <span class="gradient-text-blue">Team</span></h3>
+<!-- Size Comparison -->
+<div class="modal fade" id="sizeModal" tabindex="-1" aria-labelledby="sizeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sizeModalLabel">Size Comparison</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio-16-9">
+          <iframe class="ratio-inner" src="https://sketchfab.com/3d-models/scifair-2-39d44062f47a4f4680b28e931df1fbe1/embed"></iframe>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic">
-              <img src="assets/img/team/annika.png" alt="">
-            </div>
-            <h4>Annika Bamboa</h4>
-            <span>Annika is the leader of our project on the lightest paint on earth. She spearheaded the project with a will for leadership. She loves to read books and watch movies in her free time</span>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic">
-              <img src="assets/img/team/revyel.png" alt="">
-            </div>
-            <h4>Revyel Rodriguez</h4>
-            <span>The main coder of the website, and also helped in the content. I like science, gaming, literature, and TV shows, and overcomplicating simple things</span>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic">
-              <img src="assets/img/team/lavinia.png" alt="">
-            </div>
-            <h4>Lavinia Elizan</h4>
-            <span>Content Writer</span>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic">
-              <img src="assets/img/team/rhyss.png" alt="">
-            </div>
-            <h4>Rhyss Lopez</h4>
-            <span>Co-coder and content writer. Laid back, to the point that it's somewhat detrimental and overthinks a lot. Likes gaming, literature, and non-violent voilence.</span>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic">
-              <img src="assets/img/team/merielle.png" alt="">
-            </div>
-            <h4>Merielle Cocjin</h4>
-            <span>Merielle is mainly the board designer of the group. Even when faced with difficult situations, she chooses to persevere and give it her best shot. She likes to draw and watch movies on her free time.</span>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic">
-              <img src="assets/img/team/knight.png" alt="">
-            </div>
-            <h4>Knight Arensol</h4>
-            <span>3D Modeler</span>
-          </div>
-        </div>
-
+      <div class="modal-footer">
+        <button type="button" class="btn-card">Boeing 747</button>
+        <button type="button" class="btn-card">Toyota Fortuner</button>
       </div>
     </div>
-  </section><!-- End Team Section -->
+  </div>
+</div>
+
+
+<!-- ======= Team Section ======= -->
+<section id="team">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title ourt">Our <span class="gradient-text-blue">Team</span></h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="member">
+          <div class="pic">
+            <img src="assets/img/team/annika.png" alt="">
+          </div>
+          <h4>Annika Bamboa</h4>
+          <span>Annika is the leader of our project on the lightest paint on earth. She spearheaded the project with a will for leadership. She loves to read books and watch movies in her free time</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="member">
+          <div class="pic">
+            <img src="assets/img/team/revyel.png" alt="">
+          </div>
+          <h4>Revyel Rodriguez</h4>
+          <span>The main coder of the website, and also helped in the content. I like science, gaming, literature, and TV shows, and overcomplicating simple things</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="member">
+          <div class="pic">
+            <img src="assets/img/team/lavinia.png" alt="">
+          </div>
+          <h4>Lavinia Elizan</h4>
+          <span>Content Writer</span>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="member">
+          <div class="pic">
+            <img src="assets/img/team/rhyss.png" alt="">
+          </div>
+          <h4>Rhyss Lopez</h4>
+          <span>Coder</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="member">
+          <div class="pic">
+            <img src="assets/img/team/merielle.png" alt="">
+          </div>
+          <h4>Merielle Cocjin</h4>
+          <span>Board Designer</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="member">
+          <div class="pic">
+            <img src="assets/img/team/knight.png" alt="">
+          </div>
+          <h4>Knight Arensol</h4>
+          <span>3D Modeler</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- End Team Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -375,19 +397,18 @@
           </div>
         </div>
       </div>
-    </div>
-  </footer><!-- End Footer -->
+  </div>
+</footer>
 
- 
 
-  <!-- Vendor JS Files -->
-  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+<!-- Vendor JS Files -->
+<script type="text/javascript" src="assets/js/mdb.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/typed.js/typed.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 
