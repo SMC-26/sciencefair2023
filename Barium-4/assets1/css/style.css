@@ -1,3 +1,23 @@
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+/**
+* Template Name: KnightOne
+* Updated: Mar 10 2023 with Bootstrap v5.2.3
+* Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #009961;
+=======
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -6,11 +26,16 @@ body {
 
 a {
   color: #0563bb;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   text-decoration: none;
 }
 
 a:hover {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  color: #00cc81;
+=======
   color: #067ded;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   text-decoration: none;
 }
 
@@ -24,6 +49,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+=======
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -57,6 +84,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
@@ -75,7 +103,11 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  border: 6px solid #009961;
+=======
   border: 6px solid #f5c669;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -95,18 +127,110 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #009961;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #00c27b;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+=======
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  transition: all 0.5s;
+  z-index: 997;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: rgba(40, 40, 40, 0.9);
+}
+
+#header .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+@media (max-width: 992px) {
+  #header {
+    border: 0;
+    padding: 15px 0;
+  }
+}
+
+/* Get Startet Button */
+.get-started-btn {
+  margin-left: 25px;
+  background: #009961;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.get-started-btn:hover {
+  background: #00b371;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .get-started-btn {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+  }
+=======
   position: fixed;
   top: 0;
   left: 0;
@@ -256,6 +380,7 @@ h6 {
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
   background-color: #f5c669;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 /*--------------------------------------------------------------
@@ -264,11 +389,20 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  background: url("../img/hero-bg.jpg") top center;
+=======
   background: url("../img/Background.png") top right no-repeat;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   background-size: cover;
   position: relative;
 }
 
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+=======
 @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
@@ -277,6 +411,7 @@ h6 {
 
 #hero:before {
   content: "";
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   position: absolute;
   bottom: 0;
   top: 0;
@@ -284,6 +419,122 @@ h6 {
   right: 0;
 }
 
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+#hero .container {
+  padding-top: 72px;
+  position: relative;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+#hero .play-btn {
+  width: 94px;
+  height: 94px;
+  margin: 0 auto;
+  background: radial-gradient(#009961 50%, rgba(0, 153, 97, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#hero .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 3s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 153, 97, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+#hero .play-btn:hover::after {
+  border-left: 15px solid #009961;
+  transform: scale(20);
+}
+
+#hero .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+=======
 #hero h1 {
   position: relative;
   float: left;
@@ -341,6 +592,7 @@ h6 {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   }
 }
 
@@ -348,6 +600,23 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  padding: 80px 0;
+}
+
+.section-bg {
+  background-color: #8fffd6;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-weight: bold;
+  padding-bottom: 10px;
+  position: relative;
+=======
   padding: 60px 0;
   overflow: hidden;
 }
@@ -375,21 +644,42 @@ section {
   background: #ddd;
   bottom: 1px;
   left: calc(50% - 60px);
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  width: 50px;
+  height: 3px;
+  background: #009961;
+  bottom: 0;
+  left: 0;
+=======
   width: 40px;
   height: 3px;
   background: #f5c669;
   bottom: 0;
   left: calc(50% - 20px);
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .section-title p {
   margin-bottom: 0;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  color: #777777;
+  font-size: 15px;
+}
+
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+=======
 }
 
 /*--------------------------------------------------------------
@@ -399,6 +689,7 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: #728394;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .about .content ul {
@@ -407,6 +698,23 @@ section {
 }
 
 .about .content ul li {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  padding-left: 28px;
+  position: relative;
+}
+
+.about .content ul li+li {
+  margin-top: 10px;
+}
+
+.about .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #009961;
+  line-height: 1;
+=======
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -421,12 +729,254 @@ section {
   margin-right: 5px;
   color: #f5c669;
   line-height: 0;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
 }
 
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+.about .content .btn-learn-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #009961;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #009961;
+}
+
+.about .content .btn-learn-more:hover {
+  background: #009961;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  padding: 60px 30px;
+  transition: all ease-in-out 0.3s;
+  background: #fefefe;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  border-radius: 18px;
+  border-bottom: 5px solid #fff;
+}
+
+.services .icon-box .icon {
+  width: 64px;
+  height: 64px;
+  background: #009961;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+}
+
+.services .icon-box .icon i {
+  font-size: 28px;
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #282828;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+  border-color: #009961;
+}
+
+.services .icon-box:hover h4 a {
+  color: #009961;
+}
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  background: #009961;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.cta .cta-btn:hover {
+  background: #00b371;
+}
+
+@media (max-width: 1024px) {
+  .cta {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  .cta .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+}
+
+.features .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #009961;
+}
+
+.features .icon-box p {
+  font-size: 15px;
+  color: #848484;
+  margin-left: 60px;
+}
+
+.features .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  padding-top: 30px;
+}
+
+.clients .clients-wrap {
+  border-top: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+}
+
+.clients .client-logo {
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  overflow: hidden;
+  background: #fff;
+  height: 140px;
+}
+
+.clients .client-logo:hover img {
+  transform: scale(1.1);
+}
+
+.clients img {
+  transition: all 0.4s ease-in-out;
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  background: url("../img/counts-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+  position: relative;
+}
+
+.counts::before {
+  content: "";
+  position: absolute;
+  background: rgba(17, 17, 17, 0.9);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.counts .title {
+  position: relative;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.counts .title h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.counts .counters span {
+  font-size: 48px;
+  display: block;
+  font-weight: 700;
+  color: #009961;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .counts {
+    background-attachment: fixed;
+  }
+=======
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -564,28 +1114,47 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #f5c669;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+=======
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  border-radius: 50px;
+=======
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #f4f4f4;
+  border-radius: 50px;
+=======
   padding: 10px 15px;
   font-size: 14px;
   font-weight: 600;
@@ -594,17 +1163,86 @@ section {
   color: #272829;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  color: #fff;
+  background: #009961;
+=======
   color: #0563bb;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item img {
+  position: relative;
+  top: 0;
+  transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: -50px;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: #009961;
+  padding: 15px 20px;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: #33ffb4;
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+  right: 15px;
+}
+
+.portfolio .portfolio-item:hover img {
+  top: -30px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 0;
+=======
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -721,6 +1359,7 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 /*--------------------------------------------------------------
@@ -744,16 +1383,28 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  border: 1px solid #009961;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #009961;
+=======
   border: 1px solid #0563bb;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0563bb;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .portfolio-details .portfolio-info {
   padding: 30px;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  box-shadow: 0px 0 30px rgba(40, 40, 40, 0.08);
+=======
   box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -789,6 +1440,231 @@ section {
 }
 
 /*--------------------------------------------------------------
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+# Pricing
+--------------------------------------------------------------*/
+.pricing {
+  background-color: #f9f9f9;
+}
+
+.pricing .box {
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background: #fefefe;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+}
+
+.pricing .box h3 {
+  font-weight: 400;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #282828;
+}
+
+.pricing .box h4 {
+  font-size: 42px;
+  color: #009961;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pricing .box h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing .box h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing .box ul {
+  padding: 20px 0;
+  list-style: none;
+  color: #282828;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.pricing .box ul li {
+  padding-bottom: 16px;
+}
+
+.pricing .box ul i {
+  color: #009961;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing .box ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .box .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+
+.pricing .box .btn-buy {
+  display: inline-block;
+  padding: 10px 40px 12px 40px;
+  border-radius: 50px;
+  border: 2px solid #009961;
+  color: #009961;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .box .btn-buy:hover {
+  background: #009961;
+  color: #fff;
+}
+
+.pricing .recommended {
+  border-color: #009961;
+}
+
+.pricing .recommended .btn-buy {
+  background: #009961;
+  color: #fff;
+}
+
+.pricing .recommended .btn-buy:hover {
+  background: #00b371;
+  border-color: #00b371;
+}
+
+.pricing .recommended-badge {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 13px;
+  padding: 3px 25px 6px 25px;
+  background: #edfbf0;
+  color: #009961;
+  border-radius: 50px;
+}
+
+/*--------------------------------------------------------------
+# Faq
+--------------------------------------------------------------*/
+.faq {
+  padding: 0;
+}
+
+.faq .content {
+  padding: 60px 100px 0 100px;
+}
+
+.faq .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.faq .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.faq .content p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.faq .img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px;
+}
+
+.faq .accordion-list {
+  padding: 0 100px 60px 100px;
+}
+
+.faq .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .accordion-list li+li {
+  margin-top: 15px;
+}
+
+.faq .accordion-list li {
+  padding: 20px;
+  background: #fefefe;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  border-radius: 4px;
+}
+
+.faq .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.faq .accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .accordion-list .icon-show {
+  display: none;
+}
+
+.faq .accordion-list a.collapsed {
+  color: #343a40;
+}
+
+.faq .accordion-list a.collapsed:hover {
+  color: #009961;
+}
+
+.faq .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+
+  .faq .content,
+  .faq .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+=======
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
@@ -1001,6 +1877,7 @@ section {
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   }
 }
 
@@ -1013,6 +1890,12 @@ section {
 }
 
 .contact .info i {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  font-size: 32px;
+  color: #009961;
+  float: left;
+  line-height: 1;
+=======
   font-size: 20px;
   color: #0563bb;
   float: left;
@@ -1024,6 +1907,7 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .contact .info h4 {
@@ -1031,14 +1915,22 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  color: #282828;
+=======
   color: #45505b;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  color: #5b5b5b;
+=======
   color: #728394;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .contact .info .email,
@@ -1046,6 +1938,8 @@ section {
   margin-top: 40px;
 }
 
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+=======
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
@@ -1053,6 +1947,7 @@ section {
   color: #fff;
 }
 
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 .contact .php-email-form {
   width: 100%;
   background: #fff;
@@ -1066,24 +1961,42 @@ section {
   display: none;
   color: #fff;
   background: #ed3c0d;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  text-align: center;
+=======
   text-align: left;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   padding: 15px;
   font-weight: 600;
 }
 
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+=======
 .contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  text-align: left;
+=======
   text-align: center;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   padding: 15px;
   font-weight: 600;
 }
 
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+.contact .php-email-form .sent-message br+br {
+  margin-top: 25px;
+}
+
+=======
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 .contact .php-email-form .loading {
   display: none;
   background: #fff;
@@ -1105,9 +2018,21 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #009961;
+=======
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 .contact .php-email-form input {
@@ -1119,16 +2044,26 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  background: #009961;
+  border: 0;
+  padding: 10px 30px;
+=======
   background: #0563bb;
   border: 0;
   padding: 10px 35px;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  background: #00b371;
+=======
   background: #0678e3;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }
 
 @keyframes animate-loading {
@@ -1142,11 +2077,60 @@ section {
 }
 
 /*--------------------------------------------------------------
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 15px 0;
+  background: #f9f9f9;
+  min-height: 40px;
+  margin-top: 72px;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 63px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #424242;
+  content: "/";
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #0f0f0f;
+  color: #fff;
+=======
 # Footer
 --------------------------------------------------------------*/
 #footer {
   background: #f7f8f9;
   color: #45505b;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1155,6 +2139,10 @@ section {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  color: #fff;
+=======
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -1175,7 +2163,11 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  background: #009961;
+=======
   background: #0563bb;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1188,7 +2180,11 @@ section {
 }
 
 #footer .social-links a:hover {
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+  background: #00b371;
+=======
   background: #0678e3;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
   color: #fff;
   text-decoration: none;
 }
@@ -1201,6 +2197,15 @@ section {
   font-size: 13px;
 }
 
+<<<<<<< HEAD:Lithium-5/assets/css/style.css
+#footer .credits a {
+  color: #00b371;
+  transition: 0.3s;
+}
+
+#footer .credits a:hover {
+  color: #009961;
+=======
 .echolocation {
   background-repeat: no-repeat;
   background-size: contain;
@@ -1215,4 +2220,5 @@ section {
   background-size: contain;
   border-radius: 4px;
   height: auto;
+>>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98:Barium-4/assets1/css/style.css
 }

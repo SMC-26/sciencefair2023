@@ -1,0 +1,423 @@
+/*Unfortunately, unlike Revyel, graphic design is not my passion.*/
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: white !important;
+  color: black !important; 
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  padding: 50px 30px;
+  transition: all ease-in-out 0.3s;
+  background: #fefefe;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  border-radius: 18px;
+  border-bottom: 5px solid #fff;
+}
+
+.services .icon-box .icon {
+  width: 64px;
+  height: 64px;
+  background: #1e1e1e;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+}
+
+.services .icon-box .icon {
+  width: 64px;
+  height: 64px;
+  background: #1e1e1e;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+}
+
+.services .icon-box .icon i {
+  font-size: 28px;
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #1e1e1e;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+  border-color: #1e1e1e;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title p{
+  padding: 5px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title h2 {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 3px;
+  background: #1e1e1e;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #1e1e1e;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 150%;
+}
+
+/*--------------------------------------------------------------
+# Our Team Section
+--------------------------------------------------------------*/
+
+#team {
+  margin-top: 20px;
+}
+
+.team .member {
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  margin: 0px 0px 10px 0px;
+}
+
+.team .member img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.team .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.team .member .social {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team .member .social a {
+  color: #a2a2a2;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
+}
+
+.team .member .social a:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.sec-img {
+  height: 300px;
+  width: auto;
+  float: left;
+}
+
+.blacklink {
+  color: black !important;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.row.gy-4 {
+  justify-content:center; 
+}
+
+div p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+a h4{
+  font-family: 'Poppins', sans-serif;
+}
+
+#brief {
+  display: block;
+  height: 75px;
+}
+
+#concept {
+  display: block;
+  height: 10px;
+}
+
+#application {
+  display: block;
+  height: 15px;
+}
+
+.placeholder1{
+  float: right;
+  width: 325px;
+  height: auto;
+  margin: 15px 0px 15px 15px;
+  border-radius:5px;
+}
+
+.placeholder2{
+  float: left;
+  width: 325px;
+  height: auto;
+  margin: 15px 15px 15px 0px;
+  border-radius: 5px;
+}
+
+/* sets up image in header */
+header {
+  background-image: url(../../media/banner.jpg);
+  background-position: center center;
+  margin-top: 50px;
+  height: 100vh;
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-flow: column;
+}
+
+/* sets up header text and design */
+header h1 {
+  padding: 75px 250px;
+  font-family: 'Poppins', serif;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px 10px black, -1px -1px 10px black, 1px -1px 2px black, -1px 1px 2px black;
+  position: relative;
+  margin: auto;
+  font-size: 70px;
+  font-weight: 700; 
+  text-transform: uppercase;
+}
+
+#services {
+  margin-top: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+  
+footer {
+  background-color: #0f0f0f;
+  padding: 20px;
+}
+
+.sub-footer {
+  padding: 0px 150px;
+  text-align: center; 
+  color:#FFFFFF; 
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#fdetails {
+font-family: 'Fira Sans', sans-serif;
+font-size: 12px;
+color: white;
+}
+
+#sprites1 {
+  background: url(../../media/sm-icons.png) 0px 0px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+#sprites2 {
+  background: url(../../media/sm-icons.png) -52px -55px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+#sprites3 {
+  background: url(../../media/sm-icons.png) -104px -55px/160px auto; 
+  width: 55px;
+  height: 55px;
+}
+
+#sprites1:hover {
+  filter: brightness(75%);
+}
+
+#sprites2:hover {
+  filter: brightness(75%);
+}
+
+#sprites3:hover {
+  filter: brightness(75%);
+}
+
+.social-icon {
+  margin: 15px 5px;
+  display: inline-block;
+}
+
+.socmed .social-icon:first-child {
+  margin-left:0; 
+}
+
+.socmed { 
+  float: right;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4e4e4e; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+
+@media only screen and (max-width: 992px) {
+  header h1 { padding:0 50px; }
+}
+@media only screen and (max-width: 768px) {
+  header h1 { padding:0 50px; }
+}
+@media only screen and (max-width: 600px) {
+  header h1 { padding:0; font-size:60px; }
+  img { width:100% !important; }
+  .sub-footer { padding:15px 0; }
+  .mx-auto { padding-left:10px; padding-right:10px; max-width:95%; }
+  #fdetails { text-align:center; }
+  .socmed { float:none; text-align:center; }
+}
+@media only screen and (max-width: 480px) {
+  header h1 { font-size:30px; padding: 15px; }
+  .mx-auto { max-width:95%; }
+}
+
+.sec1 {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
+.sec1 p{
+  color: white !important;
+}
+
+.sec1 h2 {
+  padding-top: 40px;
+}
+
+.sec1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 3px;
+  background: white !important;
+  left: 0;
+}
+
+#sec2{
+  margin-top: 30px;
+}
