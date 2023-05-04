@@ -18,22 +18,16 @@ html{
 body{
   background: var(--box-shadow);
   font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
 }
 
 h1{
   font-size: 45px;
   font-weight: 600;
-}
-
-h2{
-  font-size: 35px;
-  font-weight: 600;
-  padding-left: 10px;
-}
-
-h3{
-  font-size: 25px;
-  font-weight: 500;
+  text-align: center;
 }
 
 p{
@@ -43,61 +37,9 @@ p{
   padding: 10px;
 }
 
-/* justify content */
-#intro-paragraph-1 {
+.paragraph{
   text-align: justify;
-}
-
-#intro-paragraph-2 {
-  text-align: justify;
-}
-
-#intro-paragraph-3 {
-  text-align: justify;
-}
-
-#intro-paragraph-4 {
-  text-align: justify;
-}
-
-#sci-paragraph {
-  text-align: justify;
-}
-
-#bio-paragraph-1 {
-  text-align: justify;
-}
-
-#bio-paragraph-2 {
-  text-align: justify;
-}
-
-#bio-paragraph-3 {
-  text-align: justify;
-}
-
-#bio-paragraph-4 {
-  text-align: justify;
-}
-
-#chem-paragraph-1 {
-  text-align: justify;
-}
-
-#chem-paragraph-2 {
-  text-align: justify;
-}
-
-#phys-paragraph-1 {
-  text-align: justify;
-}
-
-#phys-paragraph-2 {
-  text-align: justify;
-}
-
-#app-paragraph {
-  text-align: justify;
+  text-indent: 40px;
 }
 
 /* scroll bar */
@@ -127,6 +69,104 @@ p{
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
+}
+
+/* side bar */
+#menu {
+  height: 100vh;
+  position: fixed;
+  background-color: #87ceeb;
+  width: 300px;
+  transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(-100%);
+  left: 60px;
+  z-index: 10;
+}
+
+#menu.expanded {
+  transform: translateX(0%);
+  left: 0px;
+}
+
+.menu-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#blob {
+  top: 0;
+  z-index: -1;
+  right: 60px;
+  transform: translateX(100%);
+  height: 100%;
+  position: absolute;
+}
+
+#blob-path {
+  height: 100%;
+  fill:  #87ceeb;
+}
+
+.hamburger {
+  right: 20px;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  margin-top: -12px;  
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger .line:nth-child(3) {
+  bottom: 0;
+}
+
+.menu-inner ul {
+  padding: 0;
+  list-style: none;
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  top: 25%;
+}
+
+.menu-inner ul li {
+  color: #fff;
+  font-family: sans-serif;
+  padding: 15px 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu-inner ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.menu-inner ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu-inner ul li:hover::after{
+    width: 100%;
 }
 
 /* animate on scroll */
@@ -216,7 +256,7 @@ p{
   top:0;
   width: 100%;
   height: 100%;
-  background-color: rgba(135, 206, 235,0.45);
+  background-color: rgba(135, 206, 235,0.6);
  }
 
  .home .home-text{
@@ -239,7 +279,7 @@ p{
 }
 .home .home-text p span{
   font-size: 40px;
-  color: #ff3333;
+  color: black;
   font-weight: 700;
   display: inline-block;
   line-height: 46px;
@@ -279,7 +319,7 @@ p{
   margin: auto;
   text-align: left;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   z-index: 2;
 }
 
@@ -295,15 +335,6 @@ p{
   --white: hsl(0, 0%, 100%);
   --white-light: hsl(0, 0%, 99%);
 }
-.sciences{
-  z-index: 2;
-  background-color: white;
-  width: 100%;
-  margin: auto;
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 .sci-intro{
   position: relative;
   background-color: white;
@@ -312,6 +343,15 @@ p{
   text-align: left;
   padding-bottom: 50px;
   z-index: 2;
+}
+.sciences{
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 .container {
   max-width: var(--container);
@@ -425,4 +465,117 @@ header {
   }
 }
 
+.references p{
+  text-align: justify;
+}
+
 /* members */
+
+.members{
+  z-index: 2;
+  background-color: white;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin: auto;
+  width: 100%;
+}
+
+.members section{
+  position: relative;  
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.swiper{
+  width: 950px;
+}
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #87ceeb;
+  border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+section .card .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #87ceeb;
+}
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: ;
+} 
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+.name-profession .profession{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.swiper-pagination{
+  position: absolute;
+}
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #7d2ae8;
+}
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #7d2ae8;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #7d2ae8;
+}
+
+/* download */
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);a:link{text-decoration:none}
+.vn a{
+  background-color:#87ceeb;
+  position:relative;
+  margin:30px 5px;
+  padding:20px 20px 20px 20px;
+  color:#fff;
+  transition:all 0.4s ease;
+  border-radius:3px;
+}
+.vn a:hover{ 
+  background:#7f8c8d
+}

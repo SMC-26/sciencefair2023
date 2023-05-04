@@ -4,149 +4,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="draggable-slider.css" />
+    <script src="draggable-slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://smc-26.github.io/sciencefair2023/bootstrap.css" rel="stylesheet">
     <script src="https://smc-26.github.io/sciencefair2023/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    
-    <title>Document!!</title>
+    <title>Nanostructures in Pachliopta aristolochiae Wings for Enhanced Solar Panel Efficiency.</title>
 </head>
 <body>
     <script>addNavbar();</script>
-    <div id="firstpage">
-        <div class="Tcontainer">       
-             <h1 class="title">Nanostructures in Pachliopta aristolochiae Wings for Enhanced Solar Panel Efficiency.</h1>
-             <p>Ampogi talaga ni Arfred</p>
-        </div>
-       <div class="SS">
-            <div class="slider">
-                <div class="images">
-                    <input type="radio" name="slide" id="img1" checked>
-                    <input type="radio" name="slide" id="img2">
-                    <input type="radio" name="slide" id="img3">
-                    
-    
-                    <img src="images/1.jpg" class="m1" alt="img1">
-                    <img src="images/2.png" class="m2" alt="img2">
-                    <img src="images/3.jpg" class="m3" alt="img3">
-                  
+    <div id="all">
+        <div id="realfirstpage">
+            <div id="firstpage">
+                <div>
+                    <div id="Tcontainer">       
+                        <h1 id="title">Nanostructures in Pachliopta aristolochiae Wings for Enhanced Solar Panel Efficiency.</h1>
+                        <!-- <h1>Nanostructures in Pachliopta aristolochiae Wings for Enhanced Solar Panel Efficiency.</h1> -->
+                        <p id="groupwun">Group 1 - Calcium</p>
+                    </div>
                 </div>
-                <div class="dots">
-                    <label for="img1"></label>
-                    <label for="img2"></label>
-                    <label for="img3"></label>
-                    
+                <div class="SScontainer">
+                    <div class="SS">
+                        <div class="slider">
+                            <div class="images">
+                                <input type="radio" name="slide" id="img1" checked>
+                                <input type="radio" name="slide" id="img2">
+                                <input type="radio" name="slide" id="img3">
+                                
+                
+                                <img src="images/1.jpg" class="m1" alt="img1">
+                                <img src="images/2.png" class="m2" alt="img2">
+                                <img src="images/3.jpg" class="m3" alt="img3">
+                              
+                            </div>
+                            <div class="dots">
+                                <label for="img1"></label>
+                                <label for="img2"></label>
+                                <label for="img3"></label>
+                                
+                            </div>
+                            </div>	
+                        </div>
+                    </div>
                 </div>
-                </div>	
-            </div>
-        
-
-
-        </div>
-    </div>
-
-    <section class="red">
-        <div class="waves">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <div class="buttsola-container">
-            <div class="butsol-container">
-                <div class="butcontainer">
-                    <img class="image" src="images/butterfly.png">
-                    <div class="cursor"><img src="images/butterflynano.jpg"></div>
-                </div>
-        
-                <div class="solcontainer">
-                    <img class="image2" src="images/solarpanel.png">
-                    <div class="cursor2"><img src="images/solarpanelnano.jpg"></div>
+                <div class="waves">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
                 </div>
             </div>
+        <div id="secondpage">
+            <div class="buttsola-container">
+                <div class="butsol-container">
+                    <div class="butcontainer">
+                        <img class="image" src="images/butterfly.png">
+                        <div class="cursor"><img src="images/butterflynano.jpg"></div>
+                    </div>
+            
+                    <div class="solcontainer">
+                        <img class="image2" src="images/solarpanel.png">
+                        <div class="cursor2"><img src="images/solarpanelnano.jpg"></div>
+                    </div>
+                </div>
+                <p id="butsoltext">Hover over the icons to see how the "nanoholes" on the wings of the Common Rose Butterfly inspired the design of solar panels.</p>
+            </div>
+            <div class="Icontainer">
+                <img id = "bf" src="images/bf.png">
+                <h1 id="intro">Introduction</h1>
+                <p>With the world constantly evolving, there is a constant need for new and better technologies. With these innovations, there also must be a constant supply of energy to power them. Fossil fuels are doing the job well, but these nonrenewable energy supplies will run out sooner or later.<br><br></p>
+                <p>Solar panels are a good renewable alternative as an energy source, as these are "enough to handle the entire world's energy consumption for a full year" (n.d.). Instead of relying on non-renewable resources to power inventions, these panels are already well-known and proven to be effective.<br><br></p>
+                <p>The design of The California Institute of Technology (CIT) and Karlsruhe Institute of Technology (KIT)'s solar panels are based on the pattern and design of the black rose butterfly or Pachliopta aristolochiae which utilizes a semiconductor material of thin film with sheets of hydrogenated amorphous silicon, topped with a layer of minuscule holes with varying sizes.<br</p>
+                <p>Yirka (2017) mentions that normal thin-film solar cells are known to be less expensive, lighter, and flexible, although they perform less efficiently than traditional crystal-based cells. In order to relieve this, the application of the butterfly-wing-inspired nanostructures aims to improve the thin-film cells&#39 efficiency.<br><br></p>
+            </div>
         </div>
-        <div class="Icontainer">
+        <div id="thirdpage">
+            <div class="SCcontainer">
+                <img id = "bf" src="images/bf.png">
+                <h1 id="intro">Science Concepts Involved</h1>
+            </div>
+            <div class="spacing"></div>
+            <div class="carouwrapper">
+                <div id="example" class="draggable-slider">
+                    <div class="inner">
+                      <div id="bio" class="slide">
+                        <div class="caroutext">
+                            <h1>Biology</h1>
+                            <p>Biomimicry Based on Butterfly Wings for Solar Cell Design</p>
+                            <input type="button" value="Read More" id="biotext">
+                        </div>
+                        <div id="bioimg" class="carouimg">    
+                        </div>
+                      </div>
+                      <div id="chem" class="slide">
+                        <div class="caroutext">
+                            <h1>Chemistry</h1>
+                            <p>Improving a-Si:H Solar Cell Efficiency with Metallic Nanostructures.</p>
+                            <input type="button" value="Read More" id="chemtext">
+                        </div>
+                        <div id="chemimg" class="carouimg">    
+                        </div>
+                      </div>
+                      <div id="phys" class="slide">
+                        <div class="caroutext">
+                            <h1>Physics</h1>
+                            <p>Enhancing Solar Panel Efficiency with Hole-Patterned Surfaces</p>
+                            <input type="button" value="Read More" id="phystext">
+                        </div>
+                        <div id="physimg" class="carouimg">    
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <p id="SCsubtext"><br>Drag your cursor left or right on the science concept image to explore the different scientific concepts involved. If you want to learn more about any of them, simply click on the "Read More" button. Reclick the button again to collapse the shown text.</p>
+            </div>
+            <div class="readmore" id="biomore">
+                <p> 
+                    The Black Rose Butterfly (Pachliopta aristolochiae) is a species of butterfly that is active during the day and frequently visits many flowers, such as lantana, Dwarf Poinciana, yellow cosmos, and porterweed (Common Rose Butterfly Encyclopedia of Life, n.d.).<br><br>
+                    KIT's Institute of Microstructure Technology (IMT) was inspired by the biology of this butterfly and has utilized biomimicry based on the animals' wing color and wing pattern. The Common rose butterfly possesses a very dark color on its wings, allowing for efficient light absorption for heat management for the body (Oberdorf, n.d.-b).<br><br>
+                    The team's researchers, led by Hendrik Hölscher and Radwanul H. Siddique, replicated the butterfly's nanostructures in the silicon-absorbing layer of a thin-film solar cell. Cross-connections between the ridges on the butterfly's wings form disordered "nanoholes" that enhance light absorption (Oberdorf, n.d.-b).<br>
+                </p>
+            </div>
+            <div class="readmore" id="chemmore">
+                <p>
+                    The solar cell has a semiconductor material made of thin-film hydrogenated amorphous silicon (a-Si:H), a low-cost alternative and takes the shortest amount of time to produce energy. However, it suffers from light-induced degradation — its performance decreases when exposed to the sun for the first few hours (SinoVoltaics, n.d.). To compensate for this flaw, implementing metallic nanostructures in the active absorbing layers of a-Si:H solar cells has proven to improve optical absorption. In recent research in plasmonics, the nanostructures are proven to capture sunlight in a wide range of angles, absorb a broad range of wavelengths of light, and provide an independence from polarization state of incident light, which overall improves the light trapping scheme and enhance light absorption by 18.51% (Vora, 2015).<br><br>
+                    Electric field formation or the photovoltaic effect happens in the hydrogenated amorphous silicon (a-Si:H) layer. These Photovoltaic cells (also called PV cells) capture the light from the sun that directly hits it, and it converts this light into electricity.<br><br>
+                    Solar radiation, also known as electromagnetic radiation, is composed of photons. As the solar panel absorbs it, the semiconductor material absorbs a part of the photons, producing electron-hole pairs. If an electrical circuit is formed, the voltage difference drives the electrons from the negative to the positive side of the junction and creates an electric current in the form of electricity (Asdrubali et al., 2019).<br>
+                </p>
+            </div>
+            <div class="readmore" id="physmore">
+                <p>
+                    In normal solar panels, unpatterned PV cells, the cells without nanostructures, are arranged in an orderly manner on a flat surface. The angle at which the sun&#39s rays hit the PV cells is called the “angle of incidence” (AOI), and the AOI of a solar panel affects its efficiency and power output. The AOI’s effect on the efficiency can be calculated as a ratio from the maximum output as cos(AOI), for example, if the AOI is 10 degrees, then the efficiency of the solar panel at that angle would be cos(AOI)/cos(0).  To get the maximum output, the sun’s light has to hit the panels at a perpendicular angle, or at an AOI of 0 degrees, to capture as many photons as possible. This phenomenon happens close to midday, when the sun faces the solar panels directly. However, the rest of the hours in the morning have a larger AOI and therefore lesser efficiency (Honsberg, C., Bowden, S., 2019).<br><br>
+                    However, this nanostructure-patterned solar cell design is not a completely flat surface, as it utilizes holes. This creates a larger surface area in which light rays can hit at an angle. These holes act like funnels, as when light strikes against the walls of the holes, reflected light is bounced into the panel and is caught by the second layer of PV cells. Compare this with how light rays are reflected away in the flat solar panel, which causes the panel to lose efficiency without using anti-reflection coating material.<br><br>
+                    The modified solar panel surface essentially concentrates suns rays with AOIs farther from 0 degrees and increases solar panel efficiency when the sun is not perpendicular to the panel.<br><br>
+                    At an AOI of 0 degrees, unpatterned solar panels have been shown to have generally lesser absorption efficiency, than patterned (with holes) solar panels, and with a significant decrease in absorption of lights with wavelengths longer than 520nm.<br><br>
+                    Compared to the unpatterned solar panels being the most efficient at 0 degrees AOI, the patterned solar panels are the least efficient at an AOI of 0. Despite that, at an AOI of 0 degrees, the patterned solar panel has a relative efficiency of 97% more than the unpatterned solar panel, and its efficiency rises until its peak efficiency at an AOI of 10 to 30 degrees. At 50 degrees AOI, the patterned solar panel is 207% more efficient than the unpatterned, this being its peak relative absorption increase (Siddique et al, 2017).<br>
+                </p>
+            </div>
+        </div>
+        <div id="fourthpage">
+            <div class="Ccontainer">
+                <img id = "bf" src="images/bf.png">
+                <h1 id="intro">Conclusion</h1>
+                <p>In conclusion, the development of solar panels modeled after the wings of the Pachliopta aristolochiae offers a promising response to the rising need for renewable energy sources while minimizing the negative environmental effects. The replication of the butterfly's nanostructures and the use of thin film hydrogenated amorphous silicon enable improved efficiency at low cost. The solar panels' patterned surface also enables more light absorption at various AOIs, producing a higher output than conventional solar panels.<br><br></p>
+                <p>Improved solar panel longevity and methods to lessen light-induced degradation in thin film hydrogenated amorphous silicon could be the subject of future study. Additionally, looking into additional patterns and designs drawn from nature may result in solar panels that are even more effective and eco-friendly.<br><br></p>
+                <p>It is suggested that greater emphasis should be put on the creation of revolutionary technologies and renewable energy sources. To decrease our dependence on non-renewable resources and lessen the effects of climate change, governments, businesses, and individuals should give renewable energy solutions top priority when investing in and implementing them.<br></p>
+            </div>
+            <div class="conclusion">
+                <img src="images/conclusion.jpg" alt="">
+            </div>
+        </div>
+        <div id="fifthpage">
+            <div class="spacing"></div>
+            <div class="Rcontainer">
             <img id = "bf" src="images/bf.png">
-            <h1 id="intro">Introduction</h1>
-            <p>The world needs a constant supply of energy to power new technologies, but relying solely on non-renewable resources such as fossil fuels is not sustainable in the long run. Solar panels are a proven and effective alternative, with the potential to provide enough energy to meet the world's needs for an entire year. The California Institute of Technology and Karlsruhe Institute of Technology have developed solar panels based on the pattern and design of the black rose butterfly's wings, using thin film solar cells that are more cost-effective and efficient than traditional crystal-based cells.</p>
+            <h1 id="intro">References:</h1>
+            <ul>
+                <li>Asdrubali, F., & Desideri, U. (2019). 2.2.1 The PV Effect. In the Handbook of Energy Efficiency in buildings: A life cycle approach. essay, Butterworth-Heinemann.</li>
+                <li>Honsberg, C., & Bowden, S. (2019). Motion of the sun. PVEducation. https://www.pveducation.org/pvcdrom/properties-of-sunlight/motion-of-the-sun</li>
+                <li>How does solar work? Energy.gov. (n.d.). Retrieved April 26, 2023, from https://www.energy.gov/eere/solar/how-does-solar-work</li>
+                <li>Mostakim, K., & Hasanuzzaman, M. (2022). Solar photovoltaic thermal systems. In Elsevier eBooks (pp. 123–150). Elsevier BV. https://doi.org/10.1016/b978-0-12-823959-9.00005-2</li>
+                <li>Oberdorf, I. (n.d.-b). KIT - KIT - Media - Press Releases - Archive Press Releases - Butterfly Wing Inspires Photovoltaics: Light Absorption Can Be Enhanced by Up to 200 Percent. https://www.kit.edu/kit/english/pi_2017_153_butterfly-wing-inspires-photovoltaics-light-absorption-can-be-enhanced-by-up-to-200-percent.php</li>
+                <li>Peellden. (2013). Pachliopta aristolochiae interposita. Wikimedia. photograph. https://commons.wikimedia.org/wiki/File:Pachliopta_aristolochiae_interposita.jpg</li>
+                <li>Light Induced Degradation (LID) Test, PV specialized laboratory tests. SinoVoltaics (n.d.). Retrieved from https://sinovoltaics.com/light-induced-degradation-lid-test/</li>
+                <li>Siddique, R. H., Donie, Y. J., Gomard, G., Yalamanchili, S., Merdzhanova, T., Lemmer, U., & Hölscher, H. (2017). Bioinspired phase-separated disordered nanostructures for thin photovoltaic absorbers. Science Advances, 3(10). https://doi.org/10.1126/sciadv.1700232</li>
+                <li>Siddique, R. H. (2017). The Verge. photograph, KIT/Caltech. Retrieved from https://www.theverge.com/2017/10/19/16503258/butterfly-wings-engineering-solar-cell-energy-biomimicry</li>
+                <li>Vora, A. (2015). Increasing solar energy conversion efficiency in thin film hydrogenated amorphous silicon solar cells with patterned plasmonic silver nano-disk array (thesis).</li>
+                <li>Yirka, B. (2017). Black butterfly wings offer a model for better solar cells. PHYS ORG. https://phys.org/news/2017-10-black-butterfly-wings-solar-cells.html</li>
+            </ul>
+            </div>
         </div>
-       
-        </section>
-  </section>
+        <footer class="footer">
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            </ul>
+            <h2>Calcium Group 1 Members</h2>
+            <ul class="menu">
+                <ul style="list-style-type: none;">
+                    <li>Arfred Nathanael Daño Sanchez</li>
+                    <li>arfrednathanael.sanchez@smc.pshs.edu.ph</li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li>Jarron Decrepito</li>
+                    <li>jarron.decrepito@smc.pshs.edu.ph</li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li>Jerice Janica Ramos Escobarte</li>
+                    <li>jericejanica.escobarte@smc.pshs.edu.ph</li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li>JinHee Sotto Kim</li>
+                    <li>jinhee.kim@smc.pshs.edu.ph</li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li>Mariel Tagimacruz</li>
+                    <li>marieljoy.tagimacruz@smc.pshs.edu.ph</li>
+                </ul>
+                <ul style="list-style-type: none;">
+                    <li>Mikaela Bacaltos</li>
+                    <li>mikaelamarie.bacaltos@smc.pshs.edu.ph</li>
+                </ul>
+            </ul>
+          </footer>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
   <script src='script.js'></script>
-
-  <div class="page3">
-    <div class="SI">
-        <h1 class="black"> Science Concepts Involved:</h1>
-    </div>
-    <div class="abcd">
-        <div class="pogimosir">
-            <div class="container">
-            <div class="column">
-                <h1 class="black">Bio</h1>
-                <p>The Black Rose Butterfly (Pachliopta aristolochiae) possesses a very dark color on its wings, allowing for efficient light absorption for heat management of the body (Oberdorf, n.d.-b). The team's researchers, led by Hendrik Hölscher and Radwanul H. Siddique, replicated the butterfly's nanostructures in the silicon-absorbing layer of a thin-film solar cell. Cross-connections between the ridges on the butterfly's wings form disordered "nanoholes" that enhance light absorption (Oberdorf, n.d.-b).
-                </p>
-            </div>
-            <div class="column">
-                <h1 class="black">Chem</h1>
-                <p>The solar cell has a semiconductor material made of thin-film hydrogenated amorphous silicon (a-Si:H), a low-cost alternative and takes the shortest amount of time to produce energy. However, it suffers from light-induced degradation — its performance decreases when exposed to the sun for the first few hours (SinoVoltaics, n.d.). In recent research in plasmonics, implementing metallic nanostructures in solar panels has proven to capture sunlight in a wide range of angles, absorb a broad range of wavelengths of light, and provide an independence from polarization state of incident light, which overall improves the light trapping scheme and enhance light absorption by 18.51%, which compensates for the flaw of the semiconductor. (Vora, 2015).
-                    <br>
-                    <br>
-                    The photovoltaic effect happens in the semiconductor a-Si:H layer. The solar cell captures the light from the sun that directly hits it, and it converts this light into electricity. Solar radiation, also known as electromagnetic radiation, is composed of photons. As the solar panel absorbs it, the semiconductor material absorbs a part of the photons, producing electron-hole pairs. If an electrical circuit is formed, the voltage difference drives the electrons from the negative to the positive side of the junction and creates an electric current in the form of electricity (Asdrubali et al., 2019). 
-                    </p>
-            </div>
-            <div class="column">
-                <h1 class="black"> Physics</h1>
-                <p>In normal solar panels, average unpatterned photovoltaic cells (also called PV cells) are arranged in an orderly manner on a flat surface. These PV cells absorb sunlight and create electrical flow. To get the maximum electrical output, the sun’s light has to hit these panels at a perpendicular angle to capture as many photons as possible (Honsberg, C., Bowden, S., 2019).
-                <br>
-                <br>
-                However, this nanostructure-patterned solar cell design uses holes, and is not a flat surface, which creates a larger surface area on where light rays can hit at an angle. These holes act like funnels, as when light strikes the walls of the holes, reflected light is bounced into the panel and is caught by a second layer of PV cells. Compare this with how light rays are reflected away in the flat solar panel, which causes the panel to lose efficiency without using anti-reflection coating material.
-                    <br>
-                    <br>
-                    
-When light hits at a perpendicular angle, the nanostructure-patterned PV cell is 97% more efficient than the average thin-film solar cell, and surprisingly, this is the least efficient angle for the patterned PV cell. When light hits at an angle of 50 degrees, similar to in the diagram above, the patterned PV cell is 207% more efficient than the unpatterned PV cell (Siddique et al, 2017).
-
-                </p>
-            </div>
-        </div>
-
-    </div>
-    <div class="CNC">
-        <h1>Conclusion</h1>
-        <p>The development of solar panels modeled after the wings of the Pachliopta aristolochiae offers a promising response to the rising need for renewable energy sources while minimizing the negative environmental effects. The replication of the butterfly's nanostructures and the use of thin film hydrogenated amorphous silicon enable improved efficiency at low cost. The solar panels' patterned surface also enables more light absorption at various AOIs, producing a higher output than conventional solar panels.</p>
-    
-
-    </div>
-    </div>
-
 </body>
-
-<!-- <footer class="footer">
-    <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-    </div>
-    <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
-    </ul>
-    <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-
-    </ul>
-    <p>Science Fair 2023 Group 1</p>
-  </footer>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
-
-  
 </html>

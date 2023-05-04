@@ -32,6 +32,10 @@ a:focus {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 p {
   padding: 0;
   margin: 0 0 30px 0;
@@ -75,7 +79,7 @@ hr {
 
 
 #hero .hero-container {
-  background: rgba(0, 0, 0, 0.8);
+  background: url("../img/hero1.jpg") fixed center center;
   display: table-cell;
   margin: 0;
   padding: 0;
@@ -226,6 +230,7 @@ section {
 .section-description {
   text-align: center;
   margin-bottom: 40px;
+  font-style: italic;
 }
 
 .section-title-divider {
@@ -405,7 +410,7 @@ section {
     font-size: 2rem;
   }
   hr {
-    margin: 1rem 0 1rem;
+    margin: 1rem 0 1grem;
   }
   .about-content h2 {
     font-size: 2.5rem;
@@ -537,7 +542,7 @@ section {
 }
 
 .skytext {
-  background-image: url("../img/sky.png");
+  background-image: url("../img/sky.png") ;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -616,7 +621,7 @@ section {
 
 
 .item1 {
-  background-image: url("../img/airplane.jpg");
+  background-image: url("../img/airplane.jpg") ;
   background-size: cover;
   
 }
@@ -671,31 +676,77 @@ section {
   border-radius: 0;
 }
 
+.card-body {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .card-body {
+    height: 30vh !important;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .card-body {
+    height: 40vh;
+  }
+}
+
+
+.card-img-top {
+  max-height: 250px;
+}
+
 .card-body h5 {
   font-size: 2rem;
 }
 
 .card-body p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .btn-card {
   background: none;
-  border: 2px solid black;
+  border: 1px solid black;
   color: black;
   padding: 0.5vw 2vw;
 }
 
 .btn-card:hover {
-  border: 2px solid white;
+  border: 1px solid white;
   background: black;
   color: white;
 }
 
+/* Modal Section
+--------------------------------*/
+
+.ratio-16-9 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.ratio-inner {
+  display: block;
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+
 /* Team Section
 --------------------------------*/
 #team {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background: url("../img/teambg.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -721,6 +772,7 @@ section {
 
 .ourt {
   margin-bottom: 3vh;
+  color: white;
 }
 
 
@@ -731,12 +783,15 @@ section {
 #team .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
+  color: white;
 }
 
 #team .member span {
   font-style: italic;
   display: block;
   font-size: 1rem;
+  color: white;
+  text-align: justify;
 }
 
 
@@ -752,6 +807,20 @@ section {
 
 #footer .copyright {
   text-align: center;
+}
+
+#footer p {
+  text-align: center;
+  margin: 0;
+}
+
+#footer h5 {
+  text-align: center;
+}
+
+
+#footer hr {
+  margin: 2vh;
 }
 
 #footer .credits {

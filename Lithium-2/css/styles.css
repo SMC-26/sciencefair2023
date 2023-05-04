@@ -83,11 +83,18 @@ header {
     border-radius: 8px;
 }
 
+
 .namecomma{
   color: rgba(255, 255, 255, 0.377);
 }
 
+#navix {
+  background-color: rgba(0, 0, 0, 0.87)
+}
 
+#mxdf{
+  padding-left: 15px;
+}
   
 
 .pnav {
@@ -181,12 +188,63 @@ article {
   object-fit: cover;
 }
 
+#conerod{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center; 
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#cctvmon{
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top; 
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
 #bodyeagle {
   position: relative;
   height: 300px;
   overflow: hidden;
   object-fit: cover;
+  object-position: left; 
+  border-radius: 5px;
 }
+
+#camsensor{
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center; 
+  border-radius: 5px;
+}
+
+#bayer{
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center; 
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+#stackcctv{
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: bottom; 
+  border-radius: 5px;
+}
+
 /* qkvyj jahup tylnt ecevm lxljx romhw meybw ejtji jcvse ooite efhlq vrxtg zskkc dhsnc aasxp zafas qoxjx kunnj wuxja rbepa gxjug ssufo wemsm txlts azjcw cenmf oympf drnqy jmwjh qtlbq ttvkg xrjxh hyaeh jotlk todoi isuks ws */
 
 #authorspart {
