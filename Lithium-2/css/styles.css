@@ -88,7 +88,13 @@ header {
   color: rgba(255, 255, 255, 0.377);
 }
 
+#navix {
+  background-color: rgba(0, 0, 0, 0.87)
+}
 
+#mxdf{
+  padding-left: 15px;
+}
   
 
 .pnav {
@@ -194,7 +200,7 @@ article {
 
 #cctvmon{
   position: relative;
-  height: 100px;
+  height: 200px;
   overflow: hidden;
   object-fit: cover;
   object-position: top; 

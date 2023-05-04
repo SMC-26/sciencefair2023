@@ -120,7 +120,7 @@ header div p {
   flex-direction: column;
   text-align: center;
   position: relative;
-  height: 60vh;
+  height: 80vh;
   padding-top: 60px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -363,6 +363,15 @@ section {
   background: #ef6603;
   color: #fff;
   text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# References
+--------------------------------------------------------------*/
+
+.refer .content p {
+  text-indent: -40px;
+  padding-left: 40px;
 }
 
 /*--------------------------------------------------------------

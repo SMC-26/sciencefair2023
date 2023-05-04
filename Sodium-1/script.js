@@ -4,7 +4,5 @@ ScrollReveal({
     duration: 1500,
     delay: 400
 })
-
-ScrollReveal().reveal('#w, #o, .concept-title', {delay:150, origin:'top'})
-ScrollReveal().reveal('#m, #intro', {delay:150, origin:'top'})
-ScrollReveal().reveal('#bio-card,#chem-card,#phys-card', {delay:200, origin:'left'})
+ScrollReveal().reveal('#m, #intro, .concept-title, #bio-title, #bio-desc, #phys-title, #phys-desc, #references', {delay:150, origin:'right'})
+ScrollReveal().reveal('#bio-card,#chem-card,#phys-card, #w, #o, #chem-title, #chem-desc, #application-title, application-desc', {delay:150, origin:'left'})

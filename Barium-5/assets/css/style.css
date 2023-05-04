@@ -230,6 +230,7 @@ section {
 .section-description {
   text-align: center;
   margin-bottom: 40px;
+  font-style: italic;
 }
 
 .section-title-divider {
@@ -716,6 +717,31 @@ section {
   background: black;
   color: white;
 }
+
+/* Modal Section
+--------------------------------*/
+
+.ratio-16-9 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.ratio-inner {
+  display: block;
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
 
 /* Team Section
 --------------------------------*/
