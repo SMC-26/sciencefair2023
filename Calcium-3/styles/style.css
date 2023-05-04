@@ -1,0 +1,16 @@
+/* do not remove this import from css */
+@import url("https://smc-26.github.io/sciencefair2023/x-assets/css/bootstrap.css");
+.carousel-container{
+    min-height: 50vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.title-text {
+    margin-top: 0;
+    line-height: 1.2;
+
+}
