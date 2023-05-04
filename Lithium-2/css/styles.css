@@ -186,6 +186,17 @@ article {
   height: 300px;
   overflow: hidden;
   object-fit: cover;
+  object-position: left; 
+  border-radius: 5px;
+}
+
+#camsensor{
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center; 
+  border-radius: 5px;
 }
 /* qkvyj jahup tylnt ecevm lxljx romhw meybw ejtji jcvse ooite efhlq vrxtg zskkc dhsnc aasxp zafas qoxjx kunnj wuxja rbepa gxjug ssufo wemsm txlts azjcw cenmf oympf drnqy jmwjh qtlbq ttvkg xrjxh hyaeh jotlk todoi isuks ws */
 
