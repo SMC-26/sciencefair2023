@@ -721,6 +721,11 @@ section {
 /* Modal Section
 --------------------------------*/
 
+#references p {
+  font-size: 0.7rem;
+}
+
+
 .ratio-16-9 {
   display: block;
   position: relative;
