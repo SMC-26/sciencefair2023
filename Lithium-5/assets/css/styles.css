@@ -13,7 +13,7 @@ body {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 60px 30px;
+  padding: 50px 30px;
   transition: all ease-in-out 0.3s;
   background: #fefefe;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
@@ -226,7 +226,7 @@ a h4{
 
 #brief {
   display: block;
-  height: 45px;
+  height: 75px;
 }
 
 #concept {
@@ -404,8 +404,8 @@ color: white;
   color: white !important;
 }
 
-.sec1 h2{
-  padding-top: 20px;
+.sec1 h2 {
+  padding-top: 40px;
 }
 
 .sec1::after {
@@ -416,4 +416,8 @@ color: white;
   height: 3px;
   background: white !important;
   left: 0;
+}
+
+#sec2{
+  margin-top: 30px;
 }
