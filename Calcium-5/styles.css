@@ -1,4 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+body, html {
+    margin: 0px !important;
+    padding: 0px !important;
+}
 #header{
     background-image: url('header.png');
     height: 100vh;
@@ -7,7 +11,7 @@
     background-position: center;
     background-position-y:30px;
 }
-body{
+html{
     margin:0;
     padding:0;
 }
@@ -26,7 +30,7 @@ body{
 }
 .healingwonders{
     margin:10px;
-    text-shadow: 3px 3px #000000;
+    text-shadow: 3px 3px #4b4b4b;
     text-indent:20px;
     font-weight:bolder;
     color:white;
@@ -73,15 +77,29 @@ h2{
 hr{
     border-top:2px solid rgb(106, 162, 207);
 }
+p{
+    line-height:200%;
+}
+
 .filter-btn.active {
     background: var(--primary);
     color: var(--white);
 }
+.clarence_paragraph{
+    text-indent:50px;
+    font-size:20px;
+}
+.tab-content-left{
+    width:1000px;
+}
 .container-tab-mode{
     overflow: hidden;
     height:300px;
-    position: relative;
-    margin:0 auto;
+    margin:auto;
+    width:90%;
+}
+.button_bio{
+    color:green;
 }
 .tab-item.tab_select {
     transform: translateY(0);
@@ -95,13 +113,17 @@ hr{
     width: 100%;
     height: 100%;
     position: absolute;
-    padding: 0rem 3rem;
+    left:10%;
     transform: translateY(100%);
     background: var(--white-light);
     transition: transform 0.5s ease-in-out;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     place-items: start start;
+}
+.tab-heading{
+    font-family: "Minecraft", sans-serif;
+    padding-bottom:3.5%;
 }
 @media only screen and (max-width: 768px) {
     *, html, body, .row {
@@ -118,5 +140,20 @@ hr{
     }
     #chemistry, #physics{
         margin-left:2px !important;
+    }
+    .clarence_paragraph{
+        font-size:13px;
+    }
+    .tab-content-left{
+        width:25rem;
+    }
+    .tab-item{
+        left:2%;
+    }
+    h2{
+        font-size:20px !important;
+    }
+    img.subj{
+        width:40% !important;
     }
  }
