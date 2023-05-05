@@ -6,22 +6,24 @@ html, body{
     height: 100%;
 }
 .Hero-pics{
-    background-image: url('Gif.gif');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('Crops.mp4');
     position: relative;
+    right: 0;  
+    bottom: 0;
+    min-width: 100%;
+    min-height: 70%;
+    margin: 0%;
 }
 .Hero-texts{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5em;
     text-align: center;
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    width: 90%;
 }
 .And-I-think-to-myself{
     float: left;
