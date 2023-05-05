@@ -4,11 +4,13 @@ body, html {
 
 .content {
     padding: 60px;
+    color: #FFFDF8;
+    font-family: "Inter";
 }
 
-.heroImage {
+header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/header.png");
-  height: 70%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +33,6 @@ body, html {
 }
 
 .heading {
-    color: #FFFDF8;
     text-align: center;
     font-weight: 900;
 }
@@ -50,20 +51,16 @@ body, html {
 }
 
 .info {
-    color: #FFFDF8;
     margin-top: 20px;
     padding: 20px;
     background-color: rgba(200,158,113,0.5);
     border-radius: 10px;
     margin-bottom: 70px;
-}
-
-section {
-    font-family: "Inter";
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .scienceHeading {
-    color: #FFFDF8;
     font-weight: 900;
 }
 
@@ -83,45 +80,153 @@ section {
     padding-right: 10px;
 }
 
+.download:hover {
+    background-color: #c89e71;
+    color: black;
+}
 
+.download {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    width: 35%;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
 
 ::-webkit-scrollbar {
-  width: 5px;
-  
+    width: 5px;
 }
-
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-
+    background: #f1f1f1; 
+}   
+  
 ::-webkit-scrollbar-thumb {
-  background: #964B00; 
-}
-
-
+    background: #808080; 
+}  
+ 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8b6c56; 
+    background: #8b6c56; 
+}
+  
+.members1, .members2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.members1, .members2{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .memberpic{
-            border-radius: 50%;
-            height: 275px;
-            width: 275px;
-            float: left;
-            text-align: center;
-            background-color: #c89e71;
-            opacity: 50%;
-        }
-        .name{
-            text-align: center;
-        }
-        .desc{
-            text-align: center;
-        }
+.memberpic {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.m {
+    float: left;
+}
+
+.name {
+    text-align: center;
+}
+
+.desc {
+    text-align: center;
+}
+
+#mp1 {
+    background-image: url(images/kyle.jpg);
+    background-size: 100%;
+}
+
+#mp2 {
+    background-image: url(images/mick.jpg);
+    background-size: 100%;
+}
+
+#mp3 {
+    background-image: url(images/earl.jpg);
+    background-size: 100%;
+}
+
+#mp4 {
+    background-image: url(images/lirein.jpg);
+    background-size: 100%;
+}
+
+#mp5 {
+    background-image: url(images/sangjin.png);
+    background-size: 100%;
+}
+
+#mp6 {
+    background-image: url(images/chloe.png);
+    background-size: 100%;
+}
+
+footer {
+    margin: 0;
+    background-color: rgb(35, 19, 1);
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 0.5;
+    color: #c89e71;
+}
+
+.dopamine {
+    height: 390px;
+    margin-right: 25px;
+    padding-bottom: 10px;
+}
+
+.chem img {
+    float: left;
+}
+
+.music1 {
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+}
+
+.music2 {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.lsf {
+    color: #c89e71;
+}
+
+.lsf:hover {
+    color: black;
+}
+
+.member-email {
+    padding: 10px;
+    margin-left: 35%;
+    text-align: center;
+    color: white;
+    background-color: rgb(35, 19, 1);
+}
+
+.member-email:hover {
+    color: black;
+    background-color: #c89e71;
+}
+
+.members2 {
+    padding-top: 20px;
+    margin-bottom: 60px;
+}

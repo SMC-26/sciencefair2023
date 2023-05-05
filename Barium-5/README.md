@@ -3,40 +3,13 @@
 
 ![HOLY COW](https://media.discordapp.net/attachments/877147396449116210/934059063958990878/unknown.png)
 
-## Progress: 70% 
+## Progress: 100%  
 
-For now the website looks like a template but its gonna be an original webpage trust me :))
+whew
 
-<<<<<<< HEAD
 ### Lines of original code added by Revyel: 1,913
-=======
-**Totally Finished:**
->>>>>>> parent of 516faf5 (Merge pull request #58 from SMC-26/main)
 
-- About page
-
-- Carousel
-
-**Finished styling:**
-
-- Hero
-
-- Our Team
-
-**Under construction:**
-
-- Footer
-
-- Showcases
-
-**Not added:**
-
-- Modals
-
-
-### Lines of original code added by Revyel: 1,339  
-
-### Lines of original code added by Rhyss: 10
+### Lines of original code added by Rhyss: ~20
 
 ## Members and Credits
 

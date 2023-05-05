@@ -21,20 +21,11 @@ const appear = new IntersectionObserver(
 
 appear.observe(faders);
 
-<<<<<<< HEAD
 function alert_result(){
   document.getElementById("animation_img3").style="display:absolute; z-index:2;margin-top:20%;animation-name:scissoring; animation-duration:1.5s; transform:translateX(150%);";
 }
 function healing_result(){
    document.getElementById("animation_img3").style="z-index:2;margin-top:20%;animation-name:scissoringx; animation-duration:2s; animation-fill-mode:forwards;";
-=======
-
-function alert_result(){
-    document.getElementById("animation_img3").style="display:absolute; z-index:2;margin-top:20%;animation-name:scissoring; animation-duration:1.5s; transform:translateX(150%);";
-}
-function healing_result(){
-    document.getElementById("animation_img3").style="z-index:2;margin-top:20%;animation-name:scissoringx; animation-duration:2s; animation-fill-mode:forwards;";
->>>>>>> parent of 516faf5 (Merge pull request #58 from SMC-26/main)
 }
 
 
