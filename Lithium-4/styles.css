@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-
 header{
   z-index: 999;
   position: absolute;
@@ -17,7 +15,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 170px;
+  padding: 15px 200px;
   transition: 0.5s ease;
 }
 
@@ -46,7 +44,7 @@ header .navigation .navigation-items a{
 header .navigation .navigation-items a:before{
   content: '';
   position: absolute;
-  background: #E8B600;
+  background: #fff;
   width: 0;
   height: 3px;
   bottom: 0;
@@ -59,7 +57,7 @@ header .navigation .navigation-items a:hover:before{
 }
 
 section{
-  padding: 100px 170px;
+  padding: 100px 200px;
 }
 
 .home{
@@ -84,6 +82,7 @@ section{
 
 .home .content{
   z-index: 888;
+  color: #fff;
   width: 70%;
   margin-top: 50px;
   display: none;
@@ -94,7 +93,6 @@ section{
 }
 
 .home .content h1{
-  color: #fff;
   font-size: 4em;
   font-weight: 900;
   text-transform: uppercase;
@@ -106,18 +104,16 @@ section{
 .home .content h1 span{
   font-size: 1.2em;
   font-weight: 600;
-  color: #EB8518;
 }
 
 .home .content p{
-  color: #fff;
   margin-bottom: 65px;
 }
 
 .home .content a{
   background: #fff;
   padding: 15px 35px;
-  color: #EB8518;
+  color: #1680AC;
   font-size: 1.1em;
   font-weight: 500;
   text-decoration: none;
@@ -156,40 +152,6 @@ section{
   height: 100%;
   object-fit: cover;
 }
-
-.slider-navigation{
-  z-index: 888;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(80px);
-  margin-bottom: 12px;
-}
-
-.slider-navigation .nav-btn{
-  width: 12px;
-  height: 12px;
-  background: #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
-  transition: 0.3s ease;
-}
-
-.slider-navigation .nav-btn.active{
-  background: #2696E9;
-}
-
-.slider-navigation .nav-btn:not(:last-child){
-  margin-right: 20px;
-}
-
-.slider-navigation .nav-btn:hover{
-  transform: scale(1.2);
-}
-
-
 @media (max-width: 1040px){
   header{
     padding: 12px 20px;
@@ -268,236 +230,148 @@ section{
     line-height: 60px;
   }
 }
-.intro{
-  background-color: #F3F5FF;
-  text-align: justify;
+.ram {
+    display: inline-block;
+    margin-top: 10px;
 }
-.intro h1{
-  text-align: center;
-  color: #BD6200;
-  font-size: 40px;
+.rpicture {
+    display: block;
+    width: 310px;
+    float: left;
 }
-.intro .row{
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 2rem 0;
-  padding-bottom: 3rem;
-
+.rimg {
+    display: block;
+    height: 300px;
+    width: 300px;
 }
-.intro h3{
-  font-weight: 500;
-  color: #162C39;
-  text-align: center;
-}
-.intro .content p{
-  padding: 20px;
-  color: #293F4B;
-}
-.intro .content .two{
-  margin-top: 20px;
-  color: #293F4B;
-}
-.intro .content .img-container{
-  position: relative;
-}
-.intro .content .img-container img{
-  width: 50%;
-  height: 50%;
-  border-radius: 0.5rem;
-  object-fit: cover;
-  float: left;
-  margin-right: 15px;
-}
-.intro .content .img-container2 img{
-  margin-top: 40px;
-  width: 40%;
-  height: 50%;
-  border-radius: 0.5rem;
-  object-fit: cover;
-  float: right;
-  margin-left: 15px;
-}
-.concepts{
-
-}
-.concepts .cards{
-  padding-top: 20px;
-  display: flex;
-}
-.concepts .text{
-  margin: 20px;
-  padding: 30px;
-  border-radius: 0.5rem;
-  background: #fff;
-  box-shadow: 0px 0px 20px rgb(128,128,128,.3)
-}
-.concepts h1{
-  text-align: center;
-  color: #BD6200;
-  font-size: 40px;
-}
-.concepts h2{
-  font-weight: 500;
-  text-align: center;
-  color: #162C39;
-  font-size: 20px;
-}
-.concepts p{
-  color: #293F4B;
-}
-.concepts .cards .text a{
-  padding-top: 5px;
-  padding-bottom: 20px;
-  text-decoration: none;
-  color: black;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s ease;
-  font-size: 30px;
+.rdescription {
+    display: block;
+    width: 550px;
+    float: right;
 }
 
-.application{
-  background-color: #F3F5FF;
-}
-.application h1{
-  text-align: center;
-  color: #BD6200;
-  padding-bottom: 20px;
-  font-size: 40px;
-}
-.slider{
-  position: relative;
-  background: #000116;
-  width: 100%;
-  min-height: 500px;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: auto;
+.divw {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    font-family: Poppins;
 }
 
-.slider .slide{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  clip-path: circle(0% at 0 50%);
+.divb {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: white;
+    font-family: Poppins;
 }
 
-.slider .slide.active{
-  clip-path: circle(150% at 0 50%);
-  transition: 2s;
+.divi {
+    text-align: center;
 }
 
-.slider .slide img{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.divt{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.slider .slide .info{
-  position: absolute;
-  color: #222;
-  background: rgba(255, 255, 255, 0.3);
-  width: 75%;
-  margin-top: 50px;
-  margin-left: 50px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+.vid {
+    height: 350px;
+    width: 750px;
 }
 
-.slider .slide .info h2{
-  font-size: 2em;
-  font-weight: 800;
+.divv {
+    text-align: center;
 }
 
-.slider .slide .info p{
-  font-size: 1em;
-  font-weight: 400;
+.bio{
+    display: inline;
+    font-style: bold;
+    color: #4397e6;
 }
 
-.navigation{
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+.chem{
+    display: inline;
+    font-style: bold;
+    color: #09e12f;
 }
 
-.slider:hover .navigation{
-  opacity: 1;
+.phys{
+    display: inline;
+    font-style: bold;
+    color: #ff6666;
 }
 
-.prev-btn, .next-btn{
-  z-index: 999;
-  font-size: 2em;
-  color: #222;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  cursor: pointer;
+.diagram {
+    height: 320px;
+    width: 510px;
 }
 
-.prev-btn{
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
-.next-btn{
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+h1 {
+    font-family: Righteous;
+    color: gold;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: Poppins;
+    font-style: italic;
+}
+h3 {
+    text-align: center;
+    font-family: Poppins;
+}
+h4{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: lighter;
+    font-style: italic;
+}
+p{
+    text-align: justify;
+    font-family: Poppins;
+}
+img {
+    width: 943px;
+    height: 450px;
+}
+hr {
+    height: 20px;
+    opacity: 0%;
 }
 
-.navigation-visibility{
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-}
-
-.navigation-visibility .slide-icon{
-  z-index: 999;
-  background: rgba(255, 255, 255, 0.5);
-  width: 20px;
-  height: 10px;
-  transform: translateY(-50px);
-  margin: 0 6px;
-  border-radius: 2px;
-  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-}
-
-.navigation-visibility .slide-icon.active{
-  background: #4285F4;
-}
-
-@media (max-width: 900px){
-  .slider{
-    width: 100%;
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .githubLink a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
   }
 
-  .slider .slide .info{
-    position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 500px){
-  .slider .slide .info h2{
-    font-size: 1.8em;
-    line-height: 40px;
+  .githubLink a:hover {
+    background-color: black;
+    transition: 0.5s;
   }
 
-  .slider .slide .info p{
-    font-size: 0.9em;
+  .copyright p{
+    text-align: center;
   }
-}
-.resources{
-
-}
-.researchers{
-  background-color: #F3F5FF;
-}
