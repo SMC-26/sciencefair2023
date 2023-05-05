@@ -23,7 +23,6 @@ const midnightbg = document.getElementById("bg-wrapper-midnight");
 var noonopacity = 1;
 var sunsetopacity = 0;
 var midnightopacity = 0;
-var loader = document.getElementById("preloader");
 
 const container1 = document.getElementById("container1");
 const buttons = document.querySelectorAll(".timebutton");
@@ -310,7 +309,3 @@ function adddarkmode() {
         }
     }
 }
-
-window.addEventListener("load", "function"(){
-                        loader.style.display = "none";
-                        })

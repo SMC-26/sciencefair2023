@@ -76,6 +76,3 @@ window.addEventListener('scroll', function() {
     navbar.style.opacity = '1';
   }
 });
-
-
-
