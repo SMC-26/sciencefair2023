@@ -1,25 +1,18 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
-body, html {
-    margin: 0px !important;
-    padding: 0px !important;
-}
-body{
-    background-color:#E1D9D1
-}
 #header{
     background-image: url('header.png');
-    height:45rem;
+    height: 100vh;
     overflow:hidden;
     background-repeat:no-repeat;
     background-position: center;
     background-position-y:30px;
 }
-#minecraft-bow{
-    background-image:url('minecraft-bow.png');
-    height:5vh;
+body{
+    margin:0;
+    padding:0;
 }
 #healingwonders_h1{
-    font-size:5rem;
+    font-size:65px;
     margin-left:auto;
     margin-right:auto;
     font-family: "Minecraft", sans-serif;
@@ -28,26 +21,15 @@ body{
     font-size:17px;
 }
 #animation_div{
-    height:25rem;
-    width:25rem;
+    border:1px solid black;
     border-radius: 50px;
-    border:1x solid black;
 }
 .healingwonders{
     margin:10px;
-    text-shadow: 3px 3px #4b4b4b;
+    text-shadow: 3px 3px #000000;
     text-indent:20px;
     font-weight:bolder;
     color:white;
-}
-.subj{
-    margin-left:auto; 
-    margin-right:auto;
-}
-.subject_minecraft_items{
-    height:40px;
-    width:40px;
-    margin-left:1%;
 }
 h2{
     text-shadow: 2px 2px #000000;
@@ -77,62 +59,29 @@ h2{
     75%{transform:translateX(25%); width:25;}
     100%{width:0; transform:translateX(0%); visibility:hidden;}
 }
-
-#mainDiv.gone{
-    opacity:1;
-}
-#mainDiv{
-    border:2px solid rgb(106, 162, 207);
-    border-radius:10px;
+.container{
     opacity:0;
     text-align:center;
     transition:opacity 500ms ease-in; 
 }
-
-p{
-    line-height:200%;
+.container.gone{
+    opacity:1;
 }
-
+#mainDiv{
+    border:2px solid rgb(106, 162, 207);
+}
+hr{
+    border-top:2px solid rgb(106, 162, 207);
+}
 .filter-btn.active {
     background: var(--primary);
     color: var(--white);
 }
-.clarence_paragraph{
-    text-indent:50px;
-    font-size:20px;
-}
-.subject_minecraft_items{
-    margin-left:1%;
-}
-.col-sm{
-    width:12rem; 
-    border-radius:10px;
-    float:left; 
-    background-color:grey;
-}
-.tab-content-left{
-    width:90%;
-    margin-right:auto;
-    justify-content:center;
-}
-.references_p{
-    color:grey;
-    font-size:15px;
-    margin-left: 5%;
-}
-#container-tab{
+.container-tab-mode{
     overflow: hidden;
-    height:68rem;
-    width:70%;
-    justify-content: center;
-    margin-left:25%;
-}
-.button_bio{
-    color:green;
-    
-}
-footer{
-    margin-top:10rem;
+    height:300px;
+    position: relative;
+    margin:0 auto;
 }
 .tab-item.tab_select {
     transform: translateY(0);
@@ -143,10 +92,10 @@ footer{
 }
 .tab-item {
     visibility: hidden;
-    width: 90%;
-    height: 70rem;
-    overflow:auto;
+    width: 100%;
+    height: 100%;
     position: absolute;
+    padding: 0rem 3rem;
     transform: translateY(100%);
     background: var(--white-light);
     transition: transform 0.5s ease-in-out;
@@ -154,30 +103,13 @@ footer{
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     place-items: start start;
 }
-
-h1.tab-heading{
-    font-family: "Minecraft ", sans-serif;
-    padding-bottom:3.5%;
-}
-.pfp{
-    width:20rem;
-    height:10rem;
-    border:1px solid black;
-}
-
-
-@media only screen and(max-width:1980){
-    .tab-item{
-        left:10%;
-    }
-}
 @media only screen and (max-width: 768px) {
     *, html, body, .row {
-        margin-left:0 !important;
-        margin-right:0 !important;
-        padding-left:0 !important;
-        padding-right:0 !important;
-     }
+       margin-left:0 !important;
+       margin-right:0 !important;
+       padding-left:0 !important;
+       padding-right:0 !important;
+    }
     .card-text{
         font-size:10px;
     }
@@ -187,101 +119,4 @@ h1.tab-heading{
     #chemistry, #physics{
         margin-left:2px !important;
     }
-    .clarence_paragraph{
-        font-size:13px;
-    }
-    .tab-content-left{
-        width:25rem;
-    }
-    .tab-item{
-        left:2%;
-        padding-left:200px;
-    }
-    h2{
-        font-size:20px !important;
-    }
-    img.subj{
-        width:40% !important;
-    }
-    .subject_minecraft_items{
-        width:30px;
-        margin-left:5%;
-        height:30px;
-    }
-    .tab-content-left{
-        width:70%;
-    }
-    
-}
-@media (min-width:768px){
-    .outofdiv{
-        margin-left:4rem;
-    }
-    #animation_div{
-        height:50rem;
-        width:40rem;
-    }
-    .pfppic{
-        width: 33rem !important;
-        height:30rem !important;
-    } 
-    .carousel-item{
-        width:33rem !important;
-        height:33rem !important;
-    }
-    #carouselm{
-        width:33rem !important;
-        margin-left:10rem !important;
-        height:33rem !important;
-    }
-}
-@media only screen and (min-device-width : 768px), only screen and (max-device-width : 1024px){
-    h2{
-        font-size:50px;
-    }
-}
- @media only screen and (min-width: 375px), only screen and (min-height:667px)
-{ 
-    .tab-item{
-        left:2%;
-        padding-left:200px;
-    }
-    #container.tab{
-        margin-left:100px;
-    }
-    .col-sm{
-        width:7.5rem !important;
-    }   
-}
-@media only screen 
-    and (device-width : 414px) 
-    and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) {
-        .col-sm{
-            width:8.4rem !important;
-        }
-    }
-.pfppic{
-    width:17rem; 
-    border:4px solid black;
-    height:15rem;
-}
-#carouselm{
-    text-align:center;
-    width:17rem;
-    height:17rem;
-    border:1px solid black;
-    margin-left:7rem;
-}
-.carousel-inner{
-    border:1px solid black;
-}
-.carousel-item{
-    height:17rem;
-    width:17rem;
-}
-.nameS{
-    font-size:2rem;
-    color:black;
-}
-
+ }

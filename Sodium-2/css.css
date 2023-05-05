@@ -88,10 +88,12 @@ html, body{
     margin: 0%;
     width: 70%;
 }
-.SynthVid{
+.VPH{
     background-color: black;
     margin-top: 3em;
     margin-left: 50px;
+    height: 200px;
+    width: 400px;
     border-radius: 25px;
     display: inline-block;
     position: relative; 
@@ -143,7 +145,7 @@ html, body{
     font-size: 75px;
     text-align: center;
 }
-.ClimVid{
+.VVPH{
     background-color: black;
     margin-top: 3em;
     margin-left: 20px;
@@ -156,14 +158,24 @@ html, body{
     color: white;
     text-align: center;
 }
+.APH{
+    background-color: #00B2C7;
+    margin-top: 3em;
+    height: 400px;
+    width: 200px;
+    border-radius: 25px;
+    float: right;
+    margin-right: 50px;
+    position: relative; 
+    top: 30px;
+    color: white;
+    text-align: center;
+}
 .DNA{
     height: 110%;
     background-image: url(DNABack.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-.FutVid{
-    margin-left: 20px;
 }
 .Future{
     height: 100%;
@@ -177,6 +189,32 @@ html, body{
     color: #73E2AC;
     margin-left: 10px;
     font-size: 43px;
+}
+.VVVPH{
+    background-color: black;
+    margin-top: 3em;
+    margin-left: 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative; 
+    top: 30px;
+    color: white;
+    text-align: center;
+}
+.AAPH{
+    background-color: #4A9D83;
+    margin-top: 3em;
+    height: 532px;
+    width: 600px;
+    border-radius: 25px;
+    float: right;
+    margin-right: 50px;
+    position: relative; 
+    top: 0px;
+    color: white;
+    text-align: center;
 }
 .Game{
     position: relative;

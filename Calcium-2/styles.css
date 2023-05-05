@@ -22,16 +22,14 @@ h1 {
 p {
     z-index: inherit;
 
-    text-indent: 80px;
-
     margin-bottom: 50px;
 }
 
 .hidden {
     opacity: 0;
-    filter: blur(1px);
-    transform: translateX(-25%);
-    transition: all 2s;
+    filter: blur(2px);
+    transform: translateY(25%);
+    transition: all 3s;
 }
 .show {
     opacity: 1;
@@ -113,7 +111,36 @@ p {
         opacity: 0%;
     }
 }
+#sun-components {
+    position: absolute;
 
+    left: 650px;
+    top: 0px;
+}
+#sun {
+    z-index: 0;
+    position: absolute;
+
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+
+    margin: 40px;
+
+    background-color: rgb(255, 228, 131);
+}
+#sun-glow {
+    z-index: 1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 100%;
+
+    background-color: rgb(255, 214, 66);
+    filter: blur(45px);
+    mix-blend-mode: soft-light;
+}
 .stars {
     position: absolute;
     left: 0;
@@ -142,29 +169,8 @@ p {
     width: 100%;
 
     padding: 1em 4em 1em 6em;
-    
-    line-height: 2.6;
-
     background-color: rgb(0, 0, 0, 0);
 }
-
-#content1 {
-    z-index: inherit;
-
-    margin: 5em 6em 5em 2em; 
-}
-
-#content1a {
-    display: inline-flex;
-
-    height: 50%;
-    width: 100%;
-}
-#content1a-first-div {
-    height: 100%;
-    width: 70%;
-}
-
 #interactive-bar-div {
     z-index: inherit;
     float: left;
@@ -175,7 +181,7 @@ p {
     margin: auto;
 
     height: 100%;
-    width: 18%;
+    width: 50%;
 }
 #interactive-bar {
     z-index: inherit;
@@ -192,7 +198,7 @@ p {
     height: 38px;
     width: 35px;
 
-    color: rgba(0, 0, 0);
+    color: rgba(0, 0, 0, 0);
 
     transition: all 0.5s ease-out;
 }
@@ -224,32 +230,33 @@ p {
     transition: all 1s ease-out;
 }
 
+#content1 {
+    z-index: inherit;
+
+    margin: 5em 6em 5em 2em; 
+}
+
+#content1a {
+    display: inline-flex;
+
+    height: 50%;
+    width: 100%;
+}
+#content1a-first-div {
+    height: 100%;
+    width: 55%;
+}
 #lens-div {
     position: relative;
 
     height: 100%;
-    width: 20%;
+    width: 45%;
 }
-#lenslayer1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-
-    border-radius: 100%;
-    background-color: aqua;
-}
-/* #lens-img {
-    z-index: 3;
-    padding: 5vw 0vw 0vw 0vw;
+#lens-img {
+    padding: 5vw 0vw 0vw 5vw;
     height: 100%;
     width: 100%;
-    opacity: 0.7;
-    mix-blend-mode: multiply;
-    filter: blur(25px);
-} */
+}
 
 #container2{
     background-color: antiquewhite; 
@@ -278,10 +285,10 @@ h2 {
     display: flex;
     margin: 120px 0px 150px 0px;
 
+    height: 425px;
     width: 100%;
 }
 .half img {
-    align-self: center;
     height: 100%;
     width: 40%;
 
@@ -290,9 +297,6 @@ h2 {
 .half div {
     padding: 0vw 6vw 7vw 6vw;
     width: 60%;
-}
-#chemp {
-    line-height: 2.35;
 }
 
 #references {
@@ -317,7 +321,6 @@ footer{
     font-size: 20px;
 }
 footer p {
-    text-indent: 0px;
     padding: 10px 0px;
     margin-top: 25px;
     margin-bottom: 0px;
@@ -335,4 +338,13 @@ footer a:hover {
     font-size: 21.5px;
     text-decoration: underline;
     transition: 0.5s;
+}
+
+#preloader{
+    background: #000 url(yes.webp) no-repeat center;
+    background-size: 13%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
