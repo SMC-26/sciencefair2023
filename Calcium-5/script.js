@@ -23,10 +23,11 @@ appear.observe(faders);
 
 
 function alert_result(){
-    document.getElementById("animation_img3").style="display:absolute; z-index:2;margin-top:20%;animation-name:scissoring; animation-duration:1.5s; transform:translateX(150%);";
+  document.getElementById("animation_img3").style="display:absolute; z-index:2;margin-top:20%;animation-name:scissoring; animation-duration:1.5s; transform:translateX(150%);";
 }
 function healing_result(){
-    document.getElementById("animation_img3").style="z-index:2;margin-top:20%;animation-name:scissoringx; animation-duration:2s; animation-fill-mode:forwards;";
+  document.getElementById("animation_img3").style="z-index:2;margin-top:20%;animation-name:scissoringx; animation-duration:2s; animation-fill-mode:forwards;";
+  
 }
 
 
@@ -48,4 +49,5 @@ for (let i = 0; i < filter.length; i++) {
       }
     });
 }
+
 
