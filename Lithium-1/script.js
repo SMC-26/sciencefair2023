@@ -6,27 +6,27 @@ var modal = document.getElementById('fifth')
 var modal = document.getElementById('sixth')
 var inside = document.getElementById("contain");
 
-first.onclick = function(){
+window.onclick = function(){
     modal.style.display = "block";
     inside.src = this.src;
 }
-second.onclick = function(){
+window.onclick = function(){
     modal.style.display = "block";
     inside.src = this.src;
 }
-third.onclick = function(){
+window.onclick = function(){
     modal.style.display = "block";
     inside.src = this.src;
 }
-fourth.onclick = function(){
+window.onclick = function(){
     modal.style.display = "block";
     inside.src = this.src;
 }
-fifth.onclick = function(){
+window.onclick = function(){
     modal.style.display = "block";
     inside.src = this.src;
 }
-sixth.onclick = function(){
+window.onclick = function(){
     modal.style.display = "block";
     inside.src = this.src;
 }
@@ -44,13 +44,3 @@ document.querySelector("#one").addEventListener("click", function(){
 document.querySelector(".modal-content .close").addEventListener("click", function(){
     document.querySelector(".modal-content").classList.add("active");
 });
-
-function openNav(){
-    document.getElementById("mySidebar").style.width = "100px";
-    document.getElementById("menu").style.marginRight = "100px";
-}
-  
-function closeNav(){
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("menu").style.marginRight = "0";
-}

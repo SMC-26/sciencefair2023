@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
-    <link href="https://smc-26.github.io/sciencefair2023/bootstrap.css" rel="stylesheet">
     <script src="https://smc-26.github.io/sciencefair2023/bootstrap.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <script>addNavbar();</script>
-    <div class="px-4 pt-5 text-center" id="header">
+    <script>addNavbar()</script>
+    <div class="px-4 pt-5 my-0 text-center" id="header">
         <h1 class="healingwonders" id="healingwonders_h1">HEALING WONDERS:</h1>
         <div class="col-md-6 mx-auto">
           <p class="healingwonders"id="healingwonders_p">Self-Healing Materials Which Can Repair Itself, Inspired by the Human Body</p>
         </div>
-        <div class="col-md-5 mt-5 mx-auto" id="animation_div" onmousedown="alert_result()" onmouseup="healing_result()">
+        <div class="mt-5 mx-auto" id="animation_div" onmousedown="alert_result()" onmouseup="healing_result()">
             <img id="animation_img3" src="figure2.png"  width=33% alt="scissors" style="margin-left:auto; transform:translateX(0%); width:0">
             <img id="animation_img2" src="figure1.png" width=50% alt="figure-animation" style="margin-left:auto; margin-right:auto; display:absolute; z-index:1">
             <img id="animation_img" src="figure3.png"  width=50% alt="figure-animation" style=" display:absolute; margin-left:auto; margin-right:auto;">
         </div>
     </div>
-    <hr>
     <div class="container my-2" id="mainDiv">
         <div class="row justify-content-md-center">
-            <div class="col-sm" id="biology" style="width:10rem; border-radius:10px;float:left; background-color:grey;">
-                <img id="biology" src="biology.png" width=20% alt="biology" style="margin-left:auto; margin-right:auto;">
+            <div class="col-sm" id="biology">
+                <img id="biology" class="subj" src="biology.png" width=30% alt="biology" style="margin-left:auto; margin-right:auto;">
                 <h2>Biology</h2>
                 <div class="card-body">
                     <p class="card-text">Cement is the number one source of carbon emissions from decomposition of carbonates, and it accounts for 8% of the total global  CO2  emissions. According to the Portland Cement Association (n.d), cement manufacturing produces 0.41 kilograms of CO2 for every 0.45 kg of cement.</p>
-                    <button type="button" class="filter-btn btn-success btn-outline-secondary btn-sm" data-tab="biology"> Read Me</button>
+                    <button type="button" class="filter-btn" data-tab="biology" id="button_bio"> Read Me</button>
                 </div>
             </div>
-            <div class="col-sm" id="chemistry" style="width:10rem; border-radius:10px;float:left; background-color:grey;margin-left:2px;">
-                <img id="chemistry" src="chemistry.png" width=20% alt="chemistry" style="margin-left:auto; margin-right:auto;">
+            <div class="col-sm" id="chemistry" style="margin-left:2px;">
+                <img id="chemistry" class="subj" src="chemistry.png" id="button_chem" width=30% alt="chemistry" style="margin-left:auto; margin-right:auto;">
                 <h2>Chemistry</h2>
                 <div class="card-body">
                     <p class="card-text">Quicklime, also known as calcium oxide, is made by heating crushed limestone to 1,100~ degrees Celsius, releasing carbon dioxide (CaCO3 —> CaO + CO2). The self-healing properties of quicklime were tested by Admir Masic</p>
-                    <button type="button" class="filter-btn btn-warning btn-outline-secondary btn-sm" data-tab="chemistry">Read Me!</button>
+                    <button type="button" class="filter-btn" data-tab="chemistry">Read Me!</button>
                 </div>
             </div>
-            <div class="col-sm" id="physics" style="width:10rem; border-radius:10px;float:left; background-color:grey;margin-left:2px;">
-                <img id="phyics" src="physics.png" width=20% alt="phyics" style="margin-left:auto; margin-right:auto;">
+            <div class="col-sm" id="physics" style="margin-left:2px;">
+                <img id="phyics" class="subj" src="physics.png" width=30% id="button_physics" alt="phyics" style="margin-left:auto; margin-right:auto;">
                 <h2>Physics</h2>
                 <div class="card-body">
                     <p class="card-text">In the 2000 year existence of Roman infrastructure, its buildings have passed the test of time and natural disasters. Many major earthquakes have happened in the past 2000 years, yet the Roman infrastructure is still intact- how much more can it take?</p>
@@ -51,25 +48,106 @@
         </div>
     </div>
     <div class="container hidden"></div>
-        <div class=".container-tab-mode p-3 md-5" style="height:100px; width:100px;"id="container-tab" >
-            <div class="tab-item biology">
-                <div class="tab-content-left">
-                    <h1 class="tab-heading">Biology</h1>
-                    <p></p>
+        <div class=".container-tab-mode p-3"id="container-tab" >
+            <div class="row">
+                <div class="tab-item biology">
+                    <div class="tab-content-left">
+                        <h1 class="tab-heading">Biology <img src="tnt.png" class="subject_minecraft_items"></h1>
+                        <p class="clarence_paragraph">The most commonly manufactured cement today is a process patented by bricklayer Joseph Aspdin of Leeds in the 19th century. Global carbon emissions by cement manufacturing (especially Portland cement) in 2018 were estimated to have been 1.50±0.12 Gt CO2. The cement industry has produced 30-fold the amount since the 1950s and 4-fold since the 1990s, becoming the third largest source of anthropogenic emissions of carbon dioxide (third to fossil fuels and land-use changes). </p>
+                        <p class="clarence_paragraph">Cement is the number one source of carbon emissions from decomposition of carbonates, and it accounts for 8% of the total global  CO2  emissions (Andrews, 2019). According to the Portland Cement Association (n.d), cement manufacturing produces 0.41 kilograms of CO2 for every 0.45 kg of cement. Even with  cement only being fractional of concrete, the manufacturing process of 1769 kilograms of concrete yields 181.4 kilograms of cement. In 2022, 4.1 billion metric tons of cement were produced.</p>
+                        <p class="clarence_paragraph">The discovery of the secrets to Ancient Rome’s cement could lead to a massive reduction of the cement industry’s carbon emissions. Cement is one of the most widely used materials in the world, more than coal and iron. The destruction of concrete infrastructures from poor construction to natural disasters leads to the requirement to reconstruct, which in turn increases the demand for concrete. The self-healing properties of Roman concrete allows for the increased longevity of concrete and infrastructure. This consequently corresponds to the reduced use for concrete, hence, also reducing the cement manufacturing emissions.</p>
+                        <p class="clarence_paragraph">The concept of self-healing is evident in the medicinal services and biological mechanisms of the human body. The self-healing cement (SHC) is made to imitate the human body’s capability to locate or detect and repair injuries within the concrete. It is meant to repair itself autonomously or autogenously, which are different mechanisms but essentially require the secretion of a substance material (in this case, water) in order to disperse and recrystallize the calcium deposits around the cracks - all without the need for external intervention (Amran etal., 2022). These self-healing processes can be monitored in three ways: recovery of strength performance, microstructural evaluations, and improvement of durability performance. There are several influential factors in the self-healing process. These can be characterized by the following: moisture content, crack width, hydration time, crack pressure, and water-to-cement ratio. Along with chemical compounded capsules being integrated into the composition of cement, the use of microorganisms (bacteria) such as Bacillus cohnii, Lysinibacillus sphaericus, B. pseudomycoides, etc. are also additives placed into microcapsules filled with bacteria spores.</p>
+                    </div>  
                 </div>
-            </div>
-            <div class="tab-item chemistry">
-                <div class ="tab-content-left">
-                    <h1 class="tab-heading">Chemistry</h1>
+                <div class="tab-item chemistry">
+                    <div class ="tab-content-left">
+                        <h1 class="tab-heading">Chemistry<img src="potion.png" class="subject_minecraft_items"></h1>
+                        <p class="clarence_paragraph">Quicklime, also known as calcium oxide, is made by heating crushed limestone to 1,100~ degrees Celsius, releasing carbon dioxide (CaCO3 —> CaO + CO2). The self-healing properties of quicklime were tested by Admir Masic, a chemist at the Massachusetts Institute of Technology, and his colleagues when they gathered samples from an ancient wall in Privernum (a 2,000-year-old building near Rome) and experimented on it in their laboratories. Their experiments consisted of cracking small bursts in the concrete, and then simulating rainwater by adding water to the concrete. The lumps started dissolving and recrystallizing, filling the cracks and keeping the concrete sturdy (Science.org, 2023). The experiment also proved the effectiveness of the quicklime-Rome cement as it showed that it healed up cracks up to 0.6 millimeters, compared to today’s cement: 0.2 - 0.3 millimeters (Science.org, 2023). </p>
+                        <p class="clarence_paragraph">However, there is still one problem. Upon closer observation of the Roman cement, the distinct millimeter-scale white mineral can be seen in chunks that have been part of Roman infrastructure. How could this form? Using the traditional method of mixing calcium oxide (CaO) with water, also known as slaking, wouldn’t explain the so-called time clasts (ArsTechnica, 2023). Masic’s team used high-resolution multiscale imaging and determined that these lime clasts were various forms of calcium carbonate heated up in extreme temperatures, quickly forming calcium oxide and carbon dioxide, and produced compounds that have high-temperature characteristics in a process called “hot-mixing” (EurekAlert, 2023): </p>
+                        <p class="clarence_paragraph">Using the process of mixing with extremely high temperatures significantly reduces curing and setting times, effectively accelerating construction periods.</p>
+                        <p class="clarence_paragraph">The significance of hot-mixing and the use of quicklime goes on a molecular level. By using hot-mixing insteads of traditional slaking, the lime clasts develop a brittle nanoparticle architecture that creates an easily fractured, reactive source of calcium (SpecifyConcrete, 2023). The structure becomes significant when the lime clasts are damaged; crystalline mineral deposits fill the cracks. To understand, let’s explore the general formation of cement. </p>
+                        <p class="clarence_paragraph">Concrete has a relatively low tensile strength, meaning tiny cracks occur frequently. As concrete is exposed to different environmental conditions, rainwater can possibly enter the holes. As small cracks form in the concrete, the production of lime clasts ( the brittle nanoparticle architecture) traverses through high-surface-area life class, reacting with the rainwater, reacting a calcium-saturated solution that recrystallizes as calcium carbonate, quickly filling the crack. These reactions happen before damage spreads, giving the name “self-healing” for spontaneous/automatic healing (MIT, 2023).</p>
+                    </div>
                 </div>
-            </div>
-            <div class="tab-item physics">
-                <div class="tab-content-left">
-                    <h1 class="tab-heading">Physics</h1>
+                <div class="tab-item physics">
+                    <div class="tab-content-left">
+                        <h1 class="tab-heading">Physics<img src="minecraft-bow.png" class="subject_minecraft_items"></h1>
+                        <p class="clarence_paragraph">In the 2000 year existence of Roman infrastructure, its buildings have passed the test of time and natural disasters. Many major earthquakes have happened in the past 2000 years, yet the Roman infrastructure is still intact- how much more can it take? One key factor that we can use to measure an object's resistance to the forces of wind/earthquakes/other environmental factors is tensile strength.
+                        </p>
+                        <p class="clarence_paragraph">Tensile strength is an important factor used in engineering; it's the resistance of an object to withstand forces due to tension or stretching (CorrosionPedia, 2023). In the construction industry, it's critical in ensuring the building's endurance to wind, earthquakes, and other natural disasters. The average tensile strength of structural steel is 400-500MPa, and the average tensile strength of concrete is 2-5MPa (DesignBuildings,2022).</p>
+                        <p class="clarence_paragraph">According to EngineeringRome (2013), original ancient Roman hydraulic concrete (from the 1st century) had a tensile strength of 7.9979MPa.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+   <footer>
+        <h2 class="outofdiv">References:</h2>
+        <p class="references_p">Amran, M., Onaizi, A. M., Fediuk, R., Vatin, N. I., Muhammad Rashid, R. S., Abdelgader, H., & 
+            Ozbakkaloglu, T. (2022). Self-Healing Concrete as a Prospective Construction Material: A Review. Materials (Basel, Switzerland), 15(9), 3214. https://doi.org/10.3390/ma15093214</p>
+        <p class="references_p">Andrew, R.  Earth System Science Data; Katlenburg-Lindau Vol. 11, Iss. 4,  (2019): 1675-1710. 
+            DOI:10.5194/essd-11-1675-2019</p>
+        <p class="references_p">Chandler, D. (2023, January 6). Riddle solved: Why was Roman concrete so durable?
+            Retrieved from: https://www.eurekalert.org/news-releases/975532</p>
+        <p class="references_p">Garside, M. (2023, April 11). Cement production global 2022. Statista. Retrieved April 26, 2023, 
+            from https://www.statista.com/statistics/1087115/global-cement-production-volume/</p>
+        <p class="references_p">Lefkow, C. (2023, January 9). Researchers dig up secrets of 'self-healing' Roman concrete.
+            Retrieved from: https://phys.org/news/2023-01-secrets-self-healing-roman-concrete.html</p>
+        <p class="references_p">Lyons, N. (2013, September 16). Understanding Roman concrete. Retrieved from:
+            https://engineeringrome.org/understanding-roman-concrete</p>
+        <p class="references_p">MIT News (January 6, 2023). Riddle solved: Why was Roman Concrete so durable? Retrieved 
+            from: https://news.mit.edu/2023/roman-concrete-durability-lime-casts-0106</p>
+        <p class="references_p">Otutu, M. (2023, March 21). What is a tensile strength? - Definition from Corrosionpedia.
+            Retrieved from: https://www.corrosionpedia.com/definition/1072/tensile-strength</p>
+        <p class="references_p">Fabris, P. (2023, January 24). Researchers investigate ancient Roman concrete to make 
+            durable, lower carbon mortar. Building Design + Construction. 
+            https://www.bdcnetwork.com/researchers-investigate-ancient-roman-concrete-make-durable-lower-carbon-mortar</p>
+        <p class="references_p">Portland Cement Association. (n.d). Carbon Footprint. Retrieved from: 
+            https://www.cement.org/docs/default-source/th-paving-pdfs/sustainability/carbon-foot-print.pdf</p>
+        <p class="references_p">Rodgers, B. L. (2018, December 17). Climate change: The massive CO2 emitter you may not 
+            know about. BBC News. https://www.bbc.com/news/science-environment-46455844</p>
+        <p class="references_p">Specify Concrete. (2023, March 23). Lime clasts and heat: The romans' secret sauce. Retrieved
+            from: https://www.specifyconcrete.org/blog/lime-clasts-and-heat-the-romans-secret-sauce</p>
+        <p class="references_p">Vedantu. (2023, April 21). When water is added to quicklime, the rise in temperature is
+            observed. This is an example of _____ reaction. Retrieved from:
+            https://www.vedantu.com/question-answer/water-is-added-to-quicklime-the-rise-in-class-
+            11-chemistry-cbse-60cc1bf3b9d60b2eae09b245</p>
+        <p class="references_p">WIRED (March 2, 2023). The Secret to Making Concrete that Lasts 1,000 Years.
+            Retrieved from: https://www.wired.co.uk/article/secret-roman-self-repairing-concrete</p>
+        <h2 class="outofdiv">Meet Our Team!</h2>
+        <div id="carouselm" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="nol.png" class="pfppic" alt="...">
+                <h2 class="nameS">Noel Andrei Cal</h2>
+              </div>
+              <div class="carousel-item">
+                <img src="geri.png" class="pfppic" alt="...">
+                <h2 class="nameS">Gerianne Marie Navarro</h2>
+              </div>
+              <div class="carousel-item">
+                <img src="ches.png" class="pfppic" alt="...">
+                <h2 class="nameS">Chester Thomas Pedral</h2>
+              </div>
+              <div class="carousel-item">
+                <img src="cla.png" class="pfppic" alt="...">
+                <h2 class="nameS">Clarence Vinalon</h2>
+              </div>
+              <div class="carousel-item">
+                <img src="gian.png" class="pfppic" alt="...">
+                <h2 class="nameS">Gian Operiano</h2>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselm" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselm" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+   </footer>
     <script src="script.js"></script>
 </body>
 </html>
