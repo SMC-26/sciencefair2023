@@ -7,6 +7,7 @@ document.addEventListener('mousemove', (e) => {
   cursor2.style.top = e.clientY + 'px';
 });
 
+<<<<<<< HEAD
 var cntnr = document.getElementById('Tcontainer');
 var title = document.getElementById('title');
 var lngth = title.textContent.length;
@@ -41,3 +42,5 @@ $(document).ready(function() {
     });
   });
 });
+=======
+>>>>>>> parent of 516faf5 (Merge pull request #58 from SMC-26/main)
