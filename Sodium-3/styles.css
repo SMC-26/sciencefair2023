@@ -261,3 +261,93 @@ footer {
     transform: translateY(0);
     opacity: 1;
 }
+
+@media screen and (max-width: 1024px){
+    .content {
+        padding: 20px;
+    }
+
+    .download {
+        text-align: center;
+        width: 40%;
+    }
+
+    .spin {
+        width: 50px;
+    }
+
+    .dopamine {
+        height: 650px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    .bio {
+        margin-top: 30px;
+    }
+
+    .chem-icon {
+        width: 50px;
+        float: right;
+    }
+
+    .music {
+        width: 300px;
+    }
+
+    .heroText {
+        margin-left: 80px;
+        size: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    .download {
+        text-align: center;
+        width: 50%;
+    }
+
+    .spin {
+        width: 50px;
+    }
+
+    .dopamine {
+        height: 650px;
+    }
+
+    .scicon {
+        font-size: 22px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    .bio {
+        margin-top: 30px;
+    }
+
+    .chem-icon {
+        width: 50px;
+        float: right;
+    }
+
+    .music {
+        width: 300px;
+    }
+
+    .heroText {
+        margin-left: 50px;
+        size: 10%;
+    }
+
+    .footer {
+        line-height: 1;
+    }
+}
