@@ -349,3 +349,12 @@ footer {
         line-height: 1;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .dopamine {
+        height: 300px;
+    }
+    .music1 {
+        width: 220px;
+    }
+}
