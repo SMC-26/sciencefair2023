@@ -35,6 +35,7 @@ header {
 .heading {
     text-align: center;
     font-weight: 900;
+    padding-right: 55px;
 }
 
 .divHeading {
@@ -59,6 +60,24 @@ header {
     text-align: justify;
     text-justify: inter-word;
 }
+
+.spin {
+    width: 6%;
+    margin-bottom: 5px;
+}
+
+.spin {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 
 .scienceHeading {
     font-weight: 900;
@@ -229,4 +248,113 @@ footer {
 .members2 {
     padding-top: 20px;
     margin-bottom: 70px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px){
+    .content {
+        padding: 20px;
+    }
+
+    .download {
+        text-align: center;
+        width: 40%;
+    }
+
+    .spin {
+        width: 50px;
+    }
+
+    .dopamine {
+        height: 650px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    .bio {
+        margin-top: 30px;
+    }
+
+    .chem-icon {
+        width: 40px;
+    }
+
+    .music {
+        width: 300px;
+    }
+
+    .heroText {
+        margin-left: 80px;
+        size: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    .download {
+        text-align: center;
+        width: 50%;
+    }
+
+    .spin {
+        width: 50px;
+    }
+
+    .dopamine {
+        height: 650px;
+    }
+
+    .scicon {
+        font-size: 22px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    .bio {
+        margin-top: 30px;
+    }
+
+    .chem-icon {
+        width: 40px;
+    }
+
+    .music {
+        width: 300px;
+    }
+
+    .heroText {
+        margin-left: 50px;
+        size: 10%;
+    }
+
+    .footer {
+        line-height: 1;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .dopamine {
+        height: 300px;
+    }
+    .music1 {
+        width: 220px;
+    }
 }
