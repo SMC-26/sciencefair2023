@@ -178,4 +178,14 @@ footer p{
 	from{opacity: 0.5}
 	to{opacity: 1}
 }
+#authors img{
+	width: 20vw;
+	height: 20vw;
+	object-fit: cover;
+	border-radius: 40px;
+}
+.w-100{
+	background-color: #73a4c7;
+	padding: 1vw;
+}
 >>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98
