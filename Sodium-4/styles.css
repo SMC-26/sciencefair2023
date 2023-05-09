@@ -124,7 +124,7 @@ main img{
 	margin: 4vh auto;
 	width: 40vw;
 }
-.reference, #application, #intro, .content, #objectives, #authors{
+.reference, #application, #intro, .content, #objectives, #team{
 	width: 60vw;
 	display: block;
 	margin: auto;
@@ -178,7 +178,7 @@ footer p{
 	from{opacity: 0.5}
 	to{opacity: 1}
 }
-#authors img{
+#team img{
 	width: 20vw;
 	height: 20vw;
 	object-fit: cover;
@@ -187,5 +187,11 @@ footer p{
 .w-100{
 	background-color: #73a4c7;
 	padding: 1vw;
+	color: white;
+}
+.w-100 p{
+	text-align: center;
+	text-indent: 0;
+	color: white;
 }
 >>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98
