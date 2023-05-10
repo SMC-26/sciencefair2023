@@ -1,0 +1,388 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+.Hero-pics {
+  background-image: url("images/Crops.gif");
+  height: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.Hero-texts {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5em;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.S300px {
+  width: 600px;
+  float: left;
+}
+.What-a-wonderful-world {
+  text-align: center;
+  height: 80%;
+  width: 80%;
+  position: relative;
+  left: 12%;
+}
+.Everything-is-on-fire {
+  color: #4a9d83;
+}
+.Zero {
+  height: 100%;
+  text-align: center;
+  clear: left;
+}
+.Zero-Text {
+  position: relative;
+  top: 40%;
+  color: white;
+}
+.One {
+  background-color: #73e2ac;
+  margin-left: -1%;
+  margin-right: -4px;
+  height: 100%;
+  width: 33%;
+  display: inline-block;
+}
+.One-Pic {
+  height: 144px;
+  width: 144px;
+  position: relative;
+  top: 30%;
+}
+.Two {
+  background-color: #03c5ad;
+  margin-right: -4px;
+  height: 100%;
+  width: 35%;
+  display: inline-block;
+}
+.Three {
+  background-color: #00b2c7;
+  margin-right: -4px;
+  height: 100%;
+  width: 32.7%;
+  display: inline-block;
+}
+.Learn {
+  font-size: 5em;
+  position: relative;
+  top: -95%;
+  left: 15px;
+  color: white;
+  text-align: left;
+  margin: 0%;
+  width: 70%;
+}
+.VPH {
+  background-color: black;
+  margin-top: 3em;
+  margin-left: 50px;
+  height: 200px;
+  width: 400px;
+  border-radius: 25px;
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  color: white;
+  text-align: center;
+}
+.SynthAnim {
+  margin-top: 3em;
+  height: 600px;
+  width: 400px;
+  float: right;
+  margin-right: 40px;
+}
+.MargTop {
+  margin-top: 0;
+}
+.MargBott {
+  margin-bottom: 0%;
+}
+.Phsynth {
+  margin-top: 0;
+  height: 100%;
+  background-image: url(images/SynthBack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.SynthText {
+  color: #73e2ac;
+  margin-left: 10px;
+  font-size: 75px;
+}
+.Leaf {
+  height: 100%;
+  background-image: url(images/Leaf.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Climate {
+  height: 100%;
+  background-image: url(images/AgriBack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ClimateText {
+  width: 75%;
+  color: #73e2ac;
+  margin-left: 10px;
+  font-size: 75px;
+  text-align: center;
+}
+.VVPH {
+  background-color: black;
+  margin-top: 3em;
+  margin-left: 20px;
+  height: 400px;
+  width: 1000px;
+  border-radius: 25px;
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  color: white;
+  text-align: center;
+}
+.DNA {
+  height: 110%;
+  background-image: url(images/DNABack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Future {
+  height: 100%;
+  background-image: url(images/EngiBack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.FuText {
+  text-align: center;
+  width: 45%;
+  color: #73e2ac;
+  margin-left: 10px;
+  font-size: 43px;
+}
+.VVVPH {
+  background-color: black;
+  margin-top: 3em;
+  margin-left: 20px;
+  height: 400px;
+  width: 400px;
+  border-radius: 25px;
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  color: white;
+  text-align: center;
+}
+.Sum{
+  background-color: #01b2c7;
+  margin: 0px;
+}
+.SumText{
+  color: #a1e8d1;
+  margin: 0px 0px 50px 75px;
+  position: relative;
+  top: 15px;
+  font-size: 3em;
+}
+.accordion {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  padding-bottom: 5%;
+}
+.outline {
+  margin-bottom: 2%;
+}
+.center {
+  text-align: center;
+}
+.Ac1 {
+  background-color: #eeed4d;
+}
+.Ac2 {
+  background-color: #cbd131;
+}
+.Ac3 {
+  background-color: #8aa324;
+}
+.Ac4 {
+  background-color: #d2e697;
+}
+.Doxx {
+  height: 130%;
+  background-image: url(images/DoxxBack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 10%;
+}
+.DoxxHeader {
+  text-align: center;
+  width: 40%;
+  font-size: 600%;
+  color: #4a9d83;
+  float: left;
+}
+.DoxxText {
+  text-align: center;
+  color: #03c5ad;
+  margin-left: 10px;
+  width: 40%;
+  height: fit-content;
+  position: relative;
+  top: -2%;
+  font-size: 30px;
+  clear: left;
+}
+.SmallPlant {
+  height: 37px;
+  width: 33px;
+  position: relative;
+  top: -15%;
+}
+.Info {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: small;
+}
+.Floro {
+  position: relative;
+  top: -40%;
+  margin-right: 3%;
+  margin-left: 43%;
+  height: 250px;
+  width: 250px;
+  background-color: #ffab00;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.FloroText {
+  position: relative;
+  top: 13%;
+}
+.Eve {
+  margin-right: 3%;
+  position: relative;
+  top: -40%;
+  background-color: #4a9d83;
+  height: 250px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.EveText {
+  position: relative;
+  top: 13%;
+}
+.Zild {
+  position: relative;
+  top: -40%;
+  background-color: #03c5ad;
+  height: 250px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.ZildText {
+  position: relative;
+  top: 10%;
+}
+.Bato {
+  position: relative;
+  top: -37%;
+  margin-left: 43%;
+  margin-right: 3%;
+  background-color: #00b2c7;
+  height: 250px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.BatoText {
+  position: relative;
+  top: 13%;
+}
+.Sam {
+  position: relative;
+  top: -37%;
+  margin-right: 3%;
+  background-color: #fce074;
+  height: 250px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.SamText {
+  position: relative;
+  top: 10%;
+}
+.Marita {
+  position: relative;
+  top: -35%;
+  background-color: #73e2ac;
+  height: 250px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.MaritaText {
+  position: relative;
+  top: -11%;
+}
+.Cactus {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: -3%;
+  left: 15%;
+}
+.Dirt {
+  position: relative;
+  top: -8%;
+  width: 100%;
+}
+.Soil {
+  height: 110%;
+  background-color: #884f21;
+}
+.SoilText {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+.Salt {
+  position: absolute !important;
+  right: 0%;
+  bottom: -1%;
+  border: none;
+  background-color: transparent;
+}
+.Shaker {
+  height: 5px;
+  width: 5px;
+}
+.MORB {
+  display: none;
+}
