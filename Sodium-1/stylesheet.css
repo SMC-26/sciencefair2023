@@ -44,6 +44,14 @@ font-family: 'Righteous', cursive;*/
       font-size: 190px;
 }
 
+#download{
+  float: right;
+  height: 30px;
+  width: 35px;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+
 #gen {
   color: white;
   font-size: 7vw;
