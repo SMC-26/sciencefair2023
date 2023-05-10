@@ -31,9 +31,10 @@ header{
 }
 hgroup{
 	padding-top: 35vh;
+	margin: auto 3vw;
 }
 h1, h2, h3{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Rock Salt', cursive;
 	text-align: center;
 }
 main h1{
@@ -68,8 +69,7 @@ b{
 	margin-top: 4vh;
 }
 main{
-	width: 75vw;
-	margin: 5vw auto;
+	margin-top: 5vw;
 }
 .local{
 	background-color: #73a4c7;
@@ -124,8 +124,7 @@ main img{
 	margin: 4vh auto;
 	width: 40vw;
 }
-.reference, #application, #intro, .content, #objectives, #team{
-	width: 60vw;
+section{
 	display: block;
 	margin: auto;
 }
@@ -144,22 +143,23 @@ footer{
 	background: #73a4c7;
 	margin: 0;
 	height: 50px;
-	padding-top: 15px;
+	padding-bottom: 5vw;
 }
 footer p{
 	text-align: center;
 	font-weight: bold;
 	color: white;
+	text-indent: 0;
 }
 .ml13{
     font-size: 3em;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 1000;
 }
 .ml13 .letter{
     display: inline-block;
     line-height: 1em;
+    font-family: 'Rock Salt', cursive;
 }
 .ml16{
     font-weight: 800;
@@ -184,6 +184,13 @@ footer p{
 	object-fit: cover;
 	border-radius: 40px;
 }
+#team h1{
+	background-color: #73a4c7;
+	margin-bottom: 0;
+	padding-top: 5vw;
+	color: white;
+	font-family: 'Rock Salt', cursive;
+}
 .w-100{
 	background-color: #73a4c7;
 	padding: 1vw;
@@ -194,4 +201,74 @@ footer p{
 	text-indent: 0;
 	color: white;
 }
+
+
+#objectives{
+	width: 60vw;
+	margin-bottom: 5vw;
+}
+#intro{
+
+}
+.row1{
+	background-color: #73a4c7;
+}
+.row2{
+	background-color: #4d5c6b;
+}
+.row1, .row2{
+	display: flex;
+	padding: 3vw;
+	align-items: center;
+}
+.row1 h1, .row2 h1{
+	color: white;
+	margin-bottom: 1vw;
+}
+.row1 p, .row2 p{
+	color: white;
+}
+.row1 .text{
+	margin-left: 2vw;
+}
+.row2 .text{
+	margin-right: 2vw;
+}
+#concepts{
+	margin: 5vw auto;
+}
+#application{
+	margin-bottom: 5vw;
+}
+.row3 .container{
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row3 .container div{
+	width: 25vw;
+	height: 45vw;
+	background-size: cover;
+	border-radius: 40px;
+	display: inline-block;
+	margin: 0 2vw;
+	background-color: #4d5c6b;
+	color: white;
+}
+.row3 h3{
+	padding-top: 1vh;
+}
+.row3 p{
+	color: white;
+	padding: 2vw;
+	text-indent: 0;
+}
+.row3 .container div img{
+	width: 25vw;
+	height: 25vw;
+	object-fit: cover;
+	border-radius: 40px;
+}
+
 >>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98
