@@ -177,6 +177,8 @@ footer p{
     font-weight: 1000;
 }
 .ml13 .letter{
+    color: #66b3ff;
+    text-shadow: 2px 3px 1px #08377d;
     display: inline-block;
     line-height: 1em;
     font-family: 'Rock Salt', cursive;
@@ -187,6 +189,8 @@ footer p{
     overflow: hidden;
 }
 .ml16 .letter{
+    color: #a9d4ff;
+    text-shadow: 1px 1px 1px #08377d;
     display: inline-block;
     line-height: 1em;
 }
