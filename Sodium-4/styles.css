@@ -4,6 +4,10 @@
 	font-family: 'Roboto', sans-serif;
 	color: #343f4a;
 }
+body
+{
+	overflow-x: hidden;
+}
 ::-webkit-scrollbar{
 	width: 1vw;
 }
@@ -21,20 +25,22 @@
 	background: #7891ab;
 }
 header{
-	background-image: url(images/sky.jpg);
+	background: linear-gradient(to bottom, rgb(191, 228, 243), rgb(42, 96, 197));
 	height: 100vh;
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
 	animation-name: fadein;
 	animation-duration: 2s;
+	overflow: hidden;
 }
 hgroup{
 	padding-top: 35vh;
 	margin: auto 3vw;
+	overflow: hidden;
 }
 h1, h2, h3{
-	font-family: 'Rock Salt', cursive;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
 main h1{
@@ -96,7 +102,7 @@ main{
 .local a{
 	text-decoration: none;
 	color: white;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 .local a:hover{
 	color: lightgray;
@@ -177,11 +183,11 @@ footer p{
     font-weight: 1000;
 }
 .ml13 .letter{
-    color: #66b3ff;
-    text-shadow: 2px 3px 1px #08377d;
+    color: #ffffff;
+    text-shadow: 2px 3px 1px #999999;
     display: inline-block;
     line-height: 1em;
-    font-family: 'Rock Salt', cursive;
+	font-family: 'Raleway', sans-serif;
 }
 .ml16{
     font-weight: 800;
@@ -189,8 +195,8 @@ footer p{
     overflow: hidden;
 }
 .ml16 .letter{
-    color: #a9d4ff;
-    text-shadow: 1px 1px 1px #08377d;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #999999;
     display: inline-block;
     line-height: 1em;
 }
@@ -213,7 +219,7 @@ footer p{
 	margin-bottom: 0;
 	padding: 5vw 0 2vw 0;
 	color: white;
-	font-family: 'Rock Salt', cursive;
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 .w-100{
 	background-color: #73a4c7;
@@ -300,5 +306,101 @@ footer p{
 	object-fit: cover;
 	border-radius: 40px;
 }
-
->>>>>>> 04eda035dadc316d484ad525dfa0cfae69eb4e98
+.cloud.one
+{
+	top: 50%;
+	width: 300px;
+	height: 100px;
+	opacity: 0.6;
+}
+.cloud.two
+{
+	top: 30%;
+	width: 60px;
+	height: 20px;
+	opacity: 0.9;
+	animation-duration: 10s;
+}
+.cloud.three
+{
+	top: 70%;
+	width: 180px;
+	height: 60px;
+	opacity: 0.3;
+	animation-duration: 12s;
+}
+.cloud.four
+{
+	top: 80%;
+	width: 210px;
+	height: 70px;
+	opacity: 0.5;
+	animation-duration: 19s;
+}
+.cloud.five
+{
+	top: 10%;
+	width: 450px;
+	height: 150px;
+	opacity: 0.8;
+	animation-duration: 17s;
+}
+.cloud.six
+{
+	top: 30%;
+	width: 90px;
+	height: 30px;
+	opacity: 0.4;
+	animation-duration: 14s;
+}
+.cloud.seven
+{
+	top: 90%;
+	width: 120px;
+	height: 40px;
+	opacity: 0.6;
+	animation-duration: 13s;
+}
+.cloud::before
+{
+	content: '';
+	position: absolute;
+	top: -80%;
+	left: 10%;
+	width: 50%;
+	height: 150%;
+	background: white;
+	border-radius: 50%;
+}
+.cloud::after
+{
+	content: '';
+	position: absolute;
+	top: -40%;
+	right: 20%;
+	width: 30%;
+	height: 100%;
+	background: white;
+	border-radius: 50%;
+}
+.cloud
+{
+	position: absolute;
+	left: 0;
+	background: white;
+	border-radius: 1000px;
+	animation: flyhigh 8s infinite linear;
+}
+@keyframes flyhigh
+{
+	from
+	{
+		left: 0;
+		transform: translateX(-100%);
+	}
+	to
+	{
+		left: 100%;
+		transform: translateX(0%);
+	}
+}
