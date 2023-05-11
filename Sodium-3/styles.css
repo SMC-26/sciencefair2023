@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .content {
@@ -268,6 +269,15 @@ footer {
 
 .bio {
     float: left;
+}
+
+nav a {
+    padding-right: 10px;
+    color: #C89E71;
+}
+
+nav a:hover {
+    color:#8b6c56;
 }
 
 @media screen and (max-width: 1024px){
