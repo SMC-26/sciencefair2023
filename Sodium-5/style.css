@@ -61,7 +61,7 @@ h6 {
 
 #navigation {
 
-  background: #302444;
+  background: #F7948F;
   transition: all 0.5s;
   top: 5%;
   z-index: 996;
@@ -162,7 +162,7 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero .herolearnMore {
+#hero .download {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -177,7 +177,7 @@ h6 {
   background: #FFF8F2;
 }
 
-#hero .herolearnMore:hover {
+#hero .download:hover {
 
   background: transparent;
 
@@ -191,8 +191,8 @@ section {
 
 #Intro {
 
-  color: #000000;
-  background-color: #FFDCE6;
+  color: #AD3030;
+  background-color: #FFE6E6;
   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 
 }
@@ -210,6 +210,38 @@ section {
 .Intro p {
   font-size: 20px;
   text-align: justify;
+}
+
+#Applications {
+
+  color: #BB5000;
+  background-color: #FFE7D5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+
+}
+
+.Applications .contentTwo h3 {
+  font-weight: 600;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.Applications p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.contentTwo h3 {
+  font-size: 36px;
+}
+
+.contentTwo p {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .content h3 {
@@ -248,6 +280,23 @@ section {
   display: inline-block;
 }
 
+.dots-container-two {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.dot-two {
+  height: 16px;
+  width: 16px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background-color: #F7948F;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
 #main {
 
   background-color: #FFFFFF;
@@ -257,7 +306,7 @@ section {
 .iconboxOne {
 
   text-align: center;
-  background-color: #FAF0B5;
+  background-color: #FFE898;
   padding-top: 20%;
   padding-bottom: 20%;
 
@@ -266,7 +315,7 @@ section {
 .iconboxTwo {
 
   text-align: center;
-  background-color: #9EBFB9;
+  background-color: #85A48D;
   padding-top: 20%;
   padding-bottom: 20%;
   
@@ -275,7 +324,7 @@ section {
 .iconboxThree {
 
   text-align: center;
-  background-color: #FF99F6;
+  background-color: #F7948F;
   padding-top: 20%;
   padding-bottom: 20%;
   
@@ -284,7 +333,7 @@ section {
 .iconboxFour {
 
   text-align: center;
-  background-color: #F7948F;
+  background-color: #88A9C3;
   padding-top: 20%;
   padding-bottom: 20%;
 
@@ -331,7 +380,7 @@ section {
 #cntrBTR {
 
   color: #302444;
-  background-color: #C5D8A4;
+  background-color: #DAEAF1;
   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 
 }
