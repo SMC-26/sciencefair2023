@@ -1,297 +1,484 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link rel="icon" type="image/x-icon" href="x-assets/img/favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
-    <link href="bootstrap.css" rel="stylesheet">
-    <script src="x-assets/js/bootstrap-index.js"></script>
+    <script src=""></script>
+    <script type="text/javascript" src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css">
     <link href="https://smc-26.github.io/sciencefair2023/bootstrap.css" rel="stylesheet">
-    <script src="https://smc-26.github.io/sciencefair2023/bootstrap.js"></script>  
-    <link rel="stylesheet" href="x-assets/css/styles.css">
+    <script src="https://smc-26.github.io/sciencefair2023/bootstrap.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>BIOREMEDIATION</title>
     <script src="script.js"></script>
+    <title>Bioremediation</title>
 </head>
 <body>
     <script>addNavbar();</script>
-    
-    <div class="hero">
-          <div class="side-bar" id="mySidebar">
-            <div class="social-links">
-              <div class="social">
-                <a href="https://www.facebook.com/profile.php?id=100088811120257"><img src="images/fb.png"></a>
-                <a href="https://www.instagram.com/smc_2026/"><img src="images/ig.png"></a>
-                <a href="https://twitter.com/SMC_2026"><img src="images/tw.png"></a>  
-              </div>
-            </div>    
-          </div>         
-    </div>
-
-        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">   
-            <div class="carousel-item active" >
-              <img src="images/kelp.jpg" class="w-100" alt=".">
-              <div class="content">
-                  <div class="cont">
-                      <h1>BIOREMEDIATION</h1>
-                      <h3>With the Use of of Marine Macroalgae</h3> 
-                      <a href="#but"><div class="but"><button type="button">Take a Deep Dive</button></div></a>
-                  </div>    
+    <div>
+        <script
+          type="text/javascript"
+          src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+        ></script>
+        <link href="./home.css" rel="stylesheet" />
+        <div class="home-container">
+          <div id="resources" class="home-hero">
+            <div class="home-content-container">
+              <div class="home-hero-text">
+                <h1 class="home-heading">BIOREMEDIATION</h1>
+                <span class="home-text Section-Text">
+                  with the use of Marine Macroalgae
+                </span>
+                <a href="#but"><button class="home-cta-btn button Anchor" id="button">Take a Tour</button></a>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/water.jpg" class="w-100" alt=".">
-              <div class="content">
-                <div class="cont">
-                    <h1>To Learn More</h1>
-                    <a href="#but"><div class="but"><button type="button" id="button"><span></span>Press me!</button></div></a>
-                </div>    
-            </div>               
-            </div>
-            <div class="carousel-item">
-              <img src="images/watertwo.jpg" class="w-100" alt=".">
-              <div class="content">
-                <div class="cont">
-                  <h1>Enjoy Exploring!</h1>
-                </div>    
-              </div>                
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button" data-slide="prev">&laquo;
-              <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button" data-slide="next">&raquo;
-              <span class="sr-only"></span>
-            </a>   
           </div>
-        </div> 
-                        
-    </div>
-         
-    <div class="bottom" id="but"> 
-      <div class="intro">
-        <h1>INTRODUCTION</h1>
-      </div>
-      <div class="bubbles">
-        <img src="images/bubbles.png">
-        <img src="images/bubbles.png">
-        <img src="images/bubbles.png">
-        <img src="images/bubbles.png">
-        <img src="images/bubbles.png">
-        <img src="images/bubbles.png">
-      </div>
-      <img src="images/corals.png" class="corals">
-      <img src="images/treasure.png" onclick="document.getElementById('third').style.display='block'" class="treasure">
-    </div>
-       
-    <div class="modal" id="third">
-        <span onclick="document.getElementById('third').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content">
-                <div class="container" id="contain">
-                    <h1>Description</h1>
-                    <p>Kelp is known for being able to absorb and store heavy metals and other pollutants from the environment. This property could possibly be used in developing new bioremediation technologies for cleaning up contaminated water and soil. 
-                      Heavy metals such as lead and mercury, as well as radioactive isotopes such as iodine-131 and cesium-137, can be absorbed by kelp from the surrounding water. Heavy metals could otherwise lower energy levels and damage organs (Jaishankar et al., 2014) and radioactive isotopes could increase the risk of cancers or cause radiation sickness (CDC, 2018).</p>
-                    <p>Bioremediation is the process of removing toxins from the environment using living organisms. Through phytoremediation, marine macroalgae like kelp and seaweed were shown to be successful in removing different pollutants from aquatic environments. Heavy metals, chemical compounds, and other toxins in water are absorbed and accumulated by these algae, eliminating them from the environment. The algae may then be utilized for various applications, including biofuels, fertilizers, and animal feed. 
-                      Furthermore, the production of these algae can potentially give economic advantages to coastal communities. The bioremediation potential of marine macroalgae is an important field of study, with continuous attempts to refine the process and discover novel uses.</p>
-                    <p>Through research, kelp was found to be useful in the remediation of polluted water in regions such as industrial zones and mining sites. 
-                      According to research published in the journal Marine Pollution Bulletin, a dangerous amount of toxic metals such as mercury and lead can be seen absorbed in seaweed in Europe and Asia, showing the feasibility of using seaweed for bioremediation (Paz et al., 2019). This research on the bioremediation potential of marine macroalgae takes a multidisciplinary approach, combining chemical and biology concepts.
-                      To completely comprehend how macroalgae absorb and eliminate pollutants from the environment, it is vital to examine their chemical mechanisms and how they interact with various contaminants.</p>
+          <div id="inspiration" class="home-science-concepts">
+            <div class="home-intro">
+              <h1 class="home-heading1 Section-Heading" id="but">Introduction</h1>
+              <div class="home-service-card">
+                <span class="home-text01">
+                  <span class="home-text02 Section-Text">
+                    Kelp is known for being able to absorb and store heavy metals and
+                    other pollutants from the environment. This property could
+                    possibly be used in developing new bioremediation technologies for
+                    cleaning up contaminated water and soil. Heavy metals such as lead
+                    and mercury, as well as radioactive isotopes such as iodine-131
+                    and cesium-137, can be absorbed by kelp from the surrounding
+                    water. Heavy metals could otherwise lower energy levels and damage
+                    organs (Jaishankar et al., 2014) and radioactive isotopes could
+                    increase the risk of cancers or cause radiation sickness (CDC,
+                    2018).
+                  </span>
+                  <br class="home-text03 Section-Text" />
+                  <br />
+                  <br class="home-text05 Section-Text" />
+                  <span class="home-text06 Section-Text">
+                    Bioremediation is the process of removing toxins from the
+                    environment using living organisms. Through phytoremediation,
+                    marine macroalgae like kelp and seaweed were shown to be
+                    successful in removing different pollutants from aquatic
+                    environments. Heavy metals, chemical compounds, and other toxins
+                    in water are absorbed and accumulated by these algae, eliminating
+                    them from the environment. The algae may then be utilized for
+                    various applications, including biofuels, fertilizers, and animal
+                    feed. Furthermore, the production of these algae can potentially
+                    give economic advantages to coastal communities. The
+                    bioremediation potential of marine macroalgae is an important
+                    field of study, with continuous attempts to refine the process and
+                    discover novel uses.
+                  </span>
+                  <br class="home-text07 Section-Text" />
+                  <br />
+                  <br class="home-text09 Section-Text" />
+                  <span class="home-text10 Section-Text">
+                    Through research, kelp was found to be useful in the remediation
+                    of polluted water in regions such as industrial zones and mining
+                    sites. According to research published in the journal Marine
+                    Pollution Bulletin, a dangerous amount of toxic metals such as
+                    mercury and lead can be seen absorbed in seaweed in Europe and
+                    Asia, showing the feasibility of using seaweed for bioremediation
+                    (Paz et al., 2019). This research on the bioremediation potential
+                    of marine macroalgae takes a multidisciplinary approach, combining
+                    chemical and biology concepts. To completely comprehend how
+                    macroalgae absorb and eliminate pollutants from the environment,
+                    it is vital to examine their chemical mechanisms and how they
+                    interact with various contaminants.
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="home-heading-container"></div>
+            <h2 class="home-text11 Section-Heading">Science Concepts</h2>
+            <div class="home-service-card1">
+              <div class="home-text-container">
+                <div class="home-container01">
+                  <div class="home-icon-container">
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M475.648 186.624c3.115-5.248 7.893-10.325 14.251-14.165 10.069-6.101 21.589-7.595 32.256-4.949s20.224 9.216 26.197 19.115l361.216 603.008c3.285 5.589 5.461 12.715 5.547 20.565 0.128 11.776-4.48 22.443-12.16 30.293s-18.261 12.715-29.568 12.843h-722.645c-6.485-0.043-13.696-1.749-20.523-5.717-10.197-5.888-17.024-15.317-19.883-25.899s-1.621-22.144 3.925-31.787zM402.432 142.763l-361.387 603.307c-18.005 31.189-21.589 66.133-13.141 97.707s29.013 60.075 59.648 77.739c19.797 11.435 41.643 17.067 62.933 17.152h722.901c35.797-0.384 67.712-15.104 90.581-38.485s36.864-55.595 36.48-90.923c-0.256-22.869-6.528-44.544-17.323-62.891l-361.557-603.605c-18.432-30.421-47.36-50.389-79.104-58.155s-66.603-3.456-96.811 14.891c-18.304 11.093-33.067 26.24-43.179 43.264z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="home-heading2">Biology</span>
                 </div>
-            </form>
-    </div>
-    
-    <section class="science">
-      <div class="sci-text">SCIENCE CONCEPTS & APPLICATION</div>
-
-      <div class="modal" id="first">
-        <span onclick="document.getElementById('first').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content">
-                <div class="container" id="contain">
-                  <h1>Chemistry</h1>
-                  <p>Chelation, adsorption, and ion exchange are important processes in macroalgae that help in bioremediation. Chelation is the process of a metal ion binding to a molecule, forming a complex. In algae, there are molecules called siderophores which are able to chelate iron ions and transport them into the algae's cells (Årstøl & Hohmann-Marriott, 2019). Marine brown algae contain a sugar alcohol called mannitol. Mannitol (C6H14O6) has a hydroxyl (-OH) group structure that can bind to metal ions due to lone electron pairs forming coordination bonds with metal ions, forming a stable complex that the algae can easily excrete (Doleźal et al., 1973). 
-                      This can help detoxify heavy metals like cadmium and mercury in macroalgae, as the metal-mannitol complexes are less toxic and can be more easily eliminated by the algae. Ion exchange in algae occurs when the negatively charged polysaccharides in the algae's cell walls bind with positively charged ions such as calcium and magnesium, allowing the algae to accumulate nutrients. The two aforementioned mechanisms fall under the process of adsorption. It is the process of molecules adhering to the surface of a solid or liquid. Macroalgae are known to be able to adsorb pollutants such as heavy metals like cadmium or mercury, and organic compounds too such as pesticides or herbicides (Ordóñez et al., 2023). 
-                      Because of the large surface area of macroalgae, they are a very useful tool that can be used to control large amounts of pollutants. These chemical mechanisms facilitated by biological processes can be utilized for bioremediation, as they are useful in removing and absorbing pollutants and heavy metals from contaminated water and soil.</p> 
+                <span class="home-text12">
+                  Bioaccumulation and biodegradation are two important biological
+                  processes in macroalgae that help assist in bioremediation.
+                  Bioaccumulation refers to the accumulation of substances, such as
+                  pollutants or nutrients, in living organisms over time. Macroalgae
+                  bioaccumulate essential nutrients such as nitrogen or phosphorus for
+                  plant growth, but they can also accumulate harmful pollutants such
+                  as microplastics and heavy metals (Paz et al., 2019). Biodegradation
+                  refers to the process in which organic substances are broken down by
+                  living organisms such as bacteria or protozoa, as they use the
+                  organic compounds as a source of energy by breaking them down into
+                  simpler compounds such as carbon dioxide and water. In the context
+                  of bioremediation, biodegradation of macroalgae can be used to break
+                  down pollutants into less harmful compounds. Some species of
+                  macroalgae have been shown to be effective at degrading organic
+                  compounds such as polycyclic aromatic hydrocarbons and petroleum
+                  hydrocarbons (Bisht et al., 2015). One specific type of macroalgae,
+                  kelp, gets rid of greenhouse gases like CO2 by absorbing it into its
+                  tissues and using it in photosynthesis, which is the process of
+                  using energy from sunlight and nutrients to make food, lessening the
+                  CO2 concentration in the environment (Churchill &amp; Daniel, 2021).
+                  This is beneficial for the environment since excessive greenhouse
+                  gases raise the Earth&apos;s temperatures. With these biological
+                  processes, macroalgae helps reduce the concentration of pollutants
+                  in the surrounding ecosystem, and assists in creating a sustainable
+                  environment.
+                </span>
+              </div>
+            </div>
+            <div class="home-service-card2">
+              <div class="home-text-container1">
+                <div class="home-container02">
+                  <div class="home-icon-container1">
+                    <svg viewBox="0 0 1024 1024" class="home-icon02">
+                      <path
+                        d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="home-heading3">Physics</span>
                 </div>
-            </form>
-      </div>
-      <div class="modal" id="fourth">
-        <span onclick="document.getElementById('fourth').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content">
-                <div class="container" id="contain">
-                  <h1>Biology</h1>
-                  <p>Bioaccumulation and biodegradation are two important biological processes in macroalgae that help assist in bioremediation. Bioaccumulation refers to the accumulation of substances, such as pollutants or nutrients, in living organisms over time. Macroalgae bioaccumulate essential nutrients such as nitrogen or phosphorus for plant growth, but they can also accumulate harmful pollutants such as microplastics and heavy metals (Paz et al., 2019). Biodegradation refers to the process in which organic substances are broken down by living organisms such as bacteria or protozoa, as they use the organic compounds as a source of energy by breaking them down into simpler compounds such as carbon dioxide and water. 
-                    In the context of bioremediation, biodegradation of macroalgae can be used to break down pollutants into less harmful compounds. Some species of macroalgae have been shown to be effective at degrading organic compounds such as polycyclic aromatic hydrocarbons and petroleum hydrocarbons (Bisht et al., 2015). One specific type of macroalgae, kelp, gets rid of greenhouse gases like CO2 by absorbing it into its tissues and using it in photosynthesis, which is the process of using energy from sunlight and nutrients to make food, lessening the CO2 concentration in the environment (Churchill & Daniel, 2021). 
-                    This is beneficial for the environment since excessive greenhouse gases raise the Earth's temperatures.  With these biological processes, macroalgae helps reduce the concentration of pollutants in the surrounding ecosystem, and assists in creating a sustainable environment.
-                    </p> 
+                <span class="home-text13">
+                  Diffusion and mass transfer are two processes in macroalgae that
+                  fall under physics. Mass transfer is the movement of a substance
+                  from one location to another (Lewis, 1996). Two aforementioned
+                  processes, ion exchange and adsorption, involve the transfer of
+                  pollutants from the environment to the macroalgae surface, therefore
+                  involving mass transfer. The rate of this mass transfer depends on
+                  multiple factors such as the concentration of the pollutant, the
+                  surface area of the macroalgae, or the flow rate of the water.
+                  Diffusion is a specific type of mass transfer. It is the movement of
+                  molecules from a high concentration to low concentration. This can
+                  assist in bioremediation as when contaminants such as pesticides or
+                  heavy metals come into contact with the macroalgae, those particles
+                  can be diffused into the algal cells and interact with molecules of
+                  two aforementioned processes, chelation and adsorption, and be
+                  converted into detoxified and remediated substances which are then
+                  diffused back into the environment. With the help of these physical
+                  processes, macroalgae can be used as tools for bioremediation.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="home-service-card3">
+            <div class="home-text-container2">
+              <div class="home-container03">
+                <div class="home-icon-container2">
+                  <svg viewBox="0 0 1024 1024" class="home-icon04">
+                    <path
+                      d="M768 768v-512h-512v512h512zM768 170q34 0 60 26t26 60v512q0 34-26 60t-60 26h-512q-34 0-60-26t-26-60v-512q0-34 26-60t60-26h512z"
+                    ></path>
+                  </svg>
                 </div>
-            </form>
-      </div>
-      <div class="modal" id="sixth">
-        <span onclick="document.getElementById('sixth').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="container" id="contain">
-                  <h1>Physics</h1>
-                  <p>Diffusion and mass transfer are two processes in macroalgae that fall under physics. Mass transfer is the movement of a substance from one location to another (Lewis, 1996). Two aforementioned processes, ion exchange and adsorption, involve the transfer of pollutants from the environment to the macroalgae surface, therefore involving mass transfer. The rate of this mass transfer depends on multiple factors such as the concentration of the pollutant, the surface area of the macroalgae, or the flow rate of the water. Diffusion is a specific type of mass transfer. It is the movement of molecules from a high concentration to low concentration. 
-                   This can assist in bioremediation as when contaminants such as pesticides or heavy metals come into contact with the macroalgae, those particles can be diffused into the algal cells and interact with molecules of two aforementioned processes, chelation and adsorption, and be converted into detoxified and remediated substances which are then diffused back into the environment. With the help of these physical processes, macroalgae can be used as tools for bioremediation.</p>
+                <span class="home-heading4">Chemistry</span>
+              </div>
+              <span class="home-text14">
+                Chelation, adsorption, and ion exchange are important processes in
+                macroalgae that help in bioremediation. Chelation is the process of a
+                metal ion binding to a molecule, forming a complex. In algae, there
+                are molecules called siderophores which are able to chelate iron ions
+                and transport them into the algae&apos;s cells (Årstøl &amp;
+                Hohmann-Marriott, 2019). Marine brown algae contain a sugar alcohol
+                called mannitol. Mannitol (C6H14O6) has a hydroxyl (-OH) group
+                structure that can bind to metal ions due to lone electron pairs
+                forming coordination bonds with metal ions, forming a stable complex
+                that the algae can easily excrete (Doleźal et al., 1973). This can
+                help detoxify heavy metals like cadmium and mercury in macroalgae, as
+                the metal-mannitol complexes are less toxic and can be more easily
+                eliminated by the algae. Ion exchange in algae occurs when the
+                negatively charged polysaccharides in the algae&apos;s cell walls bind
+                with positively charged ions such as calcium and magnesium, allowing
+                the algae to accumulate nutrients. The two aforementioned mechanisms
+                fall under the process of adsorption. It is the process of molecules
+                adhering to the surface of a solid or liquid. Macroalgae are known to
+                be able to adsorb pollutants such as heavy metals like cadmium or
+                mercury, and organic compounds too such as pesticides or herbicides
+                (Ordóñez et al., 2023). Because of the large surface area of
+                macroalgae, they are a very useful tool that can be used to control
+                large amounts of pollutants. These chemical mechanisms facilitated by
+                biological processes can be utilized for bioremediation, as they are
+                useful in removing and absorbing pollutants and heavy metals from
+                contaminated water and soil.
+              </span>
+            </div>
+          </div>
+          <div id="process" class="home-application">
+            <h1 class="home-text15 Section-Heading">Application</h1>
+            <div class="home-heading-container1">
+              <span class="home-text16 Section-Text">
+                How can we apply this research?
+              </span>
+            </div>
+            <div class="home-cards-container">
+              <div class="home-service-card4">
+                <span class="home-text17">
+                  <span class="Card-Text">
+                    The research on bioremediation with macroalgae, particularly kelp
+                    and seaweed, can help to create effective and long-lasting
+                    strategies for cleaning up polluted aquatic habitats, providing a
+                    habitat for marine life and improving the state of the Earth.
+                    These techniques may be used in a range of situations, including
+                    industrial, agricultural, and residential settings. Workers in
+                    aquatic environment management or creating bioremediation
+                    technologies can be assisted by the findings of this study,
+                    guiding their judgments on using kelp and seaweed to clear up
+                    pollutants. Furthermore, additional studies may be performed to
+                    investigate the potential of different forms of macroalgae for
+                    bioremediation applications. As the need for sustainable and
+                    environmentally friendly solutions continues to grow, the use of
+                    macroalgae in bioremediation and other applications is likely to
+                    become increasingly important.
+                  </span>
+                  <br class="Card-Text" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div id="process" class="home-application1">
+            <h1 class="home-text20">References</h1>
+            <div class="home-cards-container1">
+              <div class="home-service-card5">
+                <span class="home-text21">
+                  <span>
+                    • Årstøl, E., &amp; Hohmann-Marriott, M. F. (2019). Cyanobacterial
+                    Siderophores-Physiology, Structure, Biosynthesis, and
+                    Applications. Marine drugs, 17(5), 281.
+                    https://doi.org/10.3390/md17050281
+                  </span>
+                  <br class="home-text23" />
+                  <br />
+                  <span>
+                    • Bisht, S., Pandey, P., Bhargava, B., Sharma, S., Kumar, V.,
+                    &amp; Sharma, K. D. (2015). Bioremediation of polyaromatic
+                    hydrocarbons (PAHs) using rhizosphere technology. Brazilian
+                    Journal of Microbiology, 46, 7-21.
+                  </span>
+                  <br class="home-text26" />
+                  <br />
+                  <span>
+                    • CDC. (2018, April 4). Radioisotope brief: Iodine-131 (I-131).
+                    Centers for Disease Control and Prevention.
+                    https://www.cdc.gov/nceh/radiation/emergencies/isotopes/iodine.
+                  </span>
+                  <br />
+                  <span>htm#:~:text=</span>
+                  <br />
+                  <span>Once%20inside%20</span>
+                  <br />
+                  <span>
+                    the%20body%2C%20I,cancer%20or%20other%20thyroid%20problems
+                  </span>
+                  <br class="home-text35" />
+                  <br />
+                  <span>
+                    • Churchill, M., &amp; Daniel, R. (2021, November 25). Utilising
+                    kelp forests for carbon capture. Cyan Planet.
+                    https://www.cyanplanet.org/post/utilising-kelp-forests-for-carbon-capture#:~:text=Through%20the%20process%20of%20photosynthesis,1-10%20billion%20tons%20annually
+                  </span>
+                  <br class="home-text38" />
+                  <br />
+                  <span>
+                    • Doleźal, J., Klausen, K. S., &amp; Langymyhr, F. J. (1973).
+                    Studies in the complex formation of metal ions with sugars: Part
+                    I. The complex formation of cobalt(II), cobalt(III), copper(II)
+                    and nickel(II) with mannitol. Analytica Chimica Acta, 63(1),
+                    71-77. https://doi.org/10.1016/S0003-2670(01)82175-9
+                  </span>
+                  <br class="home-text41" />
+                  <br />
+                  <span>
+                    • Jaishankar, M., Tseten, T., Anbalagan, N., Mathew, B. B., &amp;
+                    Beeregowda, K. N. (2014). Toxicity, mechanism and health effects
+                    of some heavy metals. Interdisciplinary Toxicology, 7(2), 60–72.
+                    https://doi.org/10.2478/intox-2014-0009
+                  </span>
+                  <br class="home-text44" />
+                  <br />
+                  <span>
+                    • Lewis, M. J. (1996). Diffusion and Mass Transfer. In M. J. Lewis
+                    (Ed.), Physical Properties of Foods and Food Processing Systems
+                    (pp. 413-445). Woodhead Publishing.
+                    https://doi.org/10.1533/9781845698423.413
+                  </span>
+                  <br class="home-text47" />
+                  <br />
+                  <span>
+                    • Ordóñez, J. I., Cortés, S., Maluenda, P., &amp; Soto, I. (2023).
+                    Biosorption of Heavy Metals with Algae: Critical Review of Its
+                    Application in Real Effluents. Sustainability, 15(6), 5521.
+                    https://doi.org/10.3390/su15065521
+                  </span>
+                  <br class="home-text50" />
+                  <br />
+                  <span>
+                    • Paz, S., Rubio, C., Frías, I., Gutiérrez, Á. J.,
+                    González-Weller, D., Martín, V., Revert, C., &amp; Hardisson, A.
+                    (2019). Toxic metals (Al, Cd, Pb and Hg) in the most consumed
+                    edible seaweeds in Europe. Chemosphere, 218, 879-884.
+                    https://doi.org/10.1016/j.chemosphere.2018.11.165
+                  </span>
+                  <br class="home-text53" />
+                  <br />
+                  <br class="Card-Text" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="home-section-separator"></div>
+          <div class="home-team">
+            <h1 class="home-text56 Section-Heading">Meet the Team!</h1>
+            <div class="home-heading-container2">
+              <span class="home-text57 Section-Text">
+                Meet the wonderful people who helped to make this project!
+              </span>
+            </div>
+            <div class="home-cards-container2">
+              <div class="home-team-card">
+                <div class="home-avatar-container">
+                  <img
+                    alt="image"
+                    src="file:///C:/Users/ADMIN/Desktop/Lithium-1/images/aaron.jpg"
+                    class="home-image"
+                  />
                 </div>
-           </form>
-      </div>
-      <div class="modal" id="thirteen">
-        <span onclick="document.getElementById('thirteen').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="container" id="contain">
-                  <h1>Application</h1>
-                  <p> The research on bioremediation with macroalgae, particularly kelp and seaweed, can help to create effective and long-lasting strategies for cleaning up polluted aquatic habitats, providing a habitat for marine life and improving the state of the Earth. These techniques may be used in a range of situations, including industrial, agricultural, and residential settings. 
-                    Workers in aquatic environment management or creating bioremediation technologies can be assisted by the findings of this study, guiding their judgments on using kelp and seaweed to clear up pollutants. Furthermore, additional studies may be performed to investigate the potential of different forms of macroalgae for bioremediation applications. As the need for sustainable and environmentally friendly solutions continues to grow, the use of macroalgae in bioremediation and other applications is likely to become increasingly important.
-                  </p>
+                <div class="home-container04">
+                  <span class="home-name Card-Heading">Aaron</span>
+                  <span class="home-position Card-Text">Researcher/Coder</span>
                 </div>
-           </form>
-      </div>
-      <div class="modal" id="fourteen">
-        <span onclick="document.getElementById('fourteen').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="container" id="contain">
-                  <h1>References</h1>
-                  <ul>
-                    <li>Årstøl, E., & Hohmann-Marriott, M. F. (2019). Cyanobacterial Siderophores-Physiology, Structure, Biosynthesis, and Applications. Marine drugs, 17(5), 281. https://doi.org/10.3390/md17050281</li>
-                    <li>Bisht, S., Pandey, P., Bhargava, B., Sharma, S., Kumar, V., & Sharma, K. D. (2015). Bioremediation of polyaromatic hydrocarbons (PAHs) using rhizosphere technology. Brazilian Journal of Microbiology, 46, 7-21.</li>
-                    <li>CDC. (2018, April 4). Radioisotope brief: Iodine-131 (I-131). Centers for Disease Control and Prevention. https://www.cdc.gov/nceh/radiation/emergencies/isotopes/
-                      iodine.htm#:~:text=Once%20inside%20the%20body%2C%20I,cancer%20or%20other%20thyroid%20problems</li>
-                    <li>Churchill, M., & Daniel, R. (2021, November 25). Utilising kelp forests for carbon capture. Cyan Planet. https://www.cyanplanet.org/post/utilising-kelp-forests-for-carbon-capture#:~:text=Through%20the%20process%20of%20photosynthesis,1-10%20billion%20tons%20annually</li>
-                    <li>Doleźal, J., Klausen, K. S., & Langymyhr, F. J. (1973). Studies in the complex formation of metal ions with sugars: Part I. The complex formation of cobalt(II), cobalt(III), copper(II) and nickel(II) with mannitol. Analytica Chimica Acta, 63(1), 71-77. https://doi.org/10.1016/S0003-2670(01)82175-9</li>
-                    <li>Jaishankar, M., Tseten, T., Anbalagan, N., Mathew, B. B., & Beeregowda, K. N. (2014). Toxicity, mechanism and health effects of some heavy metals. Interdisciplinary Toxicology, 7(2), 60–72. https://doi.org/10.2478/intox-2014-0009</li>
-                    <li>Lewis, M. J. (1996). Diffusion and Mass Transfer. In M. J. Lewis (Ed.), Physical Properties of Foods and Food Processing Systems (pp. 413-445). Woodhead Publishing. https://doi.org/10.1533/9781845698423.413</li>
-                    <li>Ordóñez, J. I., Cortés, S., Maluenda, P., & Soto, I. (2023). Biosorption of Heavy Metals with Algae: Critical Review of Its Application in Real Effluents. Sustainability, 15(6), 5521. https://doi.org/10.3390/su15065521</li>
-                    <li>Paz, S., Rubio, C., Frías, I., Gutiérrez, Á. J., González-Weller, D., Martín, V., Revert, C., & Hardisson, A. (2019). Toxic metals (Al, Cd, Pb and Hg) in the most consumed edible seaweeds in Europe. Chemosphere, 218, 879-884. https://doi.org/10.1016/j.chemosphere.2018.11.165</li>
-                  </ul>
+                <span class="home-text58">
+                  The therapist friend who also needs therapy.&quot;, a phrase that
+                  defines Aaron Paner. Our researcher who is friendly, hard-working,
+                  and strives to do his best in all aspects. He is a highly
+                  intellectual person, his IQ is so high that he is able to mimic
+                  different animal sounds out of nowhere 🤯. You&apos;ll be amazed of
+                  how accurate he can get with his mimicking.
+                </span>
+              </div>
+              <div class="home-team-card1">
+                <img
+                  alt="image"
+                  src="file:///C:/Users/ADMIN/Desktop/Lithium-1/images/me.jpg"
+                  class="home-image1"
+                />
+                <div class="home-container05">
+                  <span class="home-name1 Card-Heading">Keiarra</span>
+                  <span class="home-position1 Card-Text">Main Coder</span>
                 </div>
-           </form>
+                <span class="home-text59">
+                  Henlooo! This is Keiarra Yutig the goofiest person you&apos;ll meet
+                  and will teach you how to play basic guitar chords &gt;&lt;.
+                </span>
+              </div>
+              <div class="home-team-card2">
+                <div class="home-avatar-container1">
+                  <img
+                    alt="image"
+                    src="file:///C:/Users/ADMIN/Desktop/Lithium-1/images/hilarie.jpg"
+                    class="home-image2"
+                  />
+                </div>
+                <div class="home-container06">
+                  <span class="home-name2 Card-Heading">Hilarie</span>
+                  <span class="home-position2 Card-Text">Researcher</span>
+                </div>
+                <span class="home-text60">
+                  Things aren&apos;t always what they seem. Though she is the quietest
+                  person in class she&apos;s also the most cooperative and
+                  participative member, especially in academics. This is Hilarie
+                  Nalasa, our pessimistic thinker of a researcher but gets the job
+                  done.
+                </span>
+              </div>
+              <div class="home-team-card3">
+                <div class="home-avatar-container2">
+                  <img
+                    alt="image"
+                    src="file:///C:/Users/ADMIN/Desktop/Lithium-1/images/novea.jpg"
+                    class="home-image3"
+                  />
+                </div>
+                <div class="home-container07">
+                  <span class="home-name3 Card-Heading">Novea</span>
+                  <span class="home-position3 Card-Text">Researcher</span>
+                </div>
+                <span class="home-text61">
+                  They say big surprises come in small boxes, Novea Tampipi, a true
+                  embodiment of that. Your short haired, short height, short tempered
+                  researcher nevertheless, has a big heart that always has space for
+                  you.
+                </span>
+              </div>
+              <div class="home-team-card4">
+                <img
+                  alt="image"
+                  src="file:///C:/Users/ADMIN/Desktop/Lithium-1/images/alfonso.jpg"
+                  class="home-image4"
+                />
+                <div class="home-container08">
+                  <span class="home-name4 Card-Heading">Alfonso</span>
+                  <span class="home-position4 Card-Text">Researcher</span>
+                </div>
+                <span class="home-text62">
+                  Fonzi believes in 2 things. #1, There are never enough Taylor Swift
+                  songs in the world. #2, KKK - Knowledge and Kindness is Key.
+                </span>
+              </div>
+            </div>
+            <div class="home-team-card5">
+              <img
+                alt="image"
+                src="file:///C:/Users/ADMIN/Desktop/Lithium-1/images/francis.png"
+                class="home-image5"
+              />
+              <div class="home-container09">
+                <span class="home-name5 Card-Heading">FrancisJohn</span>
+                <span class="home-position5 Card-Text">Researcher</span>
+              </div>
+              <span class="home-text63">
+                A researcher who is low-key and mysterious. This guys is so low-key
+                and mysterious that even I, a classmate of his, barely know things
+                about him 😵‍💫😵😵‍💫😵‍💫. But what I do know is that he is a Lithium Boy who
+                plays chess and is a hard-worker of a member. 
+              </span>
+            </div>
+          </div>
+          <div class="home-section-separator1"></div>
+          <div class="home-section-separator2"></div>
+          <div class="home-section-separator3"></div>
+          <div class="home-footer-container">
+            <div class="home-footer">
+              <div class="home-social-links">
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon06">
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg>
+                  <svg viewBox="0 0 877.7142857142857 1024" class="home-icon08">
+                  <path
+                    d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
+                  ></path></svg>
+                  <svg viewBox="0 0 877.7142857142857 1024" class="home-icon10">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="home-copyright-container">
+                <svg viewBox="0 0 1024 1024" class="home-icon12">
+                  <path
+                    d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM506 390q-80 0-80 116v12q0 116 80 116 30 0 50-17t20-43h76q0 50-44 88-42 36-102 36-80 0-122-48t-42-132v-12q0-82 40-128 48-54 124-54 66 0 104 38 42 42 42 98h-76q0-14-6-26-10-20-14-24-20-20-50-20z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
       
-        <div class="chem" onclick="document.getElementById('first').style.display = 'block'">
-            <img src="images/bubble.png" class="bubone">
-            <div class="chemtext">
-              <h1>CHEM</h1>
-            </div>
-        </div>  
-
-        <div class="bio" onclick="document.getElementById('fourth').style.display= 'block'" >
-            <img src="images/bubble.png" class="bubtwo" >
-            <div class="biotext">
-              <h1>BIO</h1>
-            </div>
-        </div>
-
-        <div class="physics" onclick="document.getElementById('sixth').style.display= 'block'">
-            <img src="images/bubble.png" class="bubthree">
-            <div class="physicstext"><h1>PHYSICS</h1></div>
-        </div> 
-
-        <div class="appli" onclick="document.getElementById('thirteen').style.display= 'block'">
-          <img src="images/bubble.png" class="bubfour">
-          <div class="applitext"><h1>APPLICATION</h1></div>
-        </div> 
-
-        <div class="ref" onclick="document.getElementById('fourteen').style.display= 'block'">
-          <img src="images/bubble.png" class="bubfive">
-          <div class="reftext"><h1>REFERENCES</h1></div>
-        </div>
-  
-    </section>
-
-    <section class="research">
-      <div class="re-text">
-        <h1>Meet The Researchers!</h1>
-      </div>
-      <img src="images/submarine.png" onclick="document.getElementById('second').style.display='block'" class="boat">
-      <img src="images/submarinetwo.png" onclick="document.getElementById('fifth').style.display='block'" class="boattwo">
-
-      <img src="images/alfonso.jpg" class="pic" onclick="document.getElementById('seven').style.display='block'">
-      <img src="images/aaron.jpg" class="pic" onclick="document.getElementById('eight').style.display='block'">
-      <img src="images/me.jpg" class="pic" onclick="document.getElementById('nine').style.display='block'">
-      <img src="images/novea.jpg" class="pic" onclick="document.getElementById('ten').style.display='block'">
-      <img src="images/hilarie.jpg" class="pic" onclick="document.getElementById('eleven').style.display='block'">
-      <img src="images/francis.png" class="pic" onclick="document.getElementById('twelve').style.display='block'">
-
-      <div class="modal" id="seven">
-        <span onclick="document.getElementById('seven').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="name" id="contain">
-                  <h3>Alfonso Gabriel C. Bernabe</h3>
-                  <h5>Designer/Author</h5>
-                  <p> Fonzi believes in 2 things. #1, There are never enough Taylor Swift songs in the world. #2, KKK - Knowledge and Kindness is Key</p>
-                </div>
-           </form>
-      </div>
-      <div class="modal" id="eight">
-        <span onclick="document.getElementById('eight').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="name" id="contain">
-                  <h3>Aaron Francis Q. Paner</h3>
-                  <h5>Website Designer/Author</h5>
-                  <p> The therapist friend who also needs therapy.", a phrase that defines Aaron Paner. 
-                    Our researcher who is friendly, hard-working, and strives to do his best in all aspects. He is a highly intellectual person, his IQ is so high that he is able to mimic different animal sounds out of nowhere 🤯. You'll be amazed of how accurate he can get with his mimicking.</p>
-                </div>
-           </form>
-      </div>
-      <div class="modal" id="nine">
-        <span onclick="document.getElementById('nine').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="name" id="contain">
-                  <h3>Maria Keiarra J. Yutig</h3>
-                  <h5>Website Coder</h5>
-                  <p> Who is the goofiest nerd you know?AYO Keiarra Yutig at your service😉, multi-talented, multi millionare, and multi crazy acts to the max. 
-                    If you're looking for goofy and a passionate student who seem to have several screws loose in the head look for our researcher Maria Keiarra J. Yutig.</p>
-                </div>
-           </form>
-      </div>
-      <div class="modal" id="ten">
-        <span onclick="document.getElementById('ten').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="name" id="contain">
-                  <h3>Princess Novea L. Tampipi</h3>
-                  <h5>Designer/Author</h5>
-                  <p>They say big surprises come in small boxes, Novea Tampipi, a true embodiment of that.  Your short haired, short height, short tempered researcher nevertheless, has a big heart that always has space for you.</p>
-                </div>
-           </form>
-      </div>
-      <div class="modal" id="eleven">
-        <span onclick="document.getElementById('eleven').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="name" id="contain">
-                  <h3>Hilarie Gail Nalasa</h3>
-                  <h5>Designer/Author</h5>
-                  <p> Things aren't always what they seem. Though she is the quietest person in class she's also the most cooperative and participative member, especially in academics. 
-                    This is Hilarie Nalasa, our pessimistic thinker of a researcher but gets the job done.</p>
-                </div>
-           </form>
-      </div>
-      <div class="modal" id="twelve">
-        <span onclick="document.getElementById('twelve').style.display='none'" class="close" title="Close Modal">&times;</span>
-           <form class="modal-content">
-                <div class="name" id="contain">
-                  <h3>Francis John B. Francisco</h3>
-                  <h5>Designer/Researcher</h5>
-                  <p>   Diffusion and mass transfer are two processes in macroalgae that fall under physics. Mass transfer is the movement of a substance from one location to another (Lewis, 1996). Two aforementioned processes, ion exchange and adsorption, involve the transfer of pollutants from the environment to the macroalgae surface, therefore involving mass transfer. The rate of this mass transfer depends on multiple factors such as the concentration of the pollutant, the surface area of the macroalgae, or the flow rate of the water. Diffusion is a specific type of mass transfer. It is the movement of molecules from a high concentration to low concentration. 
-                   This can assist in bioremediation as when contaminants such as pesticides or heavy metals come into contact with the macroalgae, those particles can be diffused into the algal cells and interact with molecules of two aforementioned processes, chelation and adsorption, and be converted into detoxified and remediated substances which are then diffused back into the environment. With the help of these physical processes, macroalgae can be used as tools for bioremediation.</p>
-                </div>
-           </form>
-      </div>
-
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
