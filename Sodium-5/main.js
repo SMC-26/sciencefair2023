@@ -150,6 +150,39 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+const dotsTwo = document.querySelectorAll(".dot-two");
+const contentTwo = document.querySelector(".contentTwo");
+const initialTextTwo = "Patients with terminal organ failure can be saved through solid organ transplants, which can enhance the quality of life. Organ transplants have steadily improved over the past 20 years and often provide great outcomes in children and young adults, but they are becoming increasingly difficult due to the rising number of older transplant patients who have comorbid conditions. In contrast to dialysis, renal transplantation enhances patient longevity, and irreversible disorders of the liver, heart, or lungs must be treated with life-saving transplants. The activity of solid organ transplant programs has been continuously increasing, although it still falls short of worldwide demands and varies greatly between nations. Transplanting solid organs is crucial for advanced and established healthcare systems (Grinyo, 2013). <br><br> The number of organ transplants conducted today exceeded 42,800 in 2022, with yearly highs for kidney, liver, heart, and lung transplants (Organ Procurement and Transplantation Network, 2023). Nevertheless, despite all of these procedures, the possibility of unanticipated failures still exists. This is where the creation of artificial blood vessels is useful because they can enhance the circulation of blood from the body to the new organ and increase the rate of regeneration of damaged cells. A significant issue, however, arises in the manufacture of these vital pathways because, first, they are difficult to manufacture due to their small stature, and second, in order for these manufactured channels to mimic real blood vessels, they need to have an inner lining of endothelial cells to control exchanges between the bloodstream and surrounding tissues (Alberts et al., 2002).";
+const secondTextTwo = "But thanks to innovative discoveries found in the field of regenerative medicine, researchers have found that rotary jet machinery, such as the ones used in making cotton candy, can be astonishingly helpful in creating artificial pathways for blood as previously discussed above. And if researchers and scientists keep building on their existing discoveries, they may be able to employ artificial blood arteries for purposes other than organ transplantation such as angioplasties or to redirect the blood flow from damaged arteries. Artificial blood arteries can also become test subjects for studying the effects of drugs or new medical devices on arteries. With the creation of artificial blood arteries, scientists no longer have to rely on donated human or lab rat arteries to test drugs and equipment. Researchers can test the devices in vitro to determine how they interact with blood vessels, and how they affect blood flow and pressure. Additionally, they can be used to test new surgical techniques for vascular diseases. For example, doctors may want to study the effectiveness of minimally invasive procedures for treating atherosclerosis or aneurysms. By using these artificial arteries, they can stimulate the effects of these procedures on blood vessels before testing them on live patients.";
+const thirdTextTwo = "Additionally, the innovation of lab-grown meat can be expounded using this methodology of tissue engineering. Similarly, the problems of inner endothelial cell lining needs to be met for such tissues to be fully functional. The ethical problem of the current system of producing lab-grown meat through the use of FBS also needs to be addressed. But, further advancements within this study of artificial tissue production can aid environmental problems related to grazing and greenhouse gas emissions through eliminating the necessity of large scale meat farms, given that this type of lab-grown meat will be mass produced. Therefore, this research on artificial tissue engineering can be a tool for climate change mitigation as livestock farming produces 15% of the current emissions — with comparable percentages to transportation (Wilde, 2022).";
+
+let currentTextTwo = initialTextTwo;
+
+function updateContentTwo() {
+  contentTwo.innerHTML = `<p class="fst-italic">${currentTextTwo}</p>`;
+}
+
+function handleDotClickSecond(index) {
+  if (index === 1) {
+    currentTextTwo = initialTextTwo;
+  } else if (index === 2) {
+    currentTextTwo = secondTextTwo;
+  } else if (index === 3) {
+    currentTextTwo = thirdTextTwo;
+  }
+
+  updateContentTwo();
+
+  dotsTwo.forEach((dot) => {
+    dot.classList.remove("active");
+  });
+  dotsTwo[index - 1].classList.add("active");
+}
+
+dotsTwo.forEach((dot, index) => {
+  dot.addEventListener("click", () => handleDotClickSecond(index + 1));
+});
+
 const menuToggle = document.querySelector(".mobile-nav-toggle");
 const menuItems = document.querySelector(".menu-items");
 
