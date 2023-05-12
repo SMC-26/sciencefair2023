@@ -3,9 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="">
-	<meta name="keywords" content="">
-	<meta name="revised" content="">
+	<meta name="author" content="Abian, Apale, Bragat, Emin, Gamale, Lozada">
+	<meta name="keywords" content="Science Fair, HTML, CSS, JavaScript">
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
   	<link href="https://smc-26.github.io/sciencefair2023/bootstrap.css" rel="stylesheet">
@@ -13,7 +12,7 @@
 
   	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300&family=Rock+Salt&display=swap" rel="stylesheet">
 
 	<title>Biomimicry in Aeronautics</title>
 </head>
@@ -22,6 +21,13 @@
 
   	<header>
         <hgroup class="text-center">
+			<div class="cloud one"></div>
+			<div class="cloud two"></div>
+			<div class="cloud three"></div>
+			<div class="cloud four"></div>
+			<div class="cloud five"></div>
+			<div class="cloud six"></div>
+			<div class="cloud seven"></div>
             <h1 class="ml13" id="title">Biomimicry in Aeronautics</h1>      
             <h1 class="ml16" id="subtitle">Studying Fly Wing Characteristics to Improve Aircraft Aerodynamics</h1>
 	  		<a href="pdf.pdf" download="BiomimicryInAeronautics"><button id="link">Download the study</button></a>
@@ -37,13 +43,13 @@
 			<li><a href="#phys" id="phys_link">Physics</a></li>
 			<li><a href="#application">Application</a></li>
 			<li><a href="#references">References</a></li>
-			<li><a href="#authors">Authors</a></li>
+			<li><a href="#team">The Team</a></li>
 		</ul>
 	</nav>
 	
 	<main id="content">
-		
-		<h1>Objectives</h1><section id="objectives">
+		<section id="objectives">
+			<h1>Objectives</h1>
 			<ol>
 				<li>To analyze the structure and composition of fly wings.</li>
 				<li>To deduce the advantages and disadvantages of ornithopter wings modeled after fly wings.</li>
@@ -52,27 +58,29 @@
 			</ol>
 		</section>
 		
-		<h1>Introduction</h1><section id="intro">
-		
-			<p>Hello and welcome! You must have came from the Science Fair! Feel free to browse around our website to learn about our research on employing fly wing designs on flapping-wing micro-air vehicles. We hope you enjoy ♡.</p>
-			
-			<p>Human flight has been made possible by advances in technology. The Wright brothers created the first airplane, while Russia sent the first astronauts into space. Ornithopters, which mimic birds by flapping their wings, were first invented by the French in the 1870s.</p>
+		<section id="intro">
 
-			<img src="images/ornithopter.jpg">
+			<div class="row1">
+				<img src="images/ornithopter.jpg">
+				<div class="text">
+					<h1>Biomimicry in Aeronautics</h1>
+					<p>Human flight has been made possible by advances in technology. The Wright brothers created the first airplane, while Russia sent the first astronauts into space. Ornithopters, which mimic birds by flapping their wings, were first invented by the French in the 1870s.</p>
+				</div>
+			</div>
 
-			<aside><b>Figure 1.</b> Ornithopter (The Ornithopter Society, n.d.).</aside>
-		
-			<p>Although useful for surveillance, micro-unmanned ornithopters have received little attention (The Ornithopter Society, n.d.). Flapping-wing micro-air vehicles (FWMAVs) could be useful in monitoring Philippine seismic areas, forest degradation, and difficult terrain such as mountains where hikers have perished.</p>
-
-			<p>In a recent study by Zhang et al. (2023), the design and aerodynamics of FWMAVs were analyzed, including the currently-popular DelFly Nimble (Figure 2), inspired by fruit flies. This review showcased how mimicking fly wing characteristics in the innovation of ornithopters stems from biology, chemistry, and physics.</p>
-
-			<img src="images/delflynimble.jpg">
-
-			<aside><b>Figure 2.</b> DelFly Nimble in hover (DelFly, n.d.).</aside>
+			<div class="row2">
+				<div class="text">
+					<h1>Recent Developments</h1>
+					<p>Recently, flapping-wing micro-air vehicles (FWMAVs) have emerged. The Team's study especially highlights the DelFly Nimble, a FWMAV inspired by fruit flies. Most importantly, the DelFly Nimble shows the potential of being useful in the Philippine setting.</p>
+				</div>
+				<img src="images/delflynimble.jpg">
+			</div>
 
 		</section>
 		
-		<h1>Science Concepts</h1><section id="concepts">
+		<section id="concepts">
+			<h1>Science Concepts</h1>
+			<!-- Anton pls add here QwQ-->
 			<div class="content">	
 				<h2 id="bio">Biology</h2>
 				
@@ -142,111 +150,184 @@
 			</div>
 		</section>
 
-		<h1>Application</h1><section id="application">
-			<p>FWMAVs like the DelFly Nimble can be used in biology and geology field research, search and rescue, and surveillance and reconnaissance (The Ornithopter Society, n.d.). This potential comes from how the DelFly can carry a load of up to 4 g, which a micro camera suffices (DelFly, n.d.).</p>
-
-			<p>FWMAVs could be used in the Philippines to monitor tectonic activity and natural disasters, search and rescue in dangerous mountain areas, and military surveillance during wars (Climate Change Knowledge Portal, 2021; De Vera, 2023).</p>
-
-			<p>Another application for the FWMAVs is search and rescue. There have been cases in the Philippines where trekkers have gotten lost in the mountains (Lasco, 2015). With FWMAVs, searches could be done quicker and rescues could be done on time. Mountains are home to various hazards, such as wild animals, ditches, and ravines, which have claimed the lives of many hikers (Lauro, 2022).</p>
-
-			<p>While battery life and runtime are limitations, more research and discussion are required to fully explore FWMAVs' potential.</p>
-
-			<p>The applications listed above only scratch the surface of the potential of FWMAVs. There are also limitations that should be considered, such as battery life and runtime; however, the possible uses of these vehicles modeled from flies call for more research, discussion, and focus on this topic.</p>
-		</section>
-
-		<h1>References</h1><section id="references">
-			<div class="reference">
-				<p>BD Editors. (2017, April 28). <i>Chitin</i>. Biology Dictionary. Retrieved May 1, 2023 from <a href="https://biologydictionary.net/chitin/">https://biologydictionary.net/chitin/</a></p>
-
-				<p>Bhat, S. V., Zhao, J., Sheridan, J. A., Hourigan, K., & Thompson, M. M. (2019). Aspect ratio studies on insect wings. <i>Physics of Fluids</i>, 31(12), 121301. <a href="https://doi.org/10.1063/1.5129191 ">https://doi.org/10.1063/1.5129191</a></p>
-
-				<p>Biomimicry 3.8. (n.d.). <i>What is biomimicry?</i> Retrieved April 21, 2023 from <a href="https://biomimicry.net/what-is-biomimicry/">https://biomimicry.net/what-is-biomimicry/</a></p>
-
-				<p>Block, E. and Smith, P.A.S. (2018, February 6). <i>Amine</i>. Encyclopedia Britannica. <a href="https://www.britannica.com/science/amine">https://www.britannica.com/science/amine</a></p>
-
-				<p>Britannica, T. Editors of Encyclopaedia (2023, March 20). <i>Polyethylene terephthalate</i>. Encyclopedia Britannica. <a href="https://www.britannica.com/science/polyethylene-terephthalate">https://www.britannica.com/science/polyethylene-terephthalate</a></p>
-
-				<p>Carey, F. A. (2008, June 24). <i>Aromatic compound</i>. Encyclopedia Britannica. <a href="https://www.britannica.com/science/aromatic-compound"></a></p>
-
-				<p>Chen, C., & Zhang, T. (2019). A Review of Design and Fabrication of the Bionic Flapping Wing Micro Air Vehicles. <i>Micromachines</i>, 10(2), 144. <a href="https://doi.org/10.3390/mi10020144 ">https://doi.org/10.3390/mi10020144 </a></p>
-
-				<p>Climate Change Knowledge Portal. (2021A <a href="https://doi.org/10.3390/mi10020144">Review of Design and Fabrication of the Bionic Flapping Wing Micro Air Vehicles</a>). <i>Philippines</i>. Retrieved May 1, 2023 from <a href="https://climateknowledgeportal.worldbank.org/country/philippines/vulnerability">https://climateknowledgeportal.worldbank.org/country/philippines/vulnerability</a></p>
-
-				<p>DelFly. (n.d.). <i>DelFly Nimble</i>. Retrieved May 1, 2023 from <a href="https://www.delfly.nl/">https://www.delfly.nl/</a></p>
-
-				<p>De Vera, A. (2023, February 6). <i>DOST says additional equipment needed to enhance monitoring capabilities of Phivolcs</i>. Manila Bulletin. Retrieved May 1, 2023 from <a href="https://mb.com.ph/2023/02/05/dost-says-additional-equipment-needed-to-enhance-monitoring-capabilities-of-phivolcs/ ">https://mb.com.ph/2023/02/05/dost-says-additional-equipment-needed-to-enhance-monitoring-capabilities-of-phivolcs/ </a></p>
-
-				<p>Eddy, S., & Gullion, T. (2021). Characterization of Insect Wing Membranes by 13C CPMAS NMR. <i>Journal of Physical Chemistry C</i>, 125(1), 931–936. <a href="https://doi.org/10.1021/acs.jpcc.0c08423">https://doi.org/10.1021/acs.jpcc.0c08423</a></p>
-
-				<p>Hincks, J. (n.d.). <i>The battle for Marawi City</i>. Time. Retrieved May 1, 2023 from <a href="https://time.com/marawi-philippines-isis/">https://time.com/marawi-philippines-isis/</a></p>
-
-				<p>Hou, J., Aydemir, B. E., & Dumanlı, A. G. (2021). Understanding the structural diversity of chitins as a versatile biomaterial. <i>Philosophical Transactions of the Royal Society A</i>, 379(2206). <a href="https://doi.org/10.1098/rsta.2020.0331">https://doi.org/10.1098/rsta.2020.0331</a></p>
-
-				<p>Klecker, C., & Nair, L. S. (2017). Matrix Chemistry Controlling Stem Cell Behavior. In Elsevier eBooks (pp. 195–213). Elsevier BV. <a href="https://doi.org/10.1016/b978-0-12-802734-9.00013-5">https://doi.org/10.1016/b978-0-12-802734-9.00013-5</a></p>
-
-				<p>Krishna, S., Cho, M., Wehmann, H., Engels, T., & Lehmann, F. (2020). Wing Design in Flies: Properties and Aerodynamic Function. <i>Insects</i>, 11(8). <a href="https://doi.org/10.3390/insects11080466 ">https://doi.org/10.3390/insects11080466 </a></p>
-
-				<p>Lasco, G. (2015, September 29). <i>(UPDATED) Mountain News: Missing hiker Alex Lagata rescued in Mt. Marami</i>. Pinoy Mountaineer. Retrieved May 1, 2023 from <a href="http://www.pinoymountaineer.com/2015/09/updated-mountain-news-solo-hiker-alex.html ">http://www.pinoymountaineer.com/2015/09/updated-mountain-news-solo-hiker-alex.html </a></p>
-
-				<p>Lauro, P. (2022, October 2). <i>Aspiring teacher in Danao found dead 2 days after reported missing</i>. Cebu Daily News. Retrieved May 1, 2023 from <a href="https://cebudailynews.inquirer.net/466884/aspiring-teacher-in-danao-found-dead-2-days-after-reported-missing-2">https://cebudailynews.inquirer.net/466884/aspiring-teacher-in-danao-found-dead-2-days-after-reported-missing-2</a></p>
-
-				<p>MIT Department of Aeronautics and Astronautics. (1997, March 16). <i>Theory of flight</i>. Retrieved April 26, 2023, from <a href="https://web.mit.edu/16.00/www/aec/flight.html">https://web.mit.edu/16.00/www/aec/flight.html</a></p>
-
-				<p>National Cancer Institute. (n.d.). <i>Acetyl group</i>. Retrieved May 1, 2023 from <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/acetyl-group">https://www.cancer.gov/publications/dictionaries/cancer-terms/def/acetyl-group</a></p>
-
-				<p>Omnexus. (n.d.). <i>Comprehensive guide on polyethylene terephthalate (PET)</i>. Retrieved May 1, 2023 from <a href="https://omnexus.specialchem.com/selection-guide/polyethylene-terephthalate-pet-plastic">https://omnexus.specialchem.com/selection-guide/polyethylene-terephthalate-pet-plastic</a></p>
-
-				<p>Pillai, C. K. S., Paul, W., & Sharma, C. P. (2009). Chitin and chitosan polymers: Chemistry, solubility and fiber formation. <i>Progress in Polymer Science</i>, 34(7), 641–678. <a href="https://doi.org/10.1016/j.progpolymsci.2009.04.001">https://doi.org/10.1016/j.progpolymsci.2009.04.001</a></p>
-
-				<p>Purdue University. (n.d.). <i>Hydrogen bonding</i>. Retrieved May 1, 2023 from <a href="https://www.chem.purdue.edu/gchelp/liquids/hbond.html#">https://www.chem.purdue.edu/gchelp/liquids/hbond.html#</a></p>
-
-				<p>Reid, H. E., Schwab, R. K., Maxcer, M., Peterson, R. A., Johnson, E., & Jankauski, M. (2019). Wing flexibility reduces the energetic requirements of insect flight. <i>Bioinspiration & Biomimetics</i>, 14(5), 056007. <a href="https://doi.org/10.1088/1748-3190/ab2dbc">https://doi.org/10.1088/1748-3190/ab2dbc</a></p>
-
-				<p>The Ornithopter Society. (n.d.). <i>Full history of ornithopters</i>. Retrieved April 30, 2023 from <a href="https://ornithopter.org/history.full.shtml ">https://ornithopter.org/history.full.shtml </a></p>
-
-				<p>The Index Project. (n.d.). <i>DelFly Nimble</i>. Retrieved May 1, 2023 from <a href="https://theindexproject.org/award/nominees/2976">https://theindexproject.org/award/nominees/2976</a></p>
-
-				<p>Xu, Hao & Huang, Qin & Han, Jinglong & Yun, Haiwei. (2020). <i>Calculation of Hinge Moments for a Folding Wing Aircraft Based on High-Order Panel Method</i>. Mathematical Problems in Engineering. 2020. 1-14. <a href="https://doi.org/10.1155/2020/8881233 ">https://doi.org/10.1155/2020/8881233 </a></p>
-			</div>
-		</section>
-
-		<h1>Authors</h1><section id="authors">
-			<div class="row1">
-				<div>
-					<img src="images/sam.png">
-					<h3>Samuel Ray Apale</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-				</div>
-				<div>
-					<img src="images/placeholder.png">
-					<h3>Faye Michelle Abian</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-				</div>
-				<div>
-					<img src="images/placeholder.png">
-					<h3>Bruce Ice Bragat</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-				</div>
-			</div>
-			<div class="row2">	
-				<div>
-					<img src="images/placeholder.png">
-					<h3>Mich Angeline Emin</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-				</div>
-				<div>
-					<img src="images/alex.jpg">
-					<h3>Alexandrea Gamale</h3>
-					<p>Alex is a Grade 9 student who loves to play badminton and live life to the fullest.</p>
-				</div>
-				<div>
-					<img src="images/placeholder.png">
-					<h3>Anton Derek Lozada</h3>
-					<p>Lorem ipsum dolor sit amet</p>
+		<section id="application">
+			<h1>Application</h1>
+			<div class="row3">
+				<div class="container">
+					<div id="monitor">
+						<img src="images/quake.jpg">
+						<h3>Monitor</h3>
+						<p>FWMAVs like the DelFly Nimble can be a lightweight contribution to the monitoring of tectonic activities in the Philippines where there are numerous active volcanoes and faults.</p>
+					</div>
+					<div id="search">
+						<img src="images/apo.jpg">
+						<h3>Search</h3>
+						<p>Since FWMAVs are more maneuvereable during flight, they can also be used in going over rugged terrain, like Mount Apo, to look for lost individuals.</p>
+					</div>
+					<div id="military">
+						<img src="images/military.jpg">
+						<h3>Survey</h3>
+						<p>More than that, with the tiny size of FWMAVs, they will be helpful in reconnaissance and surveillance of the Filipino military.</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
+		<section id="references">
+			<h1>References</h1>
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  				<div class="carousel-inner">
+				    <div class="carousel-item active">
+				    	<div class="w-100">
+				    		<p>BD Editors. (2017, April 28). <i>Chitin</i>. Biology Dictionary. Retrieved May 1, 2023 from <a href="https://biologydictionary.net/chitin/">https://biologydictionary.net/chitin/</a></p>
+
+							<p>Bhat, S. V., Zhao, J., Sheridan, J. A., Hourigan, K., & Thompson, M. M. (2019). Aspect ratio studies on insect wings. <i>Physics of Fluids</i>, 31(12), 121301. <a href="https://doi.org/10.1063/1.5129191 ">https://doi.org/10.1063/1.5129191</a></p>
+
+							<p>Biomimicry 3.8. (n.d.). <i>What is biomimicry?</i> Retrieved April 21, 2023 from <a href="https://biomimicry.net/what-is-biomimicry/">https://biomimicry.net/what-is-biomimicry/</a></p>
+
+							<p>Block, E. and Smith, P.A.S. (2018, February 6). <i>Amine</i>. Encyclopedia Britannica. <a href="https://www.britannica.com/science/amine">https://www.britannica.com/science/amine</a></p>
+
+							<p>Britannica, T. Editors of Encyclopaedia (2023, March 20). <i>Polyethylene terephthalate</i>. Encyclopedia Britannica. <a href="https://www.britannica.com/science/polyethylene-terephthalate">https://www.britannica.com/science/polyethylene-terephthalate</a></p>
+
+							<p>Carey, F. A. (2008, June 24). <i>Aromatic compound</i>. Encyclopedia Britannica. <a href="https://www.britannica.com/science/aromatic-compound">https://www.britannica.com/science/aromatic-compounds</a></p>
+
+							<p>Chen, C., & Zhang, T. (2019). A Review of Design and Fabrication of the Bionic Flapping Wing Micro Air Vehicles. <i>Micromachines</i>, 10(2), 144. <a href="https://doi.org/10.3390/mi10020144 ">https://doi.org/10.3390/mi10020144 </a></p>
+
+							<p>Climate Change Knowledge Portal. (2021A <a href="https://doi.org/10.3390/mi10020144">Review of Design and Fabrication of the Bionic Flapping Wing Micro Air Vehicles</a>). <i>Philippines</i>. Retrieved May 1, 2023 from <a href="https://climateknowledgeportal.worldbank.org/country/philippines/vulnerability">https://climateknowledgeportal.worldbank.org/country/philippines/vulnerability</a></p>
+
+							<p>DelFly. (n.d.). <i>DelFly Nimble</i>. Retrieved May 1, 2023 from <a href="https://www.delfly.nl/">https://www.delfly.nl/</a></p>
+
+							<p>De Vera, A. (2023, February 6). <i>DOST says additional equipment needed to enhance monitoring capabilities of Phivolcs</i>. Manila Bulletin. Retrieved May 1, 2023 from <a href="https://mb.com.ph/2023/02/05/dost-says-additional-equipment-needed-to-enhance-monitoring-capabilities-of-phivolcs/ ">https://mb.com.ph/2023/02/05/dost-says-additional-equipment-needed-to-enhance-monitoring-capabilities-of-phivolcs/ </a></p>
+				    	</div>
+				    </div>
+				    <div class="carousel-item">
+				    	<div class="w-100">
+				    		<p>Eddy, S., & Gullion, T. (2021). Characterization of Insect Wing Membranes by 13C CPMAS NMR. <i>Journal of Physical Chemistry C</i>, 125(1), 931–936. <a href="https://doi.org/10.1021/acs.jpcc.0c08423">https://doi.org/10.1021/acs.jpcc.0c08423</a></p>
+
+							<p>Hincks, J. (n.d.). <i>The battle for Marawi City</i>. Time. Retrieved May 1, 2023 from <a href="https://time.com/marawi-philippines-isis/">https://time.com/marawi-philippines-isis/</a></p>
+
+							<p>Hou, J., Aydemir, B. E., & Dumanlı, A. G. (2021). Understanding the structural diversity of chitins as a versatile biomaterial. <i>Philosophical Transactions of the Royal Society A</i>, 379(2206). <a href="https://doi.org/10.1098/rsta.2020.0331">https://doi.org/10.1098/rsta.2020.0331</a></p>
+
+							<p>Klecker, C., & Nair, L. S. (2017). Matrix Chemistry Controlling Stem Cell Behavior. In Elsevier eBooks (pp. 195–213). Elsevier BV. <a href="https://doi.org/10.1016/b978-0-12-802734-9.00013-5">https://doi.org/10.1016/b978-0-12-802734-9.00013-5</a></p>
+
+							<p>Krishna, S., Cho, M., Wehmann, H., Engels, T., & Lehmann, F. (2020). Wing Design in Flies: Properties and Aerodynamic Function. <i>Insects</i>, 11(8). <a href="https://doi.org/10.3390/insects11080466 ">https://doi.org/10.3390/insects11080466 </a></p>
+							<p>Lasco, G. (2015, September 29). <i>(UPDATED) Mountain News: Missing hiker Alex Lagata rescued in Mt. Marami</i>. Pinoy Mountaineer. Retrieved May 1, 2023 from <a href="http://www.pinoymountaineer.com/2015/09/updated-mountain-news-solo-hiker-alex.html ">http://www.pinoymountaineer.com/2015/09/updated-mountain-news-solo-hiker-alex.html </a></p>
+
+							<p>Lauro, P. (2022, October 2). <i>Aspiring teacher in Danao found dead 2 days after reported missing</i>. Cebu Daily News. Retrieved May 1, 2023 from <a href="https://cebudailynews.inquirer.net/466884/aspiring-teacher-in-danao-found-dead-2-days-after-reported-missing-2">https://cebudailynews.inquirer.net/466884/aspiring-teacher-in-danao-found-dead-2-days-after-reported-missing-2</a></p>
+
+							<p>MIT Department of Aeronautics and Astronautics. (1997, March 16). <i>Theory of flight</i>. Retrieved April 26, 2023, from <a href="https://web.mit.edu/16.00/www/aec/flight.html">https://web.mit.edu/16.00/www/aec/flight.html</a></p>
+
+							<p>National Cancer Institute. (n.d.). <i>Acetyl group</i>. Retrieved May 1, 2023 from <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/acetyl-group">https://www.cancer.gov/publications/dictionaries/cancer-terms/def/acetyl-group</a></p>
+
+							<p>Omnexus. (n.d.). <i>Comprehensive guide on polyethylene terephthalate (PET)</i>. Retrieved May 1, 2023 from <a href="https://omnexus.specialchem.com/selection-guide/polyethylene-terephthalate-pet-plastic">https://omnexus.specialchem.com/selection-guide/polyethylene-terephthalate-pet-plastic</a></p>
+				    	</div>
+				    </div>
+				    <div class="carousel-item">
+				    	<div class="w-100">
+				    		<p>Pillai, C. K. S., Paul, W., & Sharma, C. P. (2009). Chitin and chitosan polymers: Chemistry, solubility and fiber formation. <i>Progress in Polymer Science</i>, 34(7), 641–678. <a href="https://doi.org/10.1016/j.progpolymsci.2009.04.001">https://doi.org/10.1016/j.progpolymsci.2009.04.001</a></p>
+
+							<p>Purdue University. (n.d.). <i>Hydrogen bonding</i>. Retrieved May 1, 2023 from <a href="https://www.chem.purdue.edu/gchelp/liquids/hbond.html#">https://www.chem.purdue.edu/gchelp/liquids/hbond.html#</a></p>
+
+							<p>Reid, H. E., Schwab, R. K., Maxcer, M., Peterson, R. A., Johnson, E., & Jankauski, M. (2019). Wing flexibility reduces the energetic requirements of insect flight. <i>Bioinspiration & Biomimetics</i>, 14(5), 056007. <a href="https://doi.org/10.1088/1748-3190/ab2dbc">https://doi.org/10.1088/1748-3190/ab2dbc</a></p>
+
+							<p>The Ornithopter Society. (n.d.). <i>Full history of ornithopters</i>. Retrieved April 30, 2023 from <a href="https://ornithopter.org/history.full.shtml ">https://ornithopter.org/history.full.shtml </a></p>
+
+							<p>The Index Project. (n.d.). <i>DelFly Nimble</i>. Retrieved May 1, 2023 from <a href="https://theindexproject.org/award/nominees/2976">https://theindexproject.org/award/nominees/2976</a></p>
+
+							<p>Xu, Hao & Huang, Qin & Han, Jinglong & Yun, Haiwei. (2020). <i>Calculation of Hinge Moments for a Folding Wing Aircraft Based on High-Order Panel Method</i>. Mathematical Problems in Engineering. 2020. 1-14. <a href="https://doi.org/10.1155/2020/8881233 ">https://doi.org/10.1155/2020/8881233 </a></p>
+				    	</div>
+				    </div>
+  				</div>
+  				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+   					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="visually-hidden">Previous</span>
+  				</button>
+  				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="visually-hidden">Next</span>
+  				</button>
+			</div>
+		</section>
+
+		<section id="team">
+			<h1>The Team</h1>
+			<div id="auth" class="carousel slide" data-bs-ride="carousel">
+  				<div class="carousel-inner">
+    				<div class="carousel-item active">
+     					<div class="w-100">
+     						<div class="container">
+     							<img src="images/faye.jpg">
+     							<h3>Faye Abian</h3>
+     							<h5>Designer</h5>
+     							<p>Loreeeeeeeeem</p>
+     						</div>
+     					</div>
+    				</div>
+    				<div class="carousel-item">
+     					<div class="w-100">
+     						<div class="container">
+     							<img src="images/sam.png">
+     							<h3>Samuel Apale</h3>
+     							<h5>Coder, Designer</h5>
+     							<p>Unforgiven I'm a villain I'm a 
+								<br>Unforgiven 난 그 길을 걸어
+								<br>Unforgiven I'm a villain I'm a 
+								<br>새 시대로 기억될 Unforgiven
+								<br>(adik sa games)</p>
+     						</div>
+     					</div>
+    				</div>
+    				<div class="carousel-item">
+     					<div class="w-100">
+     						<div class="container">
+     							<img src="images/bruce.jpg">
+     							<h3>Bruce Bragat</h3>
+     							<h5>Designer</h5>
+     							<p>Loreeeeeeeeem</p>
+     						</div>
+     					</div>
+    				</div>
+    				<div class="carousel-item">
+     					<div class="w-100">
+     						<div class="container">
+     							<img src="images/mich.jpg">
+     							<h3>Mich Emin</h3>
+     							<h5>Author, Designer</h5>
+     							<p>Hello there! I'm Mich and I love to sing and dance! (i need sleep)</p>
+     						</div>
+     					</div>
+    				</div>
+    				<div class="carousel-item">
+     					<div class="w-100">
+     						<div class="container">
+     							<img src="images/alex.jpg">
+     							<h3>Alexandrea Gamale</h3>
+     							<h5>Author, Coder, Designer</h5>
+     							<p>Hi! I'm Alex, and I love to play badminton ;)</p>
+     						</div>
+     					</div>
+    				</div>
+    				<div class="carousel-item">
+     					<div class="w-100">
+     						<div class="container">
+     							<img src="images/anton.jpg">
+     							<h3>Anton Lozada</h3>
+     							<h5>Author, Coder, Designer</h5>
+     							<p>Loreeeeeeeeem</p>
+     						</div>
+     					</div>
+    				</div>
+	  				<button class="carousel-control-prev" type="button" data-bs-target="#auth" data-bs-slide="prev">
+	    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    				<span class="visually-hidden">Previous</span>
+	  				</button>
+	  				<button class="carousel-control-next" type="button" data-bs-target="#auth" data-bs-slide="next">
+	    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    				<span class="visually-hidden">Next</span>
+	  				</button>
+	  			</div>
+			</div>
+		</section>
 	</main>
 
 	<footer>

@@ -26,6 +26,10 @@ h3 {
 h4, h5, h6, p {
   font-family: 'Manrope', sans-serif;
 }
+
+iframe {
+  max-width: 100%;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -267,6 +271,7 @@ h4, h5, h6, p {
 #hero {
   width: 100%;
   height: 100vh;
+  background-image: center;
   background: url("../img/Background.png") top right no-repeat;
   background-size: cover;
   position: relative;
@@ -290,8 +295,8 @@ h4, h5, h6, p {
 #hero h1 {
   position: relative;
   float: left;
-  left: -50px;
   margin: 0;
+  max-width: 100%;
   font-size: 74px;
   font-weight: 700;
   line-height: 56px;
@@ -301,7 +306,7 @@ h4, h5, h6, p {
 #hero p {
   position: relative;
   float: left;  
-  left: -50px;
+  max-width: 100%;
   color: white;
   margin: 0 0 0 0;
   font-size: 26px;
@@ -336,11 +341,13 @@ h4, h5, h6, p {
   }
 
   #hero h1 {
+    max-width: 100%;
     font-size: 32px;
     line-height: 36px;
   }
 
   #hero p {
+    max-width: 100%;
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
@@ -360,9 +367,10 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
+  max-width: 100%;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -524,6 +532,10 @@ section {
   margin-top: -2px;
   border-left: 2px solid #f5c669;
   position: relative;
+}
+
+.resume .resume-item img{
+  max-width: 100%;
 }
 
 .resume .resume-item h4 {

@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .content {
@@ -52,7 +53,7 @@ header {
 }
 
 .info {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 20px;
     background-color: rgba(200,158,113,0.5);
     border-radius: 10px;
@@ -61,8 +62,12 @@ header {
     text-justify: inter-word;
 }
 
+.bio-info {
+    margin-top: 65px;
+}
+
 .spin {
-    width: 6%;
+    width: 80px;
     margin-bottom: 5px;
 }
 
@@ -88,13 +93,13 @@ header {
 }
 
 .chem-icon {
-    width: 4%;
+    width: 45px;
     float: right;
     padding-left: 10px;
 }
 
 .icon {
-    width: 4%;
+    width: 45px;
     float: left;
     padding-right: 10px;
 }
@@ -108,7 +113,7 @@ header {
     margin-top: 30px;
     text-align: center;
     padding: 10px;
-    width: 35%;
+    width: 180px;
     background-color: rgb(26, 26, 26);
     color: white;
 }
@@ -204,7 +209,7 @@ footer {
 .dopamine {
     height: 390px;
     margin-right: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 45px;
 }
 
 .chem img {
@@ -213,13 +218,13 @@ footer {
 
 .music1 {
     float: left;
-    width: 25%;
+    width: 300px;
     margin-right: 20px;
 }
 
 .music2 {
     float: right;
-    width: 25%;
+    width: 300px;
     padding-left: 20px;
     padding-bottom: 20px;
 }
@@ -262,14 +267,22 @@ footer {
     opacity: 1;
 }
 
+.bio {
+    float: left;
+}
+
+nav a {
+    padding-right: 10px;
+    color: #C89E71;
+}
+
+nav a:hover {
+    color:#8b6c56;
+}
+
 @media screen and (max-width: 1024px){
     .content {
         padding: 20px;
-    }
-
-    .download {
-        text-align: center;
-        width: 40%;
     }
 
     .spin {
@@ -305,11 +318,6 @@ footer {
 @media screen and (max-width: 768px) {
     .content {
         padding: 20px;
-    }
-
-    .download {
-        text-align: center;
-        width: 50%;
     }
 
     .spin {
@@ -350,9 +358,50 @@ footer {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1500px) {
+    .hero-p {
+        font-size: 22px;
+    }
+
+    .download {
+        width: 250px;
+    }
+
+    .hero-h1 {
+        font-size: 50px;
+    }
+
+    .hero-h2 {
+        font-size: 40px;
+    }
+
+    .scienceHeading {
+        font-size: 32px;
+        vertical-align: middle;
+    }
+
+    .icon {
+        width: 50px;
+    }
+
+    .info {
+        padding: 30px;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .main {
+        font-size: 22px;
+    }
+
     .dopamine {
-        height: 300px;
+        height: 450px;
     }
     .music1 {
         width: 220px;

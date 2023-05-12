@@ -1,9 +1,40 @@
-ScrollReveal({
-    reset: true,
-    distance: '50px',
-    duration: 1500,
-    delay: 400
-})
-ScrollReveal().reveal('#m, #intro, .concept-title, #bio-title, #bio-desc, #phys-title, #phys-desc, #references,#profile-title,#adiong,#coquilla,#dugho,#gaspar,#lademora,#ongbay', {delay:150, origin:'right'})
-ScrollReveal().reveal('#bio-card,#chem-card,#phys-card, #w, #o, #chem-title, #chem-desc, #application-title, #application-desc', {delay:150, origin:'left'})
-ScrollReveal().reveal('#fb,#instgrm,#twitter',{delay:150, origin:'bottom'})
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray(".revealUp").forEach(function (elem) {
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top 80%",
+    end: "bottom 20%",
+    onEnter: function () {
+      gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto"
+        }
+      );
+    },
+    onLeave: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    },
+    onEnterBack: function () {
+      gsap.fromTo(
+        elem,
+        { y: -100, autoAlpha: 0 },
+        {
+          duration: 3,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto"
+        }
+      );
+    },
+    onLeaveBack: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    }
+  });
+});

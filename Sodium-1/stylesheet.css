@@ -7,29 +7,57 @@ font-family: 'Righteous', cursive;*/
   100% {opacity: 1;
   }
 }
-@keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 * {
-  animation: fadeInAnimation ease 0.8s;
+  animation: fadeInAnimation ease 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+.animate-character
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #1b7a33 0%,
+    #1dbb3f 29%,
+    #91ff13 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+#download{
+  float: right;
+  height: 30px;
+  width: 35px;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+
 #gen {
   color: white;
   font-size: 7vw;
   text-align: center;
   font-family: 'Righteous', cursive;
   padding-top: 12%;
-  border-right: 2px solid;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
-  animation-duration: 1.3s;
-  animation-timing-function: steps(30, end);
-  animation-fill-mode: forwards;
 }
 #title {
   color: white;
@@ -37,19 +65,13 @@ font-family: 'Righteous', cursive;*/
   text-align: center;
   font-family: 'Righteous', cursive;
   padding-bottom: 3%;
-  border-right: 2px solid;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
-  animation-duration: 1.3s;
-  animation-timing-function: steps(30, end);
-  animation-fill-mode: forwards;
 }
 .home {
   background-image: url(leaves.jpg);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover; 
+  text-align: center;
 }
 #w {
   margin-top: 5%;
@@ -79,15 +101,20 @@ font-family: 'Righteous', cursive;*/
   padding-left: 5%;
   padding-right: 5%;
 }
-.intro-last{
+#intro-last{
+  color: white;
+  font-family: Georgia, serif;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 5%;
 }
-.concept-title{
+#concept-title{
   font-family: Georgia, serif;
   text-align: center;
   margin-top: 2%;
 }
-.concept-cards{
+#concept-cards{
   margin-left: 10%;
 }
 #bio-card{
@@ -166,7 +193,7 @@ font-family: 'Righteous', cursive;*/
   font-family: Georgia, serif;
 }
 #application {
-  background-color: #AAC8A7;
+  background-color: #5c8d50;
   color: white;
   float: left;
   padding: 5%;
@@ -175,17 +202,17 @@ font-family: 'Righteous', cursive;*/
 }
 
 #profile{
-  clear: left;
+  float: left;
   background-color: #25664b;
   color: white;
+  width: 100%;
   padding: 5%;
-  padding-bottom: 50%;
   font-family: Georgia, serif;
 }
 #adiong{
   float: left;
   width: 250px;
-  margin-left: 5%;
+  margin-left: 10%;
   text-align: center;
 }
 #adiong img{
@@ -203,7 +230,7 @@ font-family: 'Righteous', cursive;*/
 #coquilla{
   float: left;
   width: 250px;
-  margin-left: 13%;
+  margin-left: 10%;
   text-align: center;
 }
 #coquilla img{
@@ -221,7 +248,7 @@ font-family: 'Righteous', cursive;*/
 #dugho{
   float: left;
   width: 250px;
-  margin-left: 13%;
+  margin-left: 10%;
   text-align: center;
 }
 #dugho img{
@@ -240,7 +267,7 @@ font-family: 'Righteous', cursive;*/
   clear: left;
   float: left;
   width: 250px;
-  margin-left: 5%;
+  margin-left: 10%;
   margin-top: 5%;
   text-align: center;
 }
@@ -259,7 +286,7 @@ font-family: 'Righteous', cursive;*/
 #lademora{
   float: left;
   width: 250px;
-  margin-left: 13%;
+  margin-left: 10%;
   margin-top: 5%;
   text-align: center;
 }
@@ -278,7 +305,7 @@ font-family: 'Righteous', cursive;*/
 #ongbay{
   float: left;
   width: 250px;
-  margin-left: 13%;
+  margin-left: 10%;
   margin-top: 5%;
   text-align: center;
 }
@@ -293,6 +320,7 @@ font-family: 'Righteous', cursive;*/
 #ongbay h2{
   border-bottom: 2px solid;
 }
+
 #references {
   float: left;
   padding: 5%;
@@ -301,7 +329,7 @@ font-family: 'Righteous', cursive;*/
 }
 
 footer{
-  margin-left:34%
+  margin-left:38%;
 }
 
 #fb{
@@ -309,40 +337,40 @@ footer{
   background: url(logos.png) no-repeat -10px -20px;
   width: 140px;
   height: 125px;
-  transform: scale(0.7,0.7);
+  transform: scale(0.5,0.5);
 }
 #instgrm{
   float: left;
   background: url(logos.png) no-repeat -150px -20px;
   width: 130px;
   height: 125px;
-  transform: scale(0.7,0.7);
+  transform: scale(0.5,0.5);
 }
 #twitter{
   float: left;
   background: url(logos.png) no-repeat -278px -20px;
   width: 130px;
   height: 125px;
-  transform: scale(0.7,0.7);
+  transform: scale(0.5,0.5);
 }
 #fb:hover{
   float: left;
   background: url(logos.png) no-repeat -7px -155px;
   width: 140px;
   height: 125px;
-  transform: scale(0.7,0.7);
+  transform: scale(0.5,0.5);
 }
 #instgrm:hover{
   float: left;
   background: url(logos.png) no-repeat -147px -155px;
   width: 130px;
   height: 125px;
-  transform: scale(0.7,0.7);
+  transform: scale(0.5,0.5);
 }
 #twitter:hover{
   float: left;
   background: url(logos.png) no-repeat -275px -155px;
   width: 130px;
   height: 125px;
-  transform: scale(0.7,0.7);
+  transform: scale(0.5,0.5);
 }

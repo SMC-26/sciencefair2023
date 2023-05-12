@@ -57,19 +57,29 @@
     position: relative;
     border-radius: 25px 25px 25px 25px;
     width: 100%;
-    height: 500px;
     overflow: hidden;
 }
 .images {
     display: flex;
     width: 100%;
-    
+    background-size: cover;
+    height: 37.878787878787875vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
 
 }
 .images img {
-    height: 300px;
+    height: 37.878787878787875vh;
     width: 100%;
     transition: all 0.5s ease;
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
 }
 .images input {
     display: none;
@@ -206,7 +216,6 @@
     margin: auto;
 }
 .butsol-container{
-    height: 56.81818181818182vh;
     display: flex;
     flex-direction: row;
     float: left;
@@ -253,6 +262,18 @@
    margin-left: 3.90625vw;
     font-size: 4.375rem;
 }
+#scintro{
+   margin-left: 3.90625vw;
+    font-size: 4.375rem;
+}
+#cintro{
+   margin-left: 3.90625vw;
+    font-size: 4.375rem;
+}
+#rintro{
+   margin-left: 3.90625vw;
+    font-size: 4.375rem;
+}
 #bf{
     position: absolute;
     margin-top: 2.525252525252525vh;
@@ -282,7 +303,7 @@
 }
 
 #thirdpage{
-    height: 130vh;
+    height: 140vh;
     width: 100%;
     background-color: #1F1F1F;
 }
@@ -290,17 +311,40 @@
     margin-left: 5.208333333333333vw;
 }
 .spacing{
-    height: 7.5vh;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+.sccontentcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.allcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.textcontainer{
+    height: 60vh;
+}
+.carouimg-container{
+    width: 50vw;
+    height: 45vh;
+}
+.draggable-slider{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 125vh;
 }
 .draggable-slider .inner .slide {
-    width: 30vw;
-    margin-right: 5vw;
-  }
+    width: 50vw;
+    height: 125vh;
+    /* border: 2px solid white; */
+}
   .draggable-slider .inner > div:nth-of-type(even) {
-    opacity: .7;
+    opacity: .4;
   }
   .draggable-slider .inner > div:nth-of-type(odd) {
-    opacity: .7;
+    opacity: .4;
   }
   .draggable-slider .inner > div:nth-of-type(even).active {
     opacity: 1;
@@ -310,15 +354,15 @@
   }
 
 .carouwrapper{
-    width: 30vw;
-    height: 500px;
+    width: 70vw;
+    height: 100VH;
     display: flex;
     justify-content: center;
     flex-direction: column;
     overflow: visible;
-    margin-left: 5vw;
+    margin-left: auto;
     margin-right: auto;
-    position: absolute;
+    /* border: 2px solid white; */
 }
 .carouwrapper #SCsubtext{
     font-size: 0.9rem;
@@ -330,19 +374,7 @@
     float: right;
     display: flex;
     flex-direction: column;
-}
-.caroutext button, input[type="button"]{
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    text-align: right;
-    font-size: large;
-    color: #ff3131;
-    text-decoration: none;
+    padding-right: 2vw;
 }
 
 .caroutext h1{
@@ -351,7 +383,6 @@
     font-size: 2.5rem;
 }
 .caroutext p{
-    width: 15vw;
     float: right;
     /* border: 2px solid black; */
     word-wrap: break-word;
@@ -359,7 +390,7 @@
     font-size: large;
 }
 .carouimg{
-    width: 27vw;
+    width: 50vw;
     height: 100%;
     /* border: 2px solid black; */
     border-radius: 25px 25px 25px 25px;
@@ -367,6 +398,7 @@
 #bioimg{
     background-image: url(images/biology.jpg);
     background-size: 100%;
+    height: 45vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -374,6 +406,7 @@
 #chemimg{
     background-image: url(images/chemistry.jpg);
     background-size: 50%;
+    height: 45vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -381,36 +414,44 @@
 #physimg{
     background-image: url(images/physics.jpg);
     background-size: 100%;
+    height: 45vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.readmore{
-    width: 55vw;
-    height: 100vh;
-    position: relative;
-    float: right;
-    margin-right: 5vw;
-    display: none;
+#biomore{
     text-align: justify;
     word-wrap: break-word;
     overflow-wrap: break-word;
-}
-#biomore{
-    height: 40vh;
+    height: 60vh;
+    overflow: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
     /* border: 2px solid black; */
 }
 #chemmore{
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     height: 60vh;
+    overflow: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
     /* border: 2px solid black; */
 }
 #physmore{
-    height: 90vh;
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    height: 60vh;
+    overflow: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
     /* border: 2px solid black; */
 }
 
 #fourthpage{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
 }
 .Ccontainer{
@@ -432,10 +473,40 @@
     overflow: hidden;
 }
 #fifthpage{
-    height: 80vh;
+    height: 110vh;
     width: 100%;
     background-color: #1F1F1F;
+    vertical-align: middle;
 }
+#referenceslist{
+    height: 79.54545454545455vh;
+    overflow-wrap: scroll;
+    overflow-y: scroll;
+}
+#pintro{
+    height: 60vh;
+    overflow-y: scroll;
+}
+#pconclusion{
+    height: 60vh;
+    overflow-y: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7.5px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#8786863d;
+    border-radius: 50px;
+  }
 .Rcontainer{
     float: left;
     padding: 0.625em;
@@ -444,13 +515,14 @@
     text-align: justify;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    width: 90%;
 }
 /* Footer*/
 .footer {
     position: relative;
     width: 100%;
     background-image: linear-gradient(#ff3131, #ff914d);
-    min-height: 250px;
+    min-height: 450px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;

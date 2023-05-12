@@ -202,3 +202,4 @@ for (let th = 0; th < tab_items.length; th++) {
         prevEl: ".swiper-button-prev",
       },
     });
+
